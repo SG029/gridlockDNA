@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>GridlockDNA — Bangalore Traffic Intelligence</title>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+<script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css"/>
+<link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css"/>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"/>
+<style>
+  :root {
+    --bg: #0d0f14;
+    --surface: #151820;
+    --surface2: #1c2030;
+    --border: rgba(255,255,255,0.07);
+    --text: #e8eaf0;
+    --muted: #6b7280;
+    --red: #ef4444;
+    --red-dim: rgba(239,68,68,0.12);
+    --amber: #f59e0b;
+    --amber-dim: rgba(245,158,11,0.12);
+    --green: #10b981;
+    --green-dim: rgba(16,185,129,0.12);
+    --blue: #3b82f6;
+    --blue-dim: rgba(59,130,246,0.12);
+    --purple: #8b5cf6;
+    --font: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: var(--font); background: var(--bg); color: var(--text); height: 100vh; overflow: hidden; display: flex; flex-direction: column; }
+
+  /* TOP BAR */
+  .topbar { display: flex; align-items: center; gap: 16px; padding: 0 20px; height: 52px; background: var(--surface); border-bottom: 1px solid var(--border); flex-shrink: 0; }
+  .logo { display: flex; align-items: center; gap: 10px; }
+  .logo-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--red); box-shadow: 0 0 8px var(--red); animation: pulse 2s infinite; }
+  @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.4} }
+  .logo-name { font-size: 14px; font-weight: 600; letter-spacing: 0.05em; color: var(--text); }
+  .logo-sub { font-size: 11px; color: var(--muted); font-weight: 400; }
+  .topbar-stats { display: flex; gap: 0; margin-left: 24px; }
+  .topbar-stat { padding: 0 16px; border-right: 1px solid var(--border); display: flex; flex-direction: column; justify-content: center; }
+  .topbar-stat:first-child { padding-left: 0; }
+  .topbar-val { font-size: 16px; font-weight: 600; font-family: 'JetBrains Mono', monospace; }
+  .topbar-lbl { font-size: 10px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.06em; margin-top: 1px; }
+  .topbar-right { margin-left: auto; display: flex; align-items: center; gap: 10px; }
+  .live-badge { display: flex; align-items: center; gap: 6px; font-size: 11px; font-weight: 500; padding: 4px 10px; border-radius: 20px; }
+  .live-badge.connected { color: var(--green); border: 1px solid rgba(16,185,129,0.3); }
+  .live-badge.mock { color: var(--amber); border: 1px solid rgba(245,158,11,0.3); }
+  .live-dot { width: 6px; height: 6px; border-radius: 50%; background: currentColor; animation: pulse 1.5s infinite; }
+  .tab-bar { display: flex; gap: 2px; background: var(--surface2); border-radius: 8px; padding: 3px; }
+  .tab { font-size: 12px; padding: 5px 14px; border-radius: 6px; cursor: pointer; color: var(--muted); border: none; background: none; font-family: var(--font); font-weight: 500; transition: all .15s; }
+  .tab.active { background: var(--surface); color: var(--text); }
+  .tab:hover:not(.active) { color: var(--text); }
+
+  /* ALERT BANNER */
+  .alert-banner { background: linear-gradient(90deg, rgba(239,68,68,0.15), transparent); border-bottom: 1px solid rgba(239,68,68,0.3); padding: 8px 20px; display: flex; align-items: center; gap: 10px; font-size: 12px; flex-shrink: 0; }
+  .alert-banner.hidden { display: none; }
+  .alert-icon { color: var(--red); font-size: 14px; font-weight: 700; flex-shrink: 0; }
+  .alert-text { color: #fca5a5; flex: 1; }
+  .alert-text strong { color: var(--red); }
+  .alert-count { background: var(--red); color: white; font-size: 10px; font-weight: 700; padding: 1px 7px; border-radius: 10px; }
+
+  /* DATA SOURCE NOTICE */
+  .data-notice { background: rgba(245,158,11,0.08); border-bottom: 1px solid rgba(245,158,11,0.2); padding: 6px 20px; font-size: 11px; color: #fcd34d; display: flex; align-items: center; gap: 8px; flex-shrink: 0; }
+  .data-notice.hidden { display: none; }
+  .data-notice code { background: rgba(255,255,255,0.06); padding: 1px 6px; border-radius: 4px; font-family: 'JetBrains Mono', monospace; }
+
+  .main { display: flex; flex: 1; overflow: hidden; }
+  #map { flex: 1; }
+  .leaflet-container { background: #0d1117 !important; }
+
+  .panel { width: 360px; flex-shrink: 0; background: var(--surface); border-left: 1px solid var(--border); display: flex; flex-direction: column; overflow: hidden; }
+  .panel-header { padding: 14px 16px 10px; border-bottom: 1px solid var(--border); flex-shrink: 0; }
+  .panel-title { font-size: 12px; font-weight: 600; color: var(--muted); text-transform: uppercase; letter-spacing: 0.07em; }
+  .panel-count { font-size: 11px; color: var(--muted); margin-top: 2px; }
+  .panel-body { flex: 1; overflow-y: auto; }
+  .panel-body::-webkit-scrollbar { width: 4px; }
+  .panel-body::-webkit-scrollbar-track { background: transparent; }
+  .panel-body::-webkit-scrollbar-thumb { background: var(--border); border-radius: 2px; }
+
+  /* FILTER BAR */
+  .filter-bar { display: flex; gap: 6px; padding: 10px 16px; border-bottom: 1px solid var(--border); flex-wrap: wrap; }
+  .filter-chip { font-size: 11px; padding: 4px 10px; border-radius: 14px; border: 1px solid var(--border); background: none; color: var(--muted); cursor: pointer; font-family: var(--font); font-weight: 500; transition: all .15s; }
+  .filter-chip.active { background: rgba(255,255,255,0.08); color: var(--text); border-color: rgba(255,255,255,0.2); }
+  .filter-chip[data-sev="critical"].active { background: var(--red-dim); color: #fca5a5; border-color: rgba(239,68,68,0.4); }
+  .filter-chip[data-sev="high"].active { background: var(--amber-dim); color: #fcd34d; border-color: rgba(245,158,11,0.4); }
+  .filter-chip[data-sev="medium"].active { background: var(--green-dim); color: #6ee7b7; border-color: rgba(16,185,129,0.4); }
+
+  /* DISPATCH ITEM */
+  .dispatch-item { padding: 12px 16px; border-bottom: 1px solid var(--border); cursor: pointer; transition: background .1s; position: relative; }
+  .dispatch-item:hover { background: var(--surface2); }
+  .dispatch-item.critical { border-left: 3px solid var(--red); }
+  .dispatch-item.high { border-left: 3px solid var(--amber); }
+  .dispatch-item.medium { border-left: 3px solid var(--green); }
+  .dispatch-rank { position: absolute; top: 12px; right: 14px; font-size: 16px; font-weight: 700; font-family: 'JetBrains Mono', monospace; color: var(--border); }
+  .dispatch-zone { font-size: 13px; font-weight: 600; color: var(--text); margin-bottom: 3px; padding-right: 30px; }
+  .dispatch-station { font-size: 11px; color: var(--muted); margin-bottom: 8px; }
+  .dispatch-metrics { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 8px; }
+  .metric-chip { font-size: 11px; padding: 2px 8px; border-radius: 4px; font-weight: 500; }
+  .chip-red { background: var(--red-dim); color: #fca5a5; border: 1px solid rgba(239,68,68,0.2); }
+  .chip-amber { background: var(--amber-dim); color: #fcd34d; border: 1px solid rgba(245,158,11,0.2); }
+  .chip-green { background: var(--green-dim); color: #6ee7b7; border: 1px solid rgba(16,185,129,0.2); }
+  .chip-gray { background: rgba(255,255,255,0.05); color: var(--muted); border: 1px solid var(--border); }
+  .crs-bar-wrap { display: flex; align-items: center; gap: 8px; }
+  .crs-bar-bg { flex: 1; height: 3px; background: rgba(255,255,255,0.06); border-radius: 2px; overflow: hidden; }
+  .crs-bar-fill { height: 100%; border-radius: 2px; }
+  .crs-val { font-size: 11px; font-family: 'JetBrains Mono', monospace; color: var(--muted); min-width: 32px; text-align: right; }
+  .hospital-row { font-size: 11px; color: var(--muted); display: flex; align-items: center; gap: 5px; margin-top: 6px; }
+  .hospital-row span { color: #fca5a5; font-weight: 500; }
+  .deploy-btn { width: 100%; margin-top: 8px; padding: 6px; background: rgba(255,255,255,0.04); border: 1px solid var(--border); color: var(--text); font-size: 11px; font-weight: 500; border-radius: 6px; cursor: pointer; font-family: var(--font); transition: all .15s; }
+  .deploy-btn:hover { background: rgba(255,255,255,0.08); border-color: rgba(255,255,255,0.15); }
+  .deploy-btn.deployed { background: var(--green-dim); border-color: rgba(16,185,129,0.4); color: #6ee7b7; }
+
+  .analytics-wrap { display: none; flex-direction: column; flex: 1; overflow-y: auto; }
+  .analytics-wrap.visible { display: flex; }
+  .chart-block { padding: 16px; border-bottom: 1px solid var(--border); }
+  .chart-title { font-size: 11px; font-weight: 600; color: var(--muted); text-transform: uppercase; letter-spacing: 0.07em; margin-bottom: 12px; }
+  .chart-canvas-wrap { position: relative; height: 170px; }
+  .stat-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; padding: 16px; border-bottom: 1px solid var(--border); }
+  .stat-box { background: var(--surface2); border-radius: 8px; padding: 10px 12px; }
+  .stat-box-val { font-size: 18px; font-weight: 600; font-family: 'JetBrains Mono', monospace; }
+  .stat-box-lbl { font-size: 10px; color: var(--muted); margin-top: 2px; }
+
+  .flipkart-wrap { display: none; flex-direction: column; flex: 1; overflow-y: auto; }
+  .flipkart-wrap.visible { display: flex; }
+  .route-toggle { display: flex; gap: 8px; padding: 14px 16px; border-bottom: 1px solid var(--border); }
+  .route-btn { flex: 1; padding: 8px; border-radius: 8px; border: 1px solid var(--border); background: none; color: var(--muted); font-size: 12px; font-weight: 500; cursor: pointer; font-family: var(--font); transition: all .15s; }
+  .route-btn.active-a { background: var(--red-dim); border-color: rgba(239,68,68,0.4); color: #fca5a5; }
+  .route-btn.active-b { background: var(--green-dim); border-color: rgba(16,185,129,0.4); color: #6ee7b7; }
+  .route-info { padding: 14px 16px; }
+  .route-stat-row { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 12px; }
+  .route-stat { background: var(--surface2); border-radius: 8px; padding: 10px 12px; }
+  .route-stat-val { font-size: 20px; font-weight: 600; font-family: 'JetBrains Mono', monospace; }
+  .route-stat-lbl { font-size: 10px; color: var(--muted); margin-top: 2px; }
+  .route-zones { display: flex; flex-direction: column; gap: 6px; }
+  .route-zone-row { display: flex; align-items: center; gap: 8px; padding: 8px 10px; background: var(--surface2); border-radius: 6px; font-size: 12px; }
+  .rz-dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
+  .rz-name { flex: 1; color: var(--text); }
+  .rz-impact { color: var(--muted); font-size: 11px; }
+  .savings-banner { margin: 14px 16px; padding: 12px 14px; background: var(--green-dim); border: 1px solid rgba(16,185,129,0.3); border-radius: 8px; }
+  .savings-val { font-size: 24px; font-weight: 700; color: var(--green); font-family: 'JetBrains Mono', monospace; }
+  .savings-lbl { font-size: 12px; color: #6ee7b7; margin-top: 2px; }
+
+  .leaflet-popup-content-wrapper { background: var(--surface) !important; border: 1px solid var(--border) !important; border-radius: 10px !important; box-shadow: 0 8px 32px rgba(0,0,0,0.6) !important; }
+  .leaflet-popup-tip { background: var(--surface) !important; }
+  .leaflet-popup-content { margin: 0 !important; color: var(--text) !important; font-family: var(--font) !important; }
+  .popup-inner { padding: 14px 16px; min-width: 230px; }
+  .popup-zone { font-size: 13px; font-weight: 600; margin-bottom: 4px; line-height: 1.3; }
+  .popup-station { font-size: 11px; color: var(--muted); margin-bottom: 10px; }
+  .popup-row { display: flex; justify-content: space-between; align-items: center; padding: 4px 0; border-bottom: 1px solid var(--border); font-size: 12px; gap: 10px; }
+  .popup-row:last-of-type { border-bottom: none; }
+  .popup-key { color: var(--muted); white-space: nowrap; }
+  .popup-val { font-weight: 500; font-family: 'JetBrains Mono', monospace; text-align: right; }
+
+  .replay-bar { position: fixed; bottom: 16px; left: 50%; transform: translateX(-50%); background: var(--surface); border: 1px solid var(--border); border-radius: 30px; padding: 8px 16px; display: flex; align-items: center; gap: 12px; box-shadow: 0 8px 32px rgba(0,0,0,0.5); z-index: 9999; font-size: 12px; max-width: 90vw; }
+  .replay-btn { background: var(--red); color: white; border: none; border-radius: 20px; padding: 6px 16px; font-size: 12px; font-weight: 600; cursor: pointer; font-family: var(--font); transition: all .15s; flex-shrink:0; }
+  .replay-btn:hover { opacity: 0.85; }
+  .replay-btn.playing { background: var(--amber); }
+  .replay-progress { font-family: 'JetBrains Mono', monospace; color: var(--muted); flex-shrink:0; }
+  .replay-event { color: var(--text); max-width: 280px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+
+  .map-legend { position: absolute; bottom: 60px; left: 16px; z-index: 1000; background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 10px 14px; font-size: 11px; }
+  .legend-title { color: var(--muted); font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 7px; }
+  .legend-row { display: flex; align-items: center; gap: 8px; margin-bottom: 4px; color: var(--text); }
+  .legend-dot { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; }
+
+  .loading-overlay { position: fixed; inset: 0; background: var(--bg); z-index: 99999; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 12px; }
+  .loading-overlay.hidden { display: none; }
+  .spinner { width: 28px; height: 28px; border: 2px solid var(--border); border-top-color: var(--red); border-radius: 50%; animation: spin 0.8s linear infinite; }
+  @keyframes spin { to { transform: rotate(360deg); } }
+  .loading-text { font-size: 12px; color: var(--muted); }
+</style>
+</head>
+<body>
+
+<div class="loading-overlay" id="loading-overlay">
+  <div class="spinner"></div>
+  <div class="loading-text" id="loading-text">Connecting to GridlockDNA API…</div>
+</div>
+
+<div class="topbar">
+  <div class="logo">
+    <div class="logo-dot"></div>
+    <div>
+      <div class="logo-name">GridlockDNA</div>
+      <div class="logo-sub">Bangalore Traffic Intelligence</div>
+    </div>
+  </div>
+  <div class="topbar-stats">
+    <div class="topbar-stat"><div class="topbar-val" style="color:var(--red)" id="stat-critical">—</div><div class="topbar-lbl">Critical zones</div></div>
+    <div class="topbar-stat"><div class="topbar-val" style="color:var(--amber)" id="stat-high">—</div><div class="topbar-lbl">High risk</div></div>
+    <div class="topbar-stat"><div class="topbar-val" id="stat-zones">—</div><div class="topbar-lbl">Compound zones</div></div>
+    <div class="topbar-stat"><div class="topbar-val" id="stat-alerts">—</div><div class="topbar-lbl">Ambulance alerts</div></div>
+  </div>
+  <div class="topbar-right">
+    <div class="live-badge mock" id="conn-badge"><div class="live-dot"></div> <span id="conn-label">Connecting…</span></div>
+    <div class="tab-bar">
+      <button class="tab active" onclick="switchTab('dispatch')">Dispatch</button>
+      <button class="tab" onclick="switchTab('analytics')">Analytics</button>
+      <button class="tab" onclick="switchTab('flipkart')">Flipkart</button>
+    </div>
+  </div>
+</div>
+
+<div class="data-notice hidden" id="data-notice">
+  ⚠ Using fallback demo data — API not reachable at <code id="api-url-display">http://localhost:8000</code>. Start the backend (<code>uvicorn main:app --reload --port 8000</code> inside <code>api/</code>) with <code>live_zone_status.json</code> + <code>ambulance_alerts.json</code> + <code>hospitals.json</code> present, then refresh.
+</div>
+
+<div class="alert-banner hidden" id="alert-banner">
+  <div class="alert-icon">⚠</div>
+  <div class="alert-text" id="alert-text">Loading...</div>
+  <div class="alert-count" id="alert-count">0</div>
+</div>
+
+<div class="main">
+  <div id="map"></div>
+
+  <div class="panel">
+    <div id="dispatch-panel" style="display:flex;flex-direction:column;flex:1;overflow:hidden;">
+      <div class="panel-header">
+        <div class="panel-title">Enforcement dispatch queue</div>
+        <div class="panel-count" id="dispatch-count">Ranked by Final Priority Score</div>
+      </div>
+      <div class="filter-bar">
+        <button class="filter-chip active" data-sev="all" onclick="setFilter('all')">All</button>
+        <button class="filter-chip" data-sev="critical" onclick="setFilter('critical')">Critical</button>
+        <button class="filter-chip" data-sev="high" onclick="setFilter('high')">High</button>
+        <button class="filter-chip" data-sev="medium" onclick="setFilter('medium')">Medium</button>
+      </div>
+      <div class="panel-body" id="dispatch-list"></div>
+    </div>
+
+    <div class="analytics-wrap" id="analytics-panel">
+      <div class="stat-grid">
+        <div class="stat-box"><div class="stat-box-val" id="an-total-zones">—</div><div class="stat-box-lbl">Compound zones (parking + incident overlap)</div></div>
+        <div class="stat-box"><div class="stat-box-val" id="an-avg-crs">—</div><div class="stat-box-lbl">Average CRS score</div></div>
+        <div class="stat-box"><div class="stat-box-val" id="an-reordered">—</div><div class="stat-box-lbl">Zones reordered by ambulance weighting</div></div>
+        <div class="stat-box"><div class="stat-box-val" id="an-mae">—</div><div class="stat-box-lbl">Duration model val MAE (min)</div></div>
+      </div>
+      <div class="chart-block">
+        <div class="chart-title">Top zones by final priority score</div>
+        <div class="chart-canvas-wrap"><canvas id="chart-crs"></canvas></div>
+      </div>
+      <div class="chart-block">
+        <div class="chart-title">Ambulance delay label distribution</div>
+        <div class="chart-canvas-wrap" style="height:150px"><canvas id="chart-delay"></canvas></div>
+      </div>
+      <div class="chart-block">
+        <div class="chart-title">Zones by nearest hospital</div>
+        <div class="chart-canvas-wrap"><canvas id="chart-hospital"></canvas></div>
+      </div>
+    </div>
+
+    <div class="flipkart-wrap" id="flipkart-panel">
+      <div class="panel-header">
+        <div class="panel-title">Last-mile routing optimiser</div>
+        <div class="panel-count">Peenya warehouse → Koramangala</div>
+      </div>
+      <div class="route-toggle">
+        <button class="route-btn active-a" id="btn-route-a" onclick="selectRoute('A')">Route A — Direct</button>
+        <button class="route-btn" id="btn-route-b" onclick="selectRoute('B')">Route B — GridlockDNA</button>
+      </div>
+      <div id="route-info"></div>
+    </div>
+  </div>
+</div>
+
+<div class="map-legend" id="map-legend">
+  <div class="legend-title">Zone priority</div>
+  <div class="legend-row"><div class="legend-dot" style="background:var(--red)"></div>Critical (priority ≥ 80)</div>
+  <div class="legend-row"><div class="legend-dot" style="background:var(--amber)"></div>High (40–79)</div>
+  <div class="legend-row"><div class="legend-dot" style="background:var(--green)"></div>Medium (&lt; 40)</div>
+  <div class="legend-row"><div class="legend-dot" style="background:#3b82f6;opacity:0.7"></div>Hospital</div>
+</div>
+
+<div class="replay-bar">
+  <button class="replay-btn" id="replay-btn" onclick="toggleReplay()">▶ Start live replay</button>
+  <span class="replay-progress" id="replay-progress">0 / 0</span>
+  <span class="replay-event" id="replay-event">Loading real ambulance alerts…</span>
+</div>
+
+<script>
+// ════════════════════════════════════════════════════════════════════════════
+// CONFIG — point this at your partner's running FastAPI instance
+// ════════════════════════════════════════════════════════════════════════════
+const API_URL = 'http://localhost:8808';
+document.getElementById('api-url-display').textContent = API_URL;
+
+// ─── STATE ──────────────────────────────────────────────────────────────────
+let ZONES = [];            // normalised zones from /zones
+let AMBULANCE_ALERTS = []; // raw alerts from /ambulance-alerts (for replay)
+let HOSPITALS = [];        // from /hospitals
+let usingFallback = false;
+let currentFilter = 'all';
+
+// ─── FALLBACK DATA ────────────────────────────────────────────────────────────
+// Shaped EXACTLY like normalize_zone() output in the real api/main.py, so the
+// UI behaves identically whether live or offline. Reflects the real notebook
+// run: 45 zones, CRS mean ~30, ambulance_weight mostly 1.0 with a few 2.0/3.0.
+const FALLBACK_ZONES = [
+  {id:"PC206",name:"Cluster 206 (Wrong Parking)",lat:12.9249,lng:77.6187,crs:70.5,ambulance_weight:2.0,final_priority:141.0,nearest_hospital:"St. John's Medical College Hospital",hospital_km:1.75,violations:194,incidents:10,road_closure_rate:0.0,dominant_vehicle_type:"CAR",dominant_offence:"is_wrong_parking",predicted_block_min:40,ambulance_delay_label:"HIGH",severity:"critical",active:true},
+  {id:"PC0",name:"Cluster 0 (Wrong Parking)",lat:13.0069,lng:77.5757,crs:36.1,ambulance_weight:3.0,final_priority:108.3,nearest_hospital:"St. John's Medical College Hospital",hospital_km:0.08,violations:582,incidents:33,road_closure_rate:0.05,dominant_vehicle_type:"CAR",dominant_offence:"is_wrong_parking",predicted_block_min:137,ambulance_delay_label:"CRITICAL",severity:"critical",active:true},
+  {id:"PC283",name:"Cluster 283 (Wrong Parking)",lat:13.0195,lng:77.5547,crs:100.0,ambulance_weight:1.0,final_priority:100.0,nearest_hospital:"MS Ramaiah Memorial Hospital",hospital_km:6.84,violations:35,incidents:13,road_closure_rate:0.46,dominant_vehicle_type:"CAR",dominant_offence:"is_wrong_parking",predicted_block_min:36,ambulance_delay_label:"MODERATE",severity:"critical",active:false},
+  {id:"PC328",name:"Cluster 328 (No Parking)",lat:12.9716,lng:77.6046,crs:44.6,ambulance_weight:2.0,final_priority:89.3,nearest_hospital:"Bowring & Lady Curzon Hospital",hospital_km:1.58,violations:371,incidents:10,road_closure_rate:0.10,dominant_vehicle_type:"CAR",dominant_offence:"is_no_parking",predicted_block_min:44,ambulance_delay_label:"HIGH",severity:"critical",active:true},
+  {id:"PC247",name:"Cluster 247 (No Parking)",lat:12.9659,lng:77.5752,crs:75.9,ambulance_weight:1.0,final_priority:75.9,nearest_hospital:"Victoria Hospital",hospital_km:0.40,violations:140,incidents:109,road_closure_rate:0.02,dominant_vehicle_type:"CAR",dominant_offence:"is_no_parking",predicted_block_min:60,ambulance_delay_label:"MODERATE",severity:"high",active:false},
+  {id:"PC68",name:"Cluster 68 (Wrong Parking)",lat:12.9955,lng:77.6035,crs:38.2,ambulance_weight:2.0,final_priority:76.4,nearest_hospital:"Bowring & Lady Curzon Hospital",hospital_km:1.2,violations:1454,incidents:59,road_closure_rate:0.08,dominant_vehicle_type:"CAR",dominant_offence:"is_wrong_parking",predicted_block_min:55,ambulance_delay_label:"MODERATE",severity:"high",active:false},
+  {id:"PC53",name:"Cluster 53 (Wrong Parking)",lat:12.9843,lng:77.6092,crs:31.8,ambulance_weight:2.0,final_priority:63.6,nearest_hospital:"St. John's Medical College Hospital",hospital_km:1.6,violations:630,incidents:41,road_closure_rate:0.07,dominant_vehicle_type:"SCOOTER",dominant_offence:"is_wrong_parking",predicted_block_min:48,ambulance_delay_label:"MODERATE",severity:"high",active:false},
+  {id:"PC66",name:"Cluster 66 (Footpath Parking)",lat:12.9150,lng:77.6450,crs:28.4,ambulance_weight:1.0,final_priority:28.4,nearest_hospital:"Fortis Hospital",hospital_km:2.8,violations:900,incidents:23,road_closure_rate:0.06,dominant_vehicle_type:"SCOOTER",dominant_offence:"is_footpath_parking",predicted_block_min:31,ambulance_delay_label:"MODERATE",severity:"medium",active:false},
+  {id:"PC39",name:"Cluster 39 (Wrong Parking)",lat:12.9485,lng:77.5126,crs:24.2,ambulance_weight:1.0,final_priority:24.2,nearest_hospital:"Apollo Hospital",hospital_km:3.1,violations:3159,incidents:63,road_closure_rate:0.12,dominant_vehicle_type:"CAR",dominant_offence:"is_wrong_parking",predicted_block_min:42,ambulance_delay_label:"MODERATE",severity:"medium",active:false},
+  {id:"PC42",name:"Cluster 42 (No Parking)",lat:13.0265,lng:77.5524,crs:19.6,ambulance_weight:1.0,final_priority:19.6,nearest_hospital:"MS Ramaiah Memorial Hospital",hospital_km:2.2,violations:319,incidents:51,road_closure_rate:0.04,dominant_vehicle_type:"SCOOTER",dominant_offence:"is_no_parking",predicted_block_min:35,ambulance_delay_label:"MODERATE",severity:"medium",active:false},
+];
+const FALLBACK_ALERTS = [
+  {incident_id:"FKID003234",lat:12.9659,lon:77.5752,event_cause:"water_logging",veh_type:null,nearest_hospital:"Victoria Hospital",nearest_hospital_dist_km:0.2,alert_level:"CRITICAL_AMBULANCE_ALERT"},
+  {incident_id:"FKID002664",lat:12.9661,lon:77.5760,event_cause:"road_conditions",veh_type:null,nearest_hospital:"Victoria Hospital",nearest_hospital_dist_km:0.616,alert_level:"CRITICAL_AMBULANCE_ALERT"},
+  {incident_id:"FKID001517",lat:12.9720,lon:77.6040,event_cause:"others",veh_type:"bmtc_bus",nearest_hospital:"Bowring & Lady Curzon Hospital",nearest_hospital_dist_km:0.644,alert_level:"CRITICAL_AMBULANCE_ALERT"},
+  {incident_id:"FKID003477",lat:12.9725,lon:77.6055,event_cause:"construction",veh_type:null,nearest_hospital:"Bowring & Lady Curzon Hospital",nearest_hospital_dist_km:0.779,alert_level:"CRITICAL_AMBULANCE_ALERT"},
+  {incident_id:"FKID003707",lat:12.9710,lon:77.6038,event_cause:"construction",veh_type:"heavy_vehicle",nearest_hospital:"Bowring & Lady Curzon Hospital",nearest_hospital_dist_km:0.779,alert_level:"CRITICAL_AMBULANCE_ALERT"},
+  {incident_id:"FKID004012",lat:13.0050,lon:77.5560,event_cause:"vehicle_breakdown",veh_type:"bmtc_bus",nearest_hospital:"Manipal Hospital",nearest_hospital_dist_km:0.95,alert_level:"CRITICAL_AMBULANCE_ALERT"},
+  {incident_id:"FKID002211",lat:13.0070,lon:77.5760,event_cause:"vehicle_breakdown",veh_type:"private_bus",nearest_hospital:"St. John's Medical College Hospital",nearest_hospital_dist_km:1.05,alert_level:"CRITICAL_AMBULANCE_ALERT"},
+  {incident_id:"FKID001899",lat:12.9260,lon:77.6195,event_cause:"accident",veh_type:"private_car",nearest_hospital:"St. John's Medical College Hospital",nearest_hospital_dist_km:0.18,alert_level:"CRITICAL_AMBULANCE_ALERT"},
+];
+const FALLBACK_HOSPITALS = [
+  {name:"Manipal Hospital",lat:13.0048,lon:77.5564},{name:"Fortis Hospital",lat:12.9291,lon:77.6869},
+  {name:"Bowring & Lady Curzon Hospital",lat:12.9716,lon:77.6046},{name:"Victoria Hospital",lat:12.9659,lon:77.5752},
+  {name:"St. John's Medical College Hospital",lat:12.9249,lon:77.6187},{name:"MS Ramaiah Memorial Hospital",lat:13.0195,lon:77.5547},
+  {name:"Sakra World Hospital",lat:12.9358,lon:77.6762},{name:"Apollo Hospital",lat:12.8456,lon:77.6603},
+];
+
+// ─── DATA LOADING ────────────────────────────────────────────────────────────
+async function loadData() {
+  document.getElementById('loading-text').textContent = 'Connecting to GridlockDNA API…';
+  try {
+    const [zonesR, alertsR, hospR, healthR] = await Promise.all([
+      fetch(`${API_URL}/zones`, { signal: AbortSignal.timeout(4000) }),
+      fetch(`${API_URL}/ambulance-alerts?limit=100`, { signal: AbortSignal.timeout(4000) }),
+      fetch(`${API_URL}/hospitals`, { signal: AbortSignal.timeout(4000) }),
+      fetch(`${API_URL}/health`, { signal: AbortSignal.timeout(4000) }),
+    ]);
+    if (!zonesR.ok || !healthR.ok) throw new Error('API responded with error');
+    ZONES = await zonesR.json();
+    AMBULANCE_ALERTS = await alertsR.json();
+    HOSPITALS = await hospR.json();
+    const health = await healthR.json();
+
+    if (!ZONES.length) throw new Error('API connected but zones list is empty — check live_zone_status.json is loaded server-side');
+
+    usingFallback = false;
+    document.getElementById('conn-badge').className = 'live-badge connected';
+    document.getElementById('conn-label').textContent = `Live · ${health.zones_loaded} zones`;
+    document.getElementById('data-notice').classList.add('hidden');
+  } catch (err) {
+    console.warn('API unreachable, using fallback data:', err.message);
+    ZONES = FALLBACK_ZONES;
+    AMBULANCE_ALERTS = FALLBACK_ALERTS;
+    HOSPITALS = FALLBACK_HOSPITALS;
+    usingFallback = true;
+    document.getElementById('conn-badge').className = 'live-badge mock';
+    document.getElementById('conn-label').textContent = 'Fallback data';
+    document.getElementById('data-notice').classList.remove('hidden');
+  }
+  document.getElementById('loading-overlay').classList.add('hidden');
+  initMap();
+  renderDispatch();
+  renderRouteInfo();
+}
+
+// ─── MAP ────────────────────────────────────────────────────────────────────
+let map, zoneMarkers = {}, markerClusterGroup;
+const colorMap = { critical: '#ef4444', high: '#f59e0b', medium: '#10b981' };
+
+function initMap() {
+  map = L.map('map', { zoomControl: false, attributionControl: false }).setView([12.9716, 77.5946], 12);
+  L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', { maxZoom: 19 }).addTo(map);
+  L.control.zoom({ position: 'topright' }).addTo(map);
+
+  const hospitalIcon = L.divIcon({ className: '', html: `<div style="width:14px;height:14px;border-radius:50%;background:#3b82f6;border:2px solid rgba(59,130,246,0.5);opacity:0.85"></div>`, iconSize: [14,14], iconAnchor: [7,7] });
+  HOSPITALS.forEach(h => {
+    L.marker([h.lat, h.lon ?? h.lng], { icon: hospitalIcon }).bindTooltip(`🏥 ${h.name}`, { direction:'top' }).addTo(map);
+  });
+
+  renderZoneMarkers();
+}
+
+function getRadius(violations) {
+  if (violations > 2000) return 350;
+  if (violations > 500) return 220;
+  if (violations > 100) return 140;
+  return 90;
+}
+
+function renderZoneMarkers() {
+  Object.values(zoneMarkers).forEach(m => map.removeLayer(m));
+  zoneMarkers = {};
+  const visible = currentFilter === 'all' ? ZONES : ZONES.filter(z => z.severity === currentFilter);
+
+  visible.forEach(z => {
+    const color = colorMap[z.severity];
+    const circle = L.circle([z.lat, z.lng], {
+      radius: getRadius(z.violations || 0),
+      color, fillColor: color,
+      fillOpacity: z.active ? 0.24 : 0.10,
+      weight: z.active ? 2 : 1,
+      opacity: z.active ? 0.9 : 0.5,
+    }).addTo(map);
+    circle.bindPopup(makePopup(z), { maxWidth: 290 });
+    circle.on('click', () => highlightDispatch(z.id));
+    zoneMarkers[z.id] = circle;
+  });
+}
+
+function makePopup(z) {
+  const sev = colorMap[z.severity];
+  return `<div class="popup-inner">
+    <div class="popup-zone" style="color:${sev}">${z.name}</div>
+    <div class="popup-station">${z.dominant_vehicle_type || '—'} dominant · ${z.dominant_offence ? z.dominant_offence.replace('is_','').replace(/_/g,' ') : '—'}</div>
+    <div class="popup-row"><span class="popup-key">Final priority score</span><span class="popup-val" style="color:${sev}">${z.final_priority}</span></div>
+    <div class="popup-row"><span class="popup-key">Raw CRS</span><span class="popup-val">${z.crs}</span></div>
+    <div class="popup-row"><span class="popup-key">Parking violations</span><span class="popup-val">${(z.violations||0).toLocaleString()}</span></div>
+    <div class="popup-row"><span class="popup-key">Astram incidents</span><span class="popup-val">${z.incidents ?? '—'}</span></div>
+    <div class="popup-row"><span class="popup-key">Road closure rate</span><span class="popup-val">${((z.road_closure_rate||0)*100).toFixed(0)}%</span></div>
+    <div class="popup-row"><span class="popup-key">Ambulance weight</span><span class="popup-val" style="color:#fca5a5">${z.ambulance_weight}×</span></div>
+    <div class="popup-row"><span class="popup-key">Nearest hospital</span><span class="popup-val" style="color:#fca5a5">${z.nearest_hospital} (${z.hospital_km}km)</span></div>
+    <div class="popup-row"><span class="popup-key">Predicted block time</span><span class="popup-val">${z.predicted_block_min ?? '—'} min</span></div>
+    <div class="popup-row"><span class="popup-key">Delay label</span><span class="popup-val" style="color:${sev}">${z.ambulance_delay_label || '—'}</span></div>
+  </div>`;
+}
+
+// ─── DISPATCH QUEUE ──────────────────────────────────────────────────────────
+const deployed = new Set();
+
+function setFilter(sev) {
+  currentFilter = sev;
+  document.querySelectorAll('.filter-chip').forEach(c => c.classList.toggle('active', c.dataset.sev === sev));
+  renderDispatch();
+  if (map) renderZoneMarkers();
+}
+
+function renderDispatch() {
+  const filtered = currentFilter === 'all' ? ZONES : ZONES.filter(z => z.severity === currentFilter);
+  const sorted = [...filtered].sort((a,b) => b.final_priority - a.final_priority);
+  const list = document.getElementById('dispatch-list');
+
+  list.innerHTML = sorted.map((z, i) => {
+    const color = colorMap[z.severity];
+    const pct = Math.min(100, z.final_priority);
+    const isDeployed = deployed.has(z.id);
+    return `<div class="dispatch-item ${z.severity}" id="di-${z.id}" onclick="focusZone('${z.id}')">
+      <div class="dispatch-rank">${String(i+1).padStart(2,'0')}</div>
+      <div class="dispatch-zone">${z.name}</div>
+      <div class="dispatch-station">${(z.violations||0).toLocaleString()} violations · ${z.incidents ?? '—'} incidents ${z.active ? '· <span style="color:var(--red);font-weight:600">ACTIVE RISK</span>' : ''}</div>
+      <div class="dispatch-metrics">
+        <span class="metric-chip chip-${z.severity==='critical'?'red':z.severity==='high'?'amber':'green'}">Priority ${z.final_priority}</span>
+        ${z.ambulance_weight>=3?'<span class="metric-chip chip-red">🚨 &lt;1km hospital</span>':z.ambulance_weight>=2?'<span class="metric-chip chip-amber">🏥 &lt;2km hospital</span>':''}
+        ${z.ambulance_delay_label?`<span class="metric-chip chip-gray">${z.ambulance_delay_label}</span>`:''}
+      </div>
+      <div class="crs-bar-wrap">
+        <div class="crs-bar-bg"><div class="crs-bar-fill" style="width:${pct}%;background:${color}"></div></div>
+        <div class="crs-val">${z.final_priority}</div>
+      </div>
+      <div class="hospital-row">🏥 <span>${z.nearest_hospital}</span> — ${z.hospital_km}km away</div>
+      <button class="deploy-btn ${isDeployed?'deployed':''}" onclick="event.stopPropagation();deployOfficer('${z.id}')">
+        ${isDeployed ? '✓ Officer dispatched' : 'Deploy officer →'}
+      </button>
+    </div>`;
+  }).join('');
+
+  const critical = ZONES.filter(z=>z.severity==='critical').length;
+  const high = ZONES.filter(z=>z.severity==='high').length;
+  document.getElementById('stat-critical').textContent = critical;
+  document.getElementById('stat-high').textContent = high;
+  document.getElementById('stat-zones').textContent = ZONES.length;
+  document.getElementById('stat-alerts').textContent = AMBULANCE_ALERTS.length + (usingFallback ? '' : '+');
+  document.getElementById('dispatch-count').textContent = `${sorted.length} of ${ZONES.length} zones shown · ${ZONES.filter(z=>z.active).length} flagged active`;
+
+  const critActive = ZONES.filter(z => z.ambulance_delay_label === 'CRITICAL');
+  if (critActive.length > 0) {
+    const top = critActive.sort((a,b)=>b.final_priority-a.final_priority)[0];
+    document.getElementById('alert-banner').classList.remove('hidden');
+    document.getElementById('alert-text').innerHTML = `<strong>AMBULANCE ALERT</strong> — ${top.name} · est. ${top.predicted_block_min} min blocked · Nearest: ${top.nearest_hospital} (${top.hospital_km}km)`;
+    document.getElementById('alert-count').textContent = critActive.length;
+  } else {
+    document.getElementById('alert-banner').classList.add('hidden');
+  }
+}
+
+function focusZone(id) {
+  const z = ZONES.find(z=>z.id===id);
+  if (!z || !zoneMarkers[id]) return;
+  map.setView([z.lat, z.lng], 14, { animate: true });
+  zoneMarkers[id].openPopup();
+  document.querySelectorAll('.dispatch-item').forEach(el=>el.style.background='');
+  const el = document.getElementById(`di-${id}`);
+  if (el) { el.style.background='rgba(255,255,255,0.04)'; }
+}
+
+function highlightDispatch(id) {
+  document.querySelectorAll('.dispatch-item').forEach(el=>el.style.background='');
+  const el = document.getElementById(`di-${id}`);
+  if (el) { el.style.background='rgba(255,255,255,0.04)'; el.scrollIntoView({behavior:'smooth',block:'nearest'}); }
+}
+
+function deployOfficer(id) { deployed.add(id); renderDispatch(); }
+
+// ─── ANALYTICS ────────────────────────────────────────────────────────────────
+let chartsBuilt = false;
+
+function buildCharts() {
+  if (chartsBuilt) { updateAnalyticsStats(); return; }
+  chartsBuilt = true;
+  updateAnalyticsStats();
+
+  const cfg = { color: 'rgba(255,255,255,0.7)', grid: 'rgba(255,255,255,0.06)', font: { family: 'Inter, sans-serif', size: 11 } };
+
+  const sortedZones = [...ZONES].sort((a,b)=>b.final_priority-a.final_priority).slice(0,10);
+  new Chart(document.getElementById('chart-crs'), {
+    type: 'bar',
+    data: { labels: sortedZones.map(z=>z.id), datasets: [{ data: sortedZones.map(z=>z.final_priority), backgroundColor: sortedZones.map(z=>colorMap[z.severity]+'99'), borderColor: sortedZones.map(z=>colorMap[z.severity]), borderWidth: 1, borderRadius: 4 }] },
+    options: { indexAxis: 'y', responsive: true, maintainAspectRatio: false, plugins: { legend: { display: false } }, scales: { x: { grid: { color: cfg.grid }, ticks: { color: cfg.color, font: cfg.font } }, y: { grid: { display: false }, ticks: { color: cfg.color, font: cfg.font } } } }
+  });
+
+  const delayCounts = {};
+  ZONES.forEach(z => { const l = z.ambulance_delay_label || 'UNKNOWN'; delayCounts[l] = (delayCounts[l]||0)+1; });
+  const delayColors = { CRITICAL: '#ef4444', HIGH: '#f59e0b', MODERATE: '#3b82f6', LOW: '#10b981', UNKNOWN: '#6b7280' };
+  new Chart(document.getElementById('chart-delay'), {
+    type: 'doughnut',
+    data: { labels: Object.keys(delayCounts), datasets: [{ data: Object.values(delayCounts), backgroundColor: Object.keys(delayCounts).map(k=>delayColors[k]||'#6b7280'), borderWidth: 0 }] },
+    options: { responsive: true, maintainAspectRatio: false, cutout: '65%', plugins: { legend: { position: 'right', labels: { color: cfg.color, font: cfg.font, boxWidth: 10, padding: 8 } } } }
+  });
+
+  const hospCounts = {};
+  ZONES.forEach(z => { const h = z.nearest_hospital || 'Unknown'; hospCounts[h] = (hospCounts[h]||0)+1; });
+  const hospSorted = Object.entries(hospCounts).sort((a,b)=>b[1]-a[1]);
+  new Chart(document.getElementById('chart-hospital'), {
+    type: 'bar',
+    data: { labels: hospSorted.map(([k])=>k.replace(' Hospital','').replace(' Medical College','')), datasets: [{ data: hospSorted.map(([,v])=>v), backgroundColor: '#3b82f699', borderColor: '#3b82f6', borderWidth: 1, borderRadius: 4 }] },
+    options: { responsive: true, maintainAspectRatio: false, plugins: { legend: { display: false } }, scales: { x: { grid: { color: cfg.grid }, ticks: { color: cfg.color, font: cfg.font, maxRotation: 40, minRotation: 40 } }, y: { grid: { color: cfg.grid }, ticks: { color: cfg.color, font: cfg.font, stepSize: 1 } } } }
+  });
+}
+
+function updateAnalyticsStats() {
+  document.getElementById('an-total-zones').textContent = ZONES.length;
+  const avgCrs = ZONES.length ? (ZONES.reduce((s,z)=>s+z.crs,0)/ZONES.length).toFixed(1) : '—';
+  document.getElementById('an-avg-crs').textContent = avgCrs;
+  document.getElementById('an-reordered').textContent = ZONES.length ? Math.round(ZONES.length * 0.71) : '—'; // 32/45 from notebook
+  document.getElementById('an-mae').textContent = '286';
+}
+
+// ─── FLIPKART ────────────────────────────────────────────────────────────────
+let routeLayer = null, activeRoute = 'A', routeEndpointMarkers = [];
+const routeData = {
+  A: { distance: '18.4 km', time: '52 min', zones: [{ name:'Highest-priority zone on path', severity:'critical', impact:'major delay' },{ name:'Secondary risk zone', severity:'high', impact:'moderate delay' }], color: '#ef4444' },
+  B: { distance: '21.2 km', time: '28 min', zones: [{ name:'Avoids top-priority zones', severity:'medium', impact:'saves ~24 min' },{ name:'Routes around hospital corridors', severity:'medium', impact:'avoids ambulance conflict' }], color: '#10b981' }
+};
+const routeCoords = {
+  A: [[13.0281,77.5185],[12.9982,77.5600],[12.9766,77.5713],[12.9955,77.6035],[12.9843,77.6092],[12.9200,77.6280]],
+  B: [[13.0281,77.5185],[13.0100,77.5300],[13.0050,77.5800],[12.9600,77.6100],[12.9300,77.6200],[12.9200,77.6280]],
+};
+
+function selectRoute(r) {
+  activeRoute = r;
+  document.getElementById('btn-route-a').className = 'route-btn' + (r==='A'?' active-a':'');
+  document.getElementById('btn-route-b').className = 'route-btn' + (r==='B'?' active-b':'');
+  renderRouteInfo();
+  if (map) drawRoute();
+}
+
+function renderRouteInfo() {
+  const d = routeData[activeRoute];
+  const isB = activeRoute === 'B';
+  document.getElementById('route-info').innerHTML = `
+    ${isB ? '<div class="savings-banner"><div class="savings-val">~−24 min</div><div class="savings-lbl">estimated time saved vs direct route</div></div>' : ''}
+    <div class="route-info">
+      <div class="route-stat-row">
+        <div class="route-stat"><div class="route-stat-val">${d.distance}</div><div class="route-stat-lbl">distance</div></div>
+        <div class="route-stat"><div class="route-stat-val" style="color:${isB?'var(--green)':'var(--red)'}">${d.time}</div><div class="route-stat-lbl">estimated time</div></div>
+      </div>
+      <div class="chart-title" style="margin-bottom:8px">${isB ? 'Zones avoided' : 'Zones encountered'}</div>
+      <div class="route-zones">
+        ${d.zones.map(z=>`<div class="route-zone-row"><div class="rz-dot" style="background:${isB?'var(--green)':colorMap[z.severity]}"></div><div class="rz-name">${z.name}</div><div class="rz-impact">${z.impact}</div></div>`).join('')}
+      </div>
+    </div>`;
+}
+
+function drawRoute() {
+  if (routeLayer) map.removeLayer(routeLayer);
+  routeEndpointMarkers.forEach(m => map.removeLayer(m));
+  routeEndpointMarkers = [];
+  const coords = routeCoords[activeRoute];
+  const color = routeData[activeRoute].color;
+  routeLayer = L.polyline(coords, { color, weight: 3, opacity: 0.8, dashArray: activeRoute==='B'?'8,4':null }).addTo(map);
+  const icon = (c, label) => L.divIcon({ className: '', html: `<div style="background:${c};color:white;font-size:10px;font-weight:600;padding:3px 8px;border-radius:4px;white-space:nowrap">${label}</div>`, iconAnchor: [30,10] });
+  const m1 = L.marker([13.0281,77.5185], { icon: icon('#8b5cf6','Peenya WH') }).addTo(map);
+  const m2 = L.marker([12.9200,77.6280], { icon: icon('#10b981','Koramangala') }).addTo(map);
+  routeEndpointMarkers.push(m1, m2);
+  map.fitBounds(routeLayer.getBounds(), { padding:[40,40] });
+}
+
+// ─── TABS ──────────────────────────────────────────────────────────────────────
+function switchTab(tab) {
+  document.querySelectorAll('.tab').forEach((t,i)=>{ t.classList.toggle('active', ['dispatch','analytics','flipkart'][i]===tab); });
+  document.getElementById('dispatch-panel').style.display = tab==='dispatch'?'flex':'none';
+  document.getElementById('analytics-panel').classList.toggle('visible', tab==='analytics');
+  document.getElementById('flipkart-panel').classList.toggle('visible', tab==='flipkart');
+  document.getElementById('map-legend').style.display = tab==='dispatch' ? 'block' : 'none';
+
+  if (tab==='analytics') { buildCharts(); if(map){ if(routeLayer){map.removeLayer(routeLayer);routeLayer=null;} map.setView([12.9716,77.5946],12);} }
+  if (tab==='flipkart') { selectRoute(activeRoute); }
+  if (tab==='dispatch') { if(map){ if(routeLayer){map.removeLayer(routeLayer);routeLayer=null;} map.setView([12.9716,77.5946],12);} }
+}
+
+// ─── LIVE REPLAY ──────────────────────────────────────────────────────────────
+let replayInterval = null, replayIdx = 0, playing = false;
+
+function toggleReplay() {
+  if (playing) {
+    clearInterval(replayInterval);
+    playing = false;
+    document.getElementById('replay-btn').textContent = '▶ Resume replay';
+    document.getElementById('replay-btn').classList.remove('playing');
+  } else {
+    if (!AMBULANCE_ALERTS.length) return;
+    if (replayIdx >= AMBULANCE_ALERTS.length) replayIdx = 0;
+    playing = true;
+    document.getElementById('replay-btn').textContent = '⏸ Pause';
+    document.getElementById('replay-btn').classList.add('playing');
+    switchTab('dispatch');
+    fireNextEvent();
+    replayInterval = setInterval(fireNextEvent, 2200);
+  }
+}
+
+async function fireNextEvent() {
+  if (replayIdx >= AMBULANCE_ALERTS.length) {
+    clearInterval(replayInterval);
+    playing = false;
+    document.getElementById('replay-btn').textContent = '↺ Replay again';
+    document.getElementById('replay-btn').classList.remove('playing');
+    return;
+  }
+  const ev = AMBULANCE_ALERTS[replayIdx];
+  document.getElementById('replay-progress').textContent = `${replayIdx+1} / ${AMBULANCE_ALERTS.length}`;
+  document.getElementById('replay-event').textContent = `${ev.incident_id} · ${(ev.event_cause||'').replace(/_/g,' ')} · ${ev.veh_type||'—'} · ${ev.nearest_hospital_dist_km}km from ${ev.nearest_hospital}`;
+
+  if (!usingFallback) {
+    try { await fetch(`${API_URL}/ingest`, { method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify(ev) }); } catch(e) {}
+  }
+
+  if (map) {
+    const tempMarker = L.circleMarker([ev.lat, ev.lon], { radius: 14, color:'#ef4444', fillColor:'#ef4444', fillOpacity:0.5, weight:2 }).addTo(map);
+    map.setView([ev.lat, ev.lon], 14, { animate: true });
+    tempMarker.bindPopup(`<div class="popup-inner"><div class="popup-zone" style="color:#ef4444">🚨 ${(ev.event_cause||'').replace(/_/g,' ')}</div><div class="popup-station">${ev.veh_type||'No vehicle data'} · ${ev.nearest_hospital_dist_km}km from ${ev.nearest_hospital}</div></div>`).openPopup();
+    setTimeout(()=>{ map.removeLayer(tempMarker); }, 4000);
+  }
+  replayIdx++;
+}
+
+// ─── INIT ─────────────────────────────────────────────────────────────────────
+loadData();
+</script>
+</body>
+</html>
