@@ -287,7 +287,9 @@
 // ════════════════════════════════════════════════════════════════════════════
 // CONFIG — point this at your partner's running FastAPI instance
 // ════════════════════════════════════════════════════════════════════════════
-const API_URL = 'http://localhost:8808';
+const API_URL = window.location.protocol === 'file:' 
+  ? 'http://localhost:8808' 
+  : window.location.origin;
 document.getElementById('api-url-display').textContent = API_URL;
 
 // ─── STATE ──────────────────────────────────────────────────────────────────
