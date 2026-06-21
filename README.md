@@ -18,6 +18,43 @@ A zone with heavy parking violations but no nearby incidents is a parking proble
 
 The project runs as a 5-phase pipeline, each phase building on the last.
 
+## Repository Structure
+
+```text
+GridlockDNA/
+│
+├── api/
+│   ├── ambulance_alerts.json
+│   ├── hospitals.json
+│   ├── live_zone_status.json
+│   └── main.py
+│
+├── data/
+│   ├── .gitkeep
+│   └── jan_to_may_police_violation_anonymized.csv
+│
+├── frontend/
+│   └── index.html
+│
+├── ml_pipeline/
+│   ├── .gitkeep
+│   ├── GridlockDNA.ipynb
+│   ├── ambulance_alerts.json
+│   ├── compound_zones.geojson
+│   ├── crs_scores.csv
+│   ├── duration_model.pkl
+│   ├── duration_train.csv
+│   ├── final_priority_scores.csv
+│   ├── hospitals.json
+│   ├── incident_clusters.geojson
+│   ├── live_zone_status.json
+│   └── parking_clusters.geojson
+│
+├── .gitignore
+├── README.md
+├── replay.py
+└── requirements.txt
+
 ### Phase 1 — Data Preparation
 Cleaned both raw datasets: dropped empty columns, filtered rejected/duplicate records, parsed JSON-encoded offence fields into severity flags, converted all timestamps to IST, and computed a recidivism score per vehicle based on repeat-violation history.
 
@@ -113,12 +150,12 @@ Put all 3 files inside the `api/` folder, next to `main.py`:
 ```
 gridlockdna/
 ├── api/
-│   ├── main.py                  ← already written for you
+│   ├── main.py                  
 │   ├── live_zone_status.json    ← PASTE HERE
 │   ├── ambulance_alerts.json    ← PASTE HERE
 │   └── hospitals.json           ← PASTE HERE
 ├── frontend/
-│   └── index.html               ← already written for you
+│   └── index.html               
 └── replay.py
 ```
 
