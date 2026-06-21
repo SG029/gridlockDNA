@@ -54,6 +54,7 @@ GridlockDNA/
 ├── README.md
 ├── replay.py
 └── requirements.txt
+```
 
 ### Phase 1 — Data Preparation
 Cleaned both raw datasets: dropped empty columns, filtered rejected/duplicate records, parsed JSON-encoded offence fields into severity flags, converted all timestamps to IST, and computed a recidivism score per vehicle based on repeat-violation history.
