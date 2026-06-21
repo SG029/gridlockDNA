@@ -1,0 +1,1886 @@
+event_cause,veh_type,corridor,requires_road_closure,priority,hour_ist,day_of_week,incident_duration_min
+vehicle_breakdown,private_bus,Non-corridor,False,Low,10,Tuesday,38.74983805
+tree_fall,unknown,Non-corridor,False,Low,1,Friday,293.3450075
+tree_fall,unknown,Non-corridor,True,Low,1,Friday,2928.5208131000004
+pot_holes,unknown,unknown,False,Low,13,Tuesday,9.079776783333331
+tree_fall,unknown,Non-corridor,False,Low,1,Friday,2907.6902057166667
+others,unknown,Bellary Road 1,True,High,1,Friday,106.41915116666668
+others,unknown,Tumkur Road,False,High,1,Friday,133.52983253333335
+tree_fall,unknown,Bellary Road 1,False,High,2,Friday,1829.3005564666664
+vehicle_breakdown,bmtc_bus,ORR East 1,False,High,2,Wednesday,55.541728516666666
+vehicle_breakdown,private_car,Bellary Road 1,False,High,3,Wednesday,69.32987603333332
+road_conditions,unknown,Non-corridor,False,Low,3,Wednesday,61.27697078333333
+vehicle_breakdown,private_car,Non-corridor,False,Low,3,Wednesday,36.41233746666667
+tree_fall,unknown,Bellary Road 1,False,High,2,Friday,1819.0784875333331
+tree_fall,unknown,Bellary Road 1,False,High,2,Friday,1823.1111353833328
+tree_fall,unknown,Bellary Road 1,False,High,2,Friday,1825.6380844833332
+vehicle_breakdown,bmtc_bus,Non-corridor,False,Low,4,Wednesday,83.22766023333334
+tree_fall,unknown,Non-corridor,False,Low,2,Friday,321.23818236666665
+vehicle_breakdown,bmtc_bus,West of Chord Road,False,High,6,Wednesday,41.797760616666665
+others,unknown,Non-corridor,False,Low,2,Friday,15.88912515
+vehicle_breakdown,lcv,Non-corridor,False,Low,8,Wednesday,83.47854003333333
+vehicle_breakdown,bmtc_bus,Mysore Road,False,High,10,Wednesday,52.75157615
+vehicle_breakdown,private_bus,ORR North 1,False,High,3,Friday,74.82553706666666
+vehicle_breakdown,heavy_vehicle,Mysore Road,False,High,9,Wednesday,47.68990556666667
+vehicle_breakdown,lcv,Mysore Road,False,High,14,Wednesday,102.3569732
+vehicle_breakdown,bmtc_bus,Magadi Road,False,High,2,Thursday,106.48373361666668
+vehicle_breakdown,heavy_vehicle,Hosur Road,True,High,1,Thursday,75.3592525
+water_logging,unknown,ORR East 1,False,High,4,Friday,49.972616783333336
+vehicle_breakdown,bmtc_bus,Mysore Road,True,High,5,Friday,111.6212591
+vehicle_breakdown,bmtc_bus,Hosur Road,False,High,5,Friday,52.83199456666667
+others,unknown,Non-corridor,False,Low,6,Friday,81.46960444999999
+tree_fall,unknown,Non-corridor,True,Low,5,Friday,178.15932105
+construction,unknown,Bellary Road 2,False,High,5,Thursday,31.910260883333333
+pot_holes,unknown,Non-corridor,False,Low,3,Tuesday,1510.57253935
+vehicle_breakdown,truck,Non-corridor,False,Low,6,Thursday,11.80107465
+vehicle_breakdown,auto,Magadi Road,False,High,6,Friday,24.50433823333333
+tree_fall,unknown,Non-corridor,False,Low,11,Thursday,1228.0686473666667
+vehicle_breakdown,lcv,Tumkur Road,False,High,7,Thursday,86.29591815
+vehicle_breakdown,bmtc_bus,ORR North 1,False,High,8,Thursday,18.84050655
+vehicle_breakdown,lcv,Tumkur Road,False,High,9,Friday,36.504006333333336
+vehicle_breakdown,ksrtc_bus,Mysore Road,True,High,9,Friday,23.38282283333333
+vehicle_breakdown,others,Non-corridor,False,Low,9,Friday,104.21347743333334
+vehicle_breakdown,private_car,Old Airport Road,False,High,9,Friday,70.8526748
+vehicle_breakdown,heavy_vehicle,Magadi Road,False,High,9,Friday,72.9697583
+construction,unknown,Bellary Road 2,False,High,9,Thursday,60.798384383333335
+vehicle_breakdown,bmtc_bus,Non-corridor,False,Low,9,Thursday,78.98550595
+vehicle_breakdown,lcv,Old Airport Road,False,High,11,Thursday,28.37677448333333
+vehicle_breakdown,bmtc_bus,Non-corridor,False,Low,11,Friday,93.05635131666666
+vehicle_breakdown,others,Hosur Road,False,High,12,Thursday,11.49699995
+others,unknown,Non-corridor,False,Low,11,Friday,199.88949181666663
+vehicle_breakdown,private_bus,Hosur Road,False,High,14,Thursday,75.03727443333334
+tree_fall,unknown,Non-corridor,True,Low,12,Friday,105.48940756666666
+tree_fall,unknown,Non-corridor,False,Low,12,Friday,2198.129693766667
+vehicle_breakdown,lcv,Mysore Road,False,High,2,Friday,57.51257438333334
+tree_fall,unknown,Non-corridor,False,Low,12,Friday,2195.455855816667
+vehicle_breakdown,heavy_vehicle,Tumkur Road,False,High,2,Friday,33.33879541666667
+vehicle_breakdown,private_bus,Mysore Road,False,High,12,Friday,39.6093981
+vehicle_breakdown,private_car,Tumkur Road,False,High,13,Friday,10.150965166666667
+tree_fall,unknown,Non-corridor,True,Low,13,Friday,66.3340463
+vehicle_breakdown,bmtc_bus,ORR East 1,False,High,4,Friday,19.115834
+others,unknown,Non-corridor,True,Low,6,Friday,42.96236663333333
+road_conditions,unknown,Non-corridor,False,Low,9,Friday,1107.119046283333
+others,unknown,Non-corridor,False,Low,9,Friday,87.31756581666667
+vehicle_breakdown,others,Tumkur Road,False,High,10,Friday,30.63011775
+vehicle_breakdown,heavy_vehicle,Non-corridor,False,Low,12,Friday,18.7735204
+vehicle_breakdown,lcv,Non-corridor,False,Low,12,Friday,77.0688961
+water_logging,unknown,Non-corridor,False,Low,14,Friday,820.8788695333334
+others,unknown,Non-corridor,False,Low,16,Friday,25.36762938333333
+accident,unknown,Old Airport Road,False,High,0,Saturday,35.956496816666665
+others,unknown,Mysore Road,False,High,2,Saturday,1922.4556106166667
+others,unknown,Mysore Road,False,High,2,Saturday,17.062712316666666
+vehicle_breakdown,lcv,Non-corridor,False,Low,3,Saturday,35.28199905
+others,unknown,Non-corridor,False,Low,3,Saturday,3015.3421913166667
+vehicle_breakdown,private_car,ORR West 1,False,High,5,Saturday,20.211203416666667
+accident,unknown,Non-corridor,False,Low,1,Saturday,78.2774947
+vehicle_breakdown,truck,ORR West 1,False,High,9,Saturday,36.08605643333333
+vehicle_breakdown,bmtc_bus,Tumkur Road,False,High,11,Saturday,132.2670364
+vehicle_breakdown,bmtc_bus,Hosur Road,False,High,12,Saturday,96.5241556
+others,unknown,Non-corridor,False,Low,11,Saturday,2522.9359043
+tree_fall,unknown,Non-corridor,False,Low,3,Saturday,508.2992390666667
+vehicle_breakdown,others,ORR West 1,False,High,3,Saturday,75.99775528333333
+vehicle_breakdown,heavy_vehicle,ORR North 1,False,High,22,Saturday,80.29286535
+others,unknown,Mysore Road,False,High,1,Sunday,36.87994801666667
+vehicle_breakdown,bmtc_bus,Non-corridor,False,Low,3,Sunday,83.28090113333333
+vehicle_breakdown,private_car,Non-corridor,False,Low,4,Sunday,23.75329868333333
+vehicle_breakdown,bmtc_bus,Non-corridor,False,Low,4,Sunday,73.46585520000001
+vehicle_breakdown,lcv,Bellary Road 1,False,High,4,Sunday,92.67076003333334
+vehicle_breakdown,ksrtc_bus,Non-corridor,False,Low,5,Sunday,12.90432295
+vehicle_breakdown,heavy_vehicle,Tumkur Road,False,High,8,Sunday,102.77983355
+others,unknown,Bellary Road 2,False,High,7,Sunday,1654.0888025333334
+vehicle_breakdown,ksrtc_bus,Tumkur Road,False,High,7,Sunday,104.3606748
+vehicle_breakdown,bmtc_bus,Non-corridor,False,Low,9,Sunday,79.53191238333334
+vehicle_breakdown,others,Non-corridor,False,Low,7,Saturday,69.83975466666668
+vehicle_breakdown,auto,Non-corridor,False,Low,11,Sunday,15.854282233333333
+vehicle_breakdown,lcv,Mysore Road,False,High,10,Saturday,39.93153236666667
+others,unknown,Magadi Road,False,High,12,Saturday,24.95513465
+vehicle_breakdown,bmtc_bus,Non-corridor,True,Low,0,Monday,24.74976433333333
+vehicle_breakdown,truck,Magadi Road,False,High,1,Monday,107.40422818333332
+water_logging,unknown,Non-corridor,False,Low,13,Saturday,634.7593560833334
+tree_fall,unknown,ORR West 1,False,High,13,Saturday,628.0100223833334
+vehicle_breakdown,bmtc_bus,ORR West 1,False,High,4,Monday,39.40781505
+accident,unknown,Tumkur Road,False,High,4,Monday,34.37267258333333
+vehicle_breakdown,private_car,Tumkur Road,False,High,5,Monday,45.264776866666665
+vehicle_breakdown,bmtc_bus,Non-corridor,False,Low,6,Monday,45.61544075
+vehicle_breakdown,truck,Magadi Road,False,High,7,Monday,77.75613968333333
+others,unknown,ORR East 2,False,High,8,Monday,18.06991683333333
+vehicle_breakdown,bmtc_bus,ORR North 2,False,High,9,Monday,90.19006885
+water_logging,unknown,Non-corridor,False,Low,13,Saturday,1043.3983678333332
+water_logging,unknown,Non-corridor,False,Low,13,Saturday,1039.9556850166666
+water_logging,unknown,Non-corridor,False,Low,12,Monday,3481.07047895
+tree_fall,unknown,Hosur Road,False,High,13,Saturday,62.19627536666667
+vehicle_breakdown,heavy_vehicle,Bellary Road 2,False,High,18,Monday,76.96167763333332
+others,unknown,Mysore Road,False,High,2,Tuesday,1862.94228465
+water_logging,unknown,ORR West 1,False,High,2,Tuesday,3321.72448815
+others,unknown,Non-corridor,False,Low,15,Saturday,567.0433455166666
+tree_fall,unknown,Mysore Road,False,High,17,Saturday,2191.5870473500004
+tree_fall,unknown,Non-corridor,False,Low,23,Saturday,1938.8078038166668
+vehicle_breakdown,truck,Non-corridor,False,Low,0,Sunday,75.83953751666667
+others,unknown,Non-corridor,False,Low,3,Tuesday,19.413640933333333
+vehicle_breakdown,others,Bellary Road 1,False,High,5,Tuesday,21.48659638333333
+vehicle_breakdown,bmtc_bus,Old Airport Road,False,High,5,Tuesday,10.285472433333332
+vehicle_breakdown,bmtc_bus,Mysore Road,False,High,4,Tuesday,78.04236811666667
+vehicle_breakdown,bmtc_bus,Old Airport Road,False,High,1,Sunday,85.34070533333333
+vehicle_breakdown,lcv,Bellary Road 1,False,High,0,Sunday,74.08036368333335
+vehicle_breakdown,heavy_vehicle,Hosur Road,False,High,8,Tuesday,57.48541201666667
+accident,unknown,Bellary Road 1,False,High,10,Tuesday,16.25948615
+vehicle_breakdown,bmtc_bus,Bellary Road 1,False,High,4,Sunday,88.67010386666668
+vehicle_breakdown,lcv,ORR North 2,False,High,5,Sunday,49.33388356666667
+road_conditions,unknown,Bannerghata Road,False,High,11,Tuesday,41.26528335
+vehicle_breakdown,private_bus,Bellary Road 2,False,High,0,Wednesday,35.9550146
+vehicle_breakdown,bmtc_bus,Tumkur Road,False,High,6,Sunday,11.41129385
+accident,unknown,Bellary Road 2,False,High,0,Wednesday,65.95049823333333
+vehicle_breakdown,heavy_vehicle,Non-corridor,False,Low,2,Wednesday,28.716758966666664
+vehicle_breakdown,bmtc_bus,Mysore Road,False,High,1,Wednesday,131.20510380000002
+vehicle_breakdown,heavy_vehicle,Tumkur Road,False,High,9,Sunday,125.82290351666668
+vehicle_breakdown,heavy_vehicle,Non-corridor,False,Low,4,Wednesday,51.52973378333333
+vehicle_breakdown,bmtc_bus,Non-corridor,False,Low,7,Wednesday,18.3825912
+vehicle_breakdown,bmtc_bus,Non-corridor,False,Low,9,Wednesday,14.79356025
+vehicle_breakdown,heavy_vehicle,Hennur Main Road,False,High,10,Wednesday,100.59974936666669
+vehicle_breakdown,others,Magadi Road,False,High,9,Sunday,102.56760073333334
+others,unknown,Magadi Road,False,High,10,Sunday,156.8681104
+others,unknown,ORR North 1,False,High,12,Wednesday,65.11967595
+vehicle_breakdown,bmtc_bus,Mysore Road,False,High,10,Sunday,46.61182065
+vehicle_breakdown,heavy_vehicle,Non-corridor,False,Low,17,Wednesday,41.68652611666666
+vehicle_breakdown,bmtc_bus,Varthur Road,False,High,10,Sunday,37.8018373
+vehicle_breakdown,heavy_vehicle,Non-corridor,False,Low,10,Sunday,118.13179021666666
+vehicle_breakdown,others,Non-corridor,False,Low,22,Wednesday,58.84397311666667
+vehicle_breakdown,private_car,Bellary Road 1,False,High,0,Thursday,40.3799524
+others,unknown,Non-corridor,False,Low,2,Thursday,187.7209152833333
+others,unknown,Non-corridor,False,Low,11,Sunday,48.6091393
+accident,unknown,Non-corridor,False,Low,5,Thursday,4.357959916666667
+others,unknown,Tumkur Road,False,High,5,Thursday,1303.7770233833332
+vehicle_breakdown,lcv,Non-corridor,False,Low,12,Sunday,41.98896968333334
+vehicle_breakdown,bmtc_bus,Non-corridor,False,Low,12,Sunday,99.42997705
+others,unknown,Non-corridor,False,Low,12,Sunday,2267.11059435
+vehicle_breakdown,lcv,Varthur Road,False,High,9,Thursday,59.29006258333333
+vehicle_breakdown,others,Non-corridor,False,Low,9,Thursday,15.77857665
+vehicle_breakdown,heavy_vehicle,Bellary Road 1,False,High,15,Sunday,105.14612633333331
+tree_fall,unknown,Non-corridor,True,Low,0,Monday,56.79600258333333
+vehicle_breakdown,heavy_vehicle,Bellary Road 2,False,High,15,Thursday,45.69163531666666
+vehicle_breakdown,bmtc_bus,Non-corridor,False,Low,2,Monday,42.935636433333336
+others,unknown,Non-corridor,False,Low,2,Monday,280.83443520000003
+others,unknown,Hosur Road,False,High,23,Thursday,26.72452003333333
+vehicle_breakdown,ksrtc_bus,Non-corridor,False,Low,0,Friday,95.82774763333332
+vehicle_breakdown,heavy_vehicle,Non-corridor,False,Low,4,Monday,129.19878353333334
+vehicle_breakdown,bmtc_bus,Tumkur Road,False,High,4,Monday,19.84877475
+others,unknown,Magadi Road,False,High,1,Friday,611.3854716000001
+vehicle_breakdown,ksrtc_bus,West of Chord Road,False,High,6,Monday,115.28882806666668
+vehicle_breakdown,bmtc_bus,Varthur Road,False,High,3,Friday,98.82358633333334
+others,unknown,Tumkur Road,False,High,3,Friday,1327.4565705999998
+vehicle_breakdown,ksrtc_bus,Bellary Road 1,False,High,4,Friday,12.097447016666669
+vehicle_breakdown,lcv,Bannerghata Road,False,High,7,Monday,10.48741705
+vehicle_breakdown,bmtc_bus,Non-corridor,False,Low,5,Friday,73.79083653333333
+vehicle_breakdown,private_bus,Mysore Road,False,High,8,Monday,48.54255426666667
+vehicle_breakdown,bmtc_bus,Non-corridor,True,Low,8,Friday,27.657876616666663
+vehicle_breakdown,others,Tumkur Road,False,High,10,Friday,148.41387268333335
+others,unknown,Mysore Road,False,High,10,Monday,154.96781246666666
+vehicle_breakdown,bmtc_bus,Non-corridor,False,Low,9,Monday,119.41805865
+vehicle_breakdown,bmtc_bus,Non-corridor,False,Low,11,Friday,30.14560906666667
+vehicle_breakdown,others,Non-corridor,False,Low,12,Monday,71.70723046666667
+vehicle_breakdown,private_bus,Mysore Road,False,High,14,Friday,41.48662983333334
+tree_fall,unknown,West of Chord Road,False,High,15,Monday,31.80648258333333
+vehicle_breakdown,private_bus,Hosur Road,False,High,15,Friday,47.11091685
+others,unknown,Bellary Road 1,False,High,23,Monday,32.5370269
+tree_fall,unknown,Non-corridor,False,Low,17,Friday,358.28831121666667
+vehicle_breakdown,heavy_vehicle,Non-corridor,False,Low,22,Friday,95.20728398333334
+vehicle_breakdown,heavy_vehicle,Non-corridor,False,Low,0,Saturday,38.20984111666667
+pot_holes,unknown,Bannerghata Road,False,High,2,Saturday,1487.2023295833335
+vehicle_breakdown,bmtc_bus,Mysore Road,False,High,0,Saturday,20.381774716666666
+accident,unknown,ORR East 1,False,High,4,Saturday,52.74507428333333
+vehicle_breakdown,truck,Non-corridor,False,Low,4,Saturday,53.86242988333333
+vehicle_breakdown,ksrtc_bus,Non-corridor,False,Low,2,Tuesday,58.697027133333336
+vehicle_breakdown,bmtc_bus,Non-corridor,False,Low,2,Tuesday,75.01906000000001
+construction,unknown,Non-corridor,False,Low,9,Saturday,969.3087974
+vehicle_breakdown,bmtc_bus,Non-corridor,False,Low,9,Saturday,22.188365633333333
+vehicle_breakdown,auto,Bellary Road 1,False,High,9,Saturday,53.13025051666667
+vehicle_breakdown,lcv,Non-corridor,False,Low,3,Tuesday,81.64968848333334
+vehicle_breakdown,lcv,Old Airport Road,False,High,12,Saturday,15.971929466666667
+vehicle_breakdown,bmtc_bus,Non-corridor,False,Low,12,Saturday,78.58225675
+vehicle_breakdown,private_bus,Bellary Road 1,False,High,17,Saturday,114.21673276666668
+construction,unknown,Non-corridor,False,Low,1,Sunday,366.65548681666667
+others,unknown,Mysore Road,False,High,9,Tuesday,76.24653713333333
+water_logging,unknown,Non-corridor,False,Low,10,Tuesday,137.85110428333334
+vehicle_breakdown,lcv,Hosur Road,False,High,10,Tuesday,79.27560286666667
+vehicle_breakdown,private_bus,Hosur Road,False,High,11,Tuesday,96.84268413333332
+others,unknown,CBD 2,False,High,3,Sunday,75.09085913333334
+vehicle_breakdown,others,Magadi Road,False,High,7,Sunday,17.01463426666667
+road_conditions,unknown,Non-corridor,False,Low,12,Tuesday,1386.89255105
+vehicle_breakdown,bmtc_bus,Non-corridor,True,Low,8,Sunday,39.4856103
+vehicle_breakdown,heavy_vehicle,Tumkur Road,False,High,8,Sunday,16.270418616666667
+vehicle_breakdown,bmtc_bus,Non-corridor,False,Low,10,Sunday,138.70672721666668
+accident,unknown,Mysore Road,False,High,10,Sunday,32.826353266666665
+procession,unknown,Non-corridor,False,Low,13,Sunday,36.53795035
+procession,unknown,Non-corridor,False,Low,14,Sunday,29.108712066666666
+vehicle_breakdown,bmtc_bus,Non-corridor,False,Low,14,Sunday,92.15842395
+others,unknown,Tumkur Road,False,High,17,Sunday,355.29140055
+vehicle_breakdown,private_car,Bellary Road 1,False,High,16,Sunday,12.875058366666668
+vehicle_breakdown,heavy_vehicle,CBD 2,False,High,1,Monday,83.6431582
+vehicle_breakdown,bmtc_bus,Mysore Road,False,High,1,Monday,54.19506535
+vehicle_breakdown,heavy_vehicle,Non-corridor,True,Low,4,Monday,21.73580035
+vehicle_breakdown,lcv,Non-corridor,False,Low,4,Monday,27.90641395
+vehicle_breakdown,bmtc_bus,Bellary Road 1,False,High,5,Monday,26.02119336666667
+vehicle_breakdown,private_bus,Non-corridor,True,Low,0,Tuesday,19.236815733333334
+others,unknown,Non-corridor,False,Low,0,Tuesday,3812.035816
+vehicle_breakdown,heavy_vehicle,Tumkur Road,False,High,23,Tuesday,77.64849921666668
+construction,unknown,ORR East 2,True,High,2,Tuesday,2852.1638163166667
+vehicle_breakdown,private_bus,ORR North 1,False,High,2,Wednesday,43.703668050000005
+vehicle_breakdown,bmtc_bus,Non-corridor,False,Low,1,Wednesday,18.12563553333333
+vehicle_breakdown,bmtc_bus,Old Airport Road,False,High,1,Wednesday,69.32541208333333
+others,unknown,Non-corridor,False,Low,2,Wednesday,43.829488833333336
+vehicle_breakdown,others,Mysore Road,False,High,2,Wednesday,107.36787663333332
+vehicle_breakdown,lcv,Tumkur Road,False,High,4,Tuesday,141.42639348333333
+vehicle_breakdown,heavy_vehicle,Non-corridor,False,Low,5,Wednesday,99.77792416666666
+vehicle_breakdown,auto,Non-corridor,False,Low,7,Tuesday,71.35226383333334
+vehicle_breakdown,bmtc_bus,Bellary Road 1,False,High,7,Tuesday,60.9291782
+vehicle_breakdown,heavy_vehicle,Non-corridor,False,Low,8,Tuesday,13.084814833333333
+vehicle_breakdown,heavy_vehicle,ORR East 1,False,High,8,Wednesday,27.22668188333333
+vehicle_breakdown,private_bus,Magadi Road,False,High,9,Wednesday,33.101952716666666
+vehicle_breakdown,private_car,Mysore Road,False,High,12,Tuesday,21.942543016666665
+vehicle_breakdown,private_car,Mysore Road,False,High,12,Tuesday,9.57339495
+others,unknown,Bellary Road 1,False,High,12,Tuesday,3801.1654547
+vehicle_breakdown,heavy_vehicle,Non-corridor,False,Low,10,Wednesday,14.661646350000002
+water_logging,unknown,Mysore Road,False,High,11,Wednesday,1341.8618717
+water_logging,unknown,Bellary Road 1,False,High,11,Wednesday,3913.5393192166666
+vehicle_breakdown,heavy_vehicle,ORR East 1,False,High,23,Tuesday,32.482557983333336
+others,unknown,Tumkur Road,True,High,16,Tuesday,425.9449986166667
+others,unknown,Non-corridor,True,Low,0,Wednesday,3387.139090366667
+vehicle_breakdown,others,Non-corridor,True,Low,0,Wednesday,68.54527198333334
+vehicle_breakdown,heavy_vehicle,Bellary Road 2,False,High,1,Wednesday,141.574881
+vehicle_breakdown,bmtc_bus,Non-corridor,False,Low,13,Wednesday,87.93818821666667
+water_logging,unknown,Old Madras Road,False,High,2,Wednesday,36.627531100000006
+vehicle_breakdown,heavy_vehicle,Non-corridor,False,Low,2,Wednesday,60.76119708333333
+vehicle_breakdown,bmtc_bus,Mysore Road,True,High,3,Wednesday,33.748134783333334
+vehicle_breakdown,bmtc_bus,Tumkur Road,False,High,4,Wednesday,114.61164653333334
+vehicle_breakdown,lcv,Mysore Road,False,High,5,Wednesday,95.59043028333332
+vehicle_breakdown,bmtc_bus,Hosur Road,False,High,8,Wednesday,11.97852685
+vehicle_breakdown,bmtc_bus,Magadi Road,False,High,9,Wednesday,24.2304184
+vehicle_breakdown,heavy_vehicle,Mysore Road,False,High,0,Thursday,22.292497583333333
+others,unknown,Bellary Road 2,False,High,0,Thursday,76.19266588333333
+vehicle_breakdown,bmtc_bus,ORR East 1,False,High,10,Wednesday,109.25451818333332
+vehicle_breakdown,bmtc_bus,Non-corridor,False,Low,11,Wednesday,89.5580396
+others,unknown,Non-corridor,False,Low,11,Wednesday,180.91461453333332
+vehicle_breakdown,bmtc_bus,Non-corridor,False,Low,11,Wednesday,62.10533875
+vehicle_breakdown,bmtc_bus,Bellary Road 2,False,High,12,Wednesday,4.185284566666667
+construction,unknown,Non-corridor,False,Low,1,Thursday,365.8770966
+vehicle_breakdown,heavy_vehicle,ORR North 2,False,High,0,Thursday,47.697048333333335
+vehicle_breakdown,bmtc_bus,Bannerghata Road,False,High,1,Thursday,62.15927346666667
+water_logging,unknown,Non-corridor,False,Low,2,Thursday,1638.5179018833333
+vehicle_breakdown,others,Non-corridor,False,Low,2,Thursday,12.48767995
+vehicle_breakdown,bmtc_bus,Bannerghata Road,False,High,2,Thursday,27.9523293
+construction,unknown,Non-corridor,False,Low,3,Thursday,624.2569785666667
+vehicle_breakdown,lcv,Tumkur Road,False,High,4,Thursday,25.9073017
+vehicle_breakdown,lcv,Non-corridor,False,Low,5,Thursday,80.1326431
+vehicle_breakdown,private_car,Bellary Road 2,False,High,3,Thursday,29.472658016666667
+vehicle_breakdown,ksrtc_bus,Non-corridor,False,Low,4,Thursday,32.38240151666667
+vehicle_breakdown,bmtc_bus,Non-corridor,True,Low,4,Thursday,130.85829606666667
+vehicle_breakdown,bmtc_bus,Non-corridor,False,Low,5,Thursday,3.172573133333333
+vehicle_breakdown,private_bus,ORR North 1,False,High,10,Thursday,126.05797051666669
+vehicle_breakdown,private_bus,Bellary Road 1,False,High,10,Thursday,68.5412746
+vehicle_breakdown,private_bus,Non-corridor,False,Low,6,Thursday,48.84292761666666
+vehicle_breakdown,ksrtc_bus,Bellary Road 1,False,High,7,Thursday,25.32421443333333
+vehicle_breakdown,lcv,ORR North 2,False,High,12,Thursday,20.49097971666667
+vehicle_breakdown,heavy_vehicle,Non-corridor,False,Low,11,Thursday,74.69350561666667
+vehicle_breakdown,private_car,Non-corridor,False,Low,0,Friday,21.15403888333333
+vehicle_breakdown,ksrtc_bus,Non-corridor,False,Low,1,Friday,15.905597883333334
+vehicle_breakdown,bmtc_bus,Non-corridor,False,Low,4,Friday,128.41844893333334
+pot_holes,unknown,Non-corridor,False,Low,3,Friday,1489.0271123833334
+pot_holes,unknown,Non-corridor,False,Low,3,Friday,1490.3736745166668
+vehicle_breakdown,heavy_vehicle,ORR North 1,False,High,6,Friday,32.5034449
+vehicle_breakdown,truck,ORR East 2,False,High,6,Friday,66.92851234999999
+pot_holes,unknown,Non-corridor,False,Low,3,Friday,1490.3403477333334
+others,unknown,Mysore Road,False,High,9,Friday,119.54685436666666
+tree_fall,unknown,Non-corridor,True,Low,13,Thursday,79.37274963333333
+vehicle_breakdown,bmtc_bus,Magadi Road,False,High,13,Thursday,153.41269573333332
+accident,unknown,ORR North 1,False,High,15,Thursday,52.03779613333334
+vehicle_breakdown,bmtc_bus,ORR West 1,False,High,12,Friday,27.9779026
+vehicle_breakdown,bmtc_bus,Non-corridor,False,Low,11,Friday,77.07247735
+vehicle_breakdown,lcv,Mysore Road,False,High,14,Friday,35.12267365
+vehicle_breakdown,bmtc_bus,West of Chord Road,False,High,2,Saturday,49.20473728333333
+vehicle_breakdown,lcv,Bellary Road 1,True,High,1,Saturday,37.30351836666667
+vehicle_breakdown,bmtc_bus,Tumkur Road,False,High,1,Saturday,72.88357673333333
+vehicle_breakdown,bmtc_bus,Non-corridor,False,Low,3,Friday,2.6236583
+vehicle_breakdown,bmtc_bus,ORR East 1,False,High,3,Friday,97.77232951666666
+road_conditions,unknown,ORR West 1,False,High,3,Friday,62.26401783333333
+construction,unknown,Non-corridor,False,Low,4,Friday,1911.9671419166664
+vehicle_breakdown,private_bus,Non-corridor,False,Low,3,Saturday,63.30596091666666
+vehicle_breakdown,private_car,Tumkur Road,False,High,4,Friday,13.265553916666668
+others,unknown,Non-corridor,False,Low,6,Saturday,34.995653966666666
+vehicle_breakdown,lcv,Tumkur Road,False,High,5,Saturday,28.267420583333333
+vehicle_breakdown,private_car,ORR East 1,False,High,4,Saturday,120.9917747
+road_conditions,unknown,Non-corridor,False,Low,6,Friday,1.6786465666666668
+accident,unknown,Old Madras Road,False,High,6,Friday,41.571545316666665
+vehicle_breakdown,ksrtc_bus,Mysore Road,False,High,8,Saturday,34.62066285
+others,unknown,Non-corridor,False,Low,7,Saturday,1764.0597806833332
+water_logging,unknown,Bannerghata Road,False,High,7,Saturday,2568.276213
+vehicle_breakdown,bmtc_bus,Non-corridor,False,Low,8,Friday,122.88383688333332
+vehicle_breakdown,private_bus,ORR West 1,False,High,9,Saturday,45.38100588333334
+vehicle_breakdown,private_car,Hosur Road,False,High,10,Saturday,15.76206795
+vehicle_breakdown,heavy_vehicle,ORR North 1,False,High,10,Friday,124.13244701666667
+vehicle_breakdown,truck,Mysore Road,False,High,9,Friday,28.3823993
+vehicle_breakdown,private_car,Bellary Road 1,False,High,11,Friday,49.68857495
+tree_fall,unknown,Bellary Road 1,True,High,22,Saturday,141.58774876666666
+vehicle_breakdown,bmtc_bus,Bellary Road 2,False,High,0,Sunday,65.21049980000001
+vehicle_breakdown,bmtc_bus,Non-corridor,False,Low,2,Sunday,21.79317205
+vehicle_breakdown,others,Bellary Road 2,False,High,2,Sunday,65.78450945
+vehicle_breakdown,lcv,Bannerghata Road,False,High,13,Friday,29.872228166666662
+vehicle_breakdown,private_bus,ORR East 1,False,High,3,Sunday,47.78352503333333
+accident,unknown,Non-corridor,False,Low,3,Sunday,64.67699146666666
+vehicle_breakdown,bmtc_bus,Mysore Road,False,High,5,Sunday,41.27645373333333
+others,unknown,Magadi Road,False,High,6,Sunday,222.83057628333333
+vehicle_breakdown,bmtc_bus,Non-corridor,False,Low,8,Sunday,116.41837865
+vehicle_breakdown,heavy_vehicle,Old Madras Road,False,High,23,Friday,75.1976845
+vehicle_breakdown,private_car,CBD 2,False,High,10,Sunday,60.0840213
+accident,unknown,Hosur Road,True,High,0,Saturday,74.62887731666666
+vehicle_breakdown,bmtc_bus,ORR North 1,False,High,11,Sunday,10.619932433333334
+vehicle_breakdown,heavy_vehicle,ORR North 1,True,High,0,Saturday,130.6786535
+others,unknown,Bellary Road 1,False,High,14,Sunday,8.213493783333332
+tree_fall,unknown,Non-corridor,False,Low,1,Saturday,48.916281016666666
+vehicle_breakdown,bmtc_bus,Non-corridor,False,Low,2,Saturday,136.8639617
+vehicle_breakdown,lcv,Bannerghata Road,False,High,1,Monday,64.36110058333334
+vehicle_breakdown,bmtc_bus,Non-corridor,False,Low,0,Monday,33.71126616666667
+pot_holes,unknown,Non-corridor,False,Low,2,Saturday,3178.621194833333
+vehicle_breakdown,heavy_vehicle,Mysore Road,False,High,4,Saturday,41.39133718333333
+vehicle_breakdown,bmtc_bus,Non-corridor,False,Low,4,Saturday,126.48344196666667
+vehicle_breakdown,bmtc_bus,ORR North 1,False,High,6,Monday,102.31517605
+vehicle_breakdown,bmtc_bus,Magadi Road,False,High,6,Saturday,17.968402516666668
+vehicle_breakdown,ksrtc_bus,Magadi Road,False,High,7,Saturday,23.66387493333333
+vehicle_breakdown,others,Mysore Road,False,High,8,Monday,75.36809358333333
+vehicle_breakdown,lcv,Magadi Road,True,High,7,Saturday,79.74376296666667
+vehicle_breakdown,others,Mysore Road,False,High,8,Monday,94.79220713333332
+vehicle_breakdown,bmtc_bus,Non-corridor,False,Low,11,Monday,25.56185143333333
+vehicle_breakdown,bmtc_bus,Non-corridor,False,Low,8,Saturday,161.71242263333335
+vehicle_breakdown,bmtc_bus,Tumkur Road,False,High,14,Monday,50.01750633333334
+vehicle_breakdown,truck,Hosur Road,False,High,15,Monday,68.04666115
+vehicle_breakdown,heavy_vehicle,ORR North 2,False,High,0,Tuesday,93.07605395
+vehicle_breakdown,others,Non-corridor,False,Low,1,Tuesday,5.5782576666666674
+vehicle_breakdown,bmtc_bus,Mysore Road,False,High,0,Tuesday,90.53504385
+vehicle_breakdown,private_bus,Non-corridor,False,Low,2,Tuesday,11.603118716666668
+vehicle_breakdown,others,ORR East 1,False,High,1,Tuesday,10.9303683
+vehicle_breakdown,heavy_vehicle,Mysore Road,False,High,1,Tuesday,99.55250775
+water_logging,unknown,ORR East 1,False,High,2,Tuesday,2880.9232620166667
+vehicle_breakdown,bmtc_bus,Non-corridor,False,Low,10,Saturday,13.15723055
+vehicle_breakdown,bmtc_bus,Hosur Road,False,High,3,Tuesday,66.10073248333333
+vehicle_breakdown,others,Hosur Road,False,High,2,Tuesday,71.50056616666667
+vehicle_breakdown,private_car,ORR North 1,False,High,5,Tuesday,18.83665193333333
+vehicle_breakdown,private_bus,Non-corridor,False,Low,7,Tuesday,117.39218681666668
+others,unknown,Non-corridor,False,Low,6,Tuesday,533.57232925
+others,unknown,Bellary Road 1,False,High,13,Saturday,27.545034283333333
+vehicle_breakdown,bmtc_bus,Non-corridor,False,Low,9,Tuesday,18.39452543333333
+others,unknown,Bellary Road 1,False,High,8,Tuesday,99.88255601666668
+tree_fall,unknown,Non-corridor,False,Low,11,Tuesday,16.6391068
+procession,unknown,Non-corridor,False,Low,13,Tuesday,19.30428275
+vehicle_breakdown,lcv,Non-corridor,False,Low,0,Wednesday,30.11519236666667
+vehicle_breakdown,others,Bellary Road 1,False,High,2,Wednesday,64.28767333333333
+vehicle_breakdown,bmtc_bus,ORR East 2,False,High,3,Wednesday,102.76117878333334
+vehicle_breakdown,heavy_vehicle,Bellary Road 1,False,High,8,Wednesday,112.30525148333332
+vehicle_breakdown,others,Magadi Road,False,High,12,Wednesday,9.717715233333331
+vehicle_breakdown,bmtc_bus,Non-corridor,False,Low,12,Wednesday,61.030100583333336
+vehicle_breakdown,ksrtc_bus,Tumkur Road,False,High,23,Saturday,118.72338911666668
+vehicle_breakdown,heavy_vehicle,Tumkur Road,False,High,0,Sunday,66.27881596666667
+vehicle_breakdown,private_bus,Non-corridor,False,Low,1,Sunday,36.20208975
+vehicle_breakdown,truck,Bellary Road 2,False,High,0,Thursday,117.76879753333333
+tree_fall,unknown,Bellary Road 1,False,High,14,Wednesday,1443.1942532166663
+vehicle_breakdown,lcv,Tumkur Road,False,High,2,Sunday,43.37783213333333
+vehicle_breakdown,private_car,Non-corridor,False,Low,4,Sunday,14.166123566666666
+vehicle_breakdown,truck,Non-corridor,False,Low,6,Thursday,65.59525101666667
+vehicle_breakdown,lcv,Hennur Main Road,False,High,6,Thursday,14.030502116666666
+vehicle_breakdown,bmtc_bus,ORR West 1,False,High,8,Thursday,82.4944742
+vehicle_breakdown,bmtc_bus,Non-corridor,True,Low,9,Thursday,153.20900648333333
+vehicle_breakdown,bmtc_bus,Mysore Road,False,High,6,Sunday,94.07856273333331
+pot_holes,unknown,Non-corridor,False,Low,6,Sunday,1801.1487678833332
+vehicle_breakdown,private_car,Non-corridor,False,Low,8,Sunday,38.377358533333336
+vehicle_breakdown,private_car,Bannerghata Road,False,High,13,Thursday,27.85295405
+vehicle_breakdown,bmtc_bus,Non-corridor,False,Low,13,Thursday,112.04517458333332
+vehicle_breakdown,bmtc_bus,Mysore Road,False,High,10,Sunday,39.481431066666666
+vehicle_breakdown,others,Non-corridor,False,Low,14,Thursday,10.010460816666669
+vehicle_breakdown,others,Non-corridor,False,Low,15,Thursday,15.370875883333332
+accident,unknown,Non-corridor,False,Low,0,Friday,45.76001521666667
+others,unknown,ORR East 1,False,High,1,Friday,83.30453795
+road_conditions,unknown,Non-corridor,False,Low,2,Friday,566.6772309666667
+others,unknown,ORR West 1,False,High,3,Friday,69.93633795000001
+vehicle_breakdown,bmtc_bus,Mysore Road,False,High,3,Friday,57.164526783333336
+vehicle_breakdown,heavy_vehicle,Tumkur Road,False,High,16,Sunday,60.87218893333333
+vehicle_breakdown,bmtc_bus,Non-corridor,False,Low,5,Friday,55.57841278333333
+vehicle_breakdown,bmtc_bus,Magadi Road,False,High,6,Friday,53.36274408333334
+vehicle_breakdown,heavy_vehicle,Mysore Road,False,High,7,Friday,51.91649708333333
+vehicle_breakdown,heavy_vehicle,Mysore Road,False,High,9,Friday,68.26804354999999
+construction,unknown,Non-corridor,False,Low,10,Friday,2.2817703166666665
+vehicle_breakdown,bmtc_bus,Non-corridor,False,Low,2,Monday,43.90706536666666
+vehicle_breakdown,bmtc_bus,Non-corridor,False,Low,11,Friday,6.4820150000000005
+vehicle_breakdown,private_car,Non-corridor,False,Low,2,Saturday,20.946314283333333
+vehicle_breakdown,heavy_vehicle,ORR West 1,False,High,1,Saturday,54.41555578333334
+vehicle_breakdown,bmtc_bus,Bellary Road 1,False,High,5,Saturday,27.87250365
+vehicle_breakdown,bmtc_bus,Hosur Road,False,High,9,Saturday,70.40309615
+vehicle_breakdown,lcv,ORR East 1,False,High,9,Saturday,64.34689078333334
+water_logging,unknown,ORR West 1,False,High,9,Saturday,245.19777885
+others,unknown,Hennur Main Road,False,High,12,Saturday,4156.1516019
+vehicle_breakdown,lcv,Old Madras Road,False,High,12,Saturday,5.209710783333334
+vehicle_breakdown,bmtc_bus,Mysore Road,False,High,13,Saturday,77.41273774999999
+vehicle_breakdown,truck,Old Airport Road,False,High,16,Saturday,69.93821856666666
+vehicle_breakdown,heavy_vehicle,West of Chord Road,False,High,0,Sunday,35.05276381666667
+accident,unknown,Non-corridor,False,Low,0,Sunday,52.07746276666667
+others,unknown,ORR West 1,False,High,5,Sunday,13.282436566666666
+vehicle_breakdown,bmtc_bus,Non-corridor,False,Low,3,Sunday,33.299465850000004
+vehicle_breakdown,bmtc_bus,Mysore Road,False,High,9,Sunday,57.2864581
+vehicle_breakdown,private_car,Bannerghata Road,False,High,7,Sunday,61.72527071666666
+vehicle_breakdown,truck,Non-corridor,True,Low,9,Sunday,144.07803846666667
+vehicle_breakdown,bmtc_bus,Mysore Road,False,High,10,Sunday,9.91719885
+vehicle_breakdown,heavy_vehicle,Bellary Road 1,False,High,9,Sunday,95.13714321666666
+vehicle_breakdown,others,Bellary Road 2,False,High,11,Sunday,36.75851303333333
+vehicle_breakdown,bmtc_bus,Mysore Road,False,High,10,Sunday,135.56645735
+vehicle_breakdown,lcv,ORR North 2,False,High,10,Sunday,175.78652098333333
+vehicle_breakdown,lcv,Bellary Road 1,False,High,12,Sunday,23.743930483333333
+vehicle_breakdown,bmtc_bus,Tumkur Road,False,High,13,Sunday,50.50448333333333
+vehicle_breakdown,lcv,Tumkur Road,False,High,13,Sunday,29.0898873
+vehicle_breakdown,private_car,CBD 2,False,High,14,Sunday,15.373663483333331
+vehicle_breakdown,heavy_vehicle,Hosur Road,False,High,2,Monday,88.63287516666666
+vehicle_breakdown,others,Mysore Road,False,High,2,Monday,85.63499211666667
+accident,unknown,Non-corridor,False,Low,6,Monday,31.81484378333333
+vehicle_breakdown,heavy_vehicle,Non-corridor,False,Low,6,Monday,16.525977933333333
+water_logging,unknown,Non-corridor,False,Low,6,Monday,1838.542380783333
+vehicle_breakdown,bmtc_bus,Tumkur Road,False,High,4,Monday,71.25627258333334
+tree_fall,unknown,Non-corridor,False,Low,1,Tuesday,2289.517529416667
+others,unknown,Non-corridor,False,Low,7,Monday,60.46577085
+vehicle_breakdown,bmtc_bus,Mysore Road,True,High,7,Tuesday,112.05360535
+vehicle_breakdown,others,Non-corridor,False,Low,7,Monday,55.35562983333333
+vehicle_breakdown,lcv,Bellary Road 1,False,High,8,Tuesday,146.3850152
+vehicle_breakdown,heavy_vehicle,Bannerghata Road,False,High,8,Monday,86.29304546666667
+vehicle_breakdown,private_car,Mysore Road,False,High,11,Tuesday,110.00090083333332
+vehicle_breakdown,ksrtc_bus,West of Chord Road,False,High,13,Tuesday,43.55364956666666
+vehicle_breakdown,bmtc_bus,Tumkur Road,False,High,15,Monday,7.989997
+vehicle_breakdown,heavy_vehicle,Bellary Road 2,False,High,18,Tuesday,105.73423235
+vehicle_breakdown,heavy_vehicle,ORR East 1,False,High,23,Tuesday,82.21110071666666
+accident,unknown,ORR North 1,False,High,2,Wednesday,41.37271345
+construction,unknown,Non-corridor,False,Low,2,Wednesday,1381.6930457333333
+accident,unknown,Non-corridor,False,Low,2,Wednesday,41.838232833333336
+water_logging,unknown,Non-corridor,False,Low,3,Tuesday,123.31325763333332
+pot_holes,unknown,Non-corridor,False,Low,3,Tuesday,3388.1434261833333
+pot_holes,unknown,Non-corridor,False,Low,3,Tuesday,3391.064447516667
+others,unknown,Non-corridor,False,Low,5,Wednesday,15.814499816666666
+others,unknown,Non-corridor,False,Low,6,Wednesday,1670.6858849166667
+vehicle_breakdown,lcv,Non-corridor,False,Low,9,Wednesday,7.453080083333333
+accident,unknown,Airport New South Road,False,High,7,Wednesday,68.80150233333333
+vehicle_breakdown,private_car,Mysore Road,False,High,11,Wednesday,125.653309
+vehicle_breakdown,ksrtc_bus,Non-corridor,False,Low,6,Tuesday,38.49233733333333
+vehicle_breakdown,others,IRR(Thanisandra road),False,High,6,Tuesday,91.30090236666666
+vehicle_breakdown,bmtc_bus,Non-corridor,False,Low,11,Wednesday,19.639472016666662
+vehicle_breakdown,bmtc_bus,Bellary Road 2,False,High,7,Tuesday,59.57834488333333
+vehicle_breakdown,private_car,Tumkur Road,False,High,13,Wednesday,12.384581016666669
+vehicle_breakdown,bmtc_bus,Bannerghata Road,False,High,14,Wednesday,16.992135533333332
+vehicle_breakdown,private_bus,Non-corridor,False,Low,9,Tuesday,13.267902833333332
+vehicle_breakdown,private_bus,Bellary Road 2,False,High,0,Thursday,25.2987684
+vehicle_breakdown,lcv,Hosur Road,False,High,1,Thursday,2.26340155
+vehicle_breakdown,others,Non-corridor,False,Low,1,Thursday,25.79376715
+vehicle_breakdown,lcv,Tumkur Road,False,High,2,Thursday,16.656762166666667
+construction,unknown,Non-corridor,False,Low,2,Thursday,1311.6875813333331
+vehicle_breakdown,bmtc_bus,ORR East 2,False,High,3,Thursday,42.19713446666666
+vehicle_breakdown,bmtc_bus,Non-corridor,False,Low,4,Thursday,54.65853513333333
+vehicle_breakdown,bmtc_bus,Tumkur Road,False,High,4,Thursday,67.62782723333333
+others,unknown,Bellary Road 1,False,High,11,Tuesday,122.96864301666666
+vehicle_breakdown,bmtc_bus,Tumkur Road,False,High,5,Thursday,66.48960311666666
+vehicle_breakdown,others,Mysore Road,False,High,6,Thursday,79.15418580000001
+vehicle_breakdown,private_bus,Non-corridor,False,Low,7,Thursday,95.58107615
+vehicle_breakdown,lcv,Tumkur Road,False,High,11,Tuesday,84.46969001666666
+vehicle_breakdown,ksrtc_bus,Hosur Road,False,High,10,Thursday,14.2335291
+vehicle_breakdown,others,Old Madras Road,False,High,10,Thursday,33.5543789
+vehicle_breakdown,bmtc_bus,Varthur Road,False,High,10,Thursday,30.59855698333333
+vehicle_breakdown,bmtc_bus,Non-corridor,False,Low,13,Thursday,46.03317931666666
+vehicle_breakdown,heavy_vehicle,Tumkur Road,False,High,16,Tuesday,105.1540334
+vehicle_breakdown,heavy_vehicle,Mysore Road,False,High,0,Wednesday,97.20824538333332
+vehicle_breakdown,ksrtc_bus,Mysore Road,False,High,14,Thursday,24.78094095
+vehicle_breakdown,bmtc_bus,Non-corridor,False,Low,13,Thursday,103.95695343333334
+vehicle_breakdown,heavy_vehicle,ORR North 1,False,High,1,Wednesday,76.73107366666666
+vehicle_breakdown,private_bus,Bellary Road 1,False,High,0,Wednesday,25.9639683
+others,unknown,Non-corridor,False,Low,2,Friday,2024.4999115666665
+accident,unknown,Bellary Road 1,False,High,1,Friday,52.424526316666665
+vehicle_breakdown,ksrtc_bus,Non-corridor,False,Low,2,Wednesday,149.32047236666668
+vehicle_breakdown,private_bus,ORR West 1,False,High,1,Friday,21.186916433333334
+procession,unknown,Non-corridor,True,Low,3,Wednesday,6.63138725
+vehicle_breakdown,bmtc_bus,ORR East 1,False,High,4,Wednesday,10.15080115
+vehicle_breakdown,bmtc_bus,ORR East 1,False,High,4,Wednesday,146.0768349
+vehicle_breakdown,bmtc_bus,Non-corridor,False,Low,6,Friday,73.34186823333333
+vehicle_breakdown,bmtc_bus,Non-corridor,False,Low,5,Wednesday,56.47194215
+vehicle_breakdown,bmtc_bus,Mysore Road,False,High,7,Wednesday,63.26480105
+others,unknown,Varthur Road,False,High,10,Friday,99.1271216
+vehicle_breakdown,heavy_vehicle,Hennur Main Road,False,High,11,Friday,46.37305535
+tree_fall,unknown,Non-corridor,False,Low,9,Wednesday,16.442733933333333
+vehicle_breakdown,bmtc_bus,Non-corridor,False,Low,13,Friday,48.24556945
+vehicle_breakdown,private_car,Bellary Road 2,False,High,15,Friday,61.77526506666666
+vehicle_breakdown,taxi,Hosur Road,False,High,1,Saturday,89.98981611666666
+vehicle_breakdown,bmtc_bus,Non-corridor,False,Low,2,Saturday,102.37431906666669
+others,unknown,Hosur Road,False,High,2,Saturday,330.18084595
+tree_fall,unknown,Tumkur Road,False,High,11,Wednesday,239.9968421
+vehicle_breakdown,bmtc_bus,Mysore Road,False,High,7,Saturday,17.988405883333332
+vehicle_breakdown,others,Non-corridor,False,Low,9,Saturday,120.1229665
+vehicle_breakdown,private_bus,ORR East 2,False,High,12,Wednesday,18.770652916666663
+vehicle_breakdown,auto,Old Airport Road,False,High,9,Saturday,27.16510463333333
+vehicle_breakdown,bmtc_bus,Non-corridor,False,Low,11,Saturday,72.78544391666667
+vehicle_breakdown,private_car,Non-corridor,False,Low,11,Saturday,107.52890245
+vehicle_breakdown,truck,Old Madras Road,False,High,0,Sunday,55.235213316666666
+others,unknown,Mysore Road,False,High,0,Sunday,302.99378225
+vehicle_breakdown,private_bus,Magadi Road,False,High,2,Sunday,86.55830583333334
+vehicle_breakdown,private_car,Mysore Road,False,High,0,Thursday,78.09311583333333
+accident,unknown,ORR North 1,False,High,1,Thursday,34.21685993333333
+construction,unknown,Non-corridor,False,Low,6,Sunday,21.925417683333333
+vehicle_breakdown,private_car,Non-corridor,False,Low,10,Sunday,50.05725543333333
+vehicle_breakdown,bmtc_bus,Mysore Road,False,High,11,Sunday,39.02434768333333
+vehicle_breakdown,bmtc_bus,Non-corridor,False,Low,4,Thursday,84.40798688333332
+vehicle_breakdown,bmtc_bus,Mysore Road,False,High,3,Monday,23.780724000000003
+pot_holes,unknown,Non-corridor,False,Low,4,Monday,2122.3967791833334
+vehicle_breakdown,bmtc_bus,Mysore Road,False,High,4,Monday,60.74641678333333
+vehicle_breakdown,bmtc_bus,Non-corridor,False,Low,5,Monday,57.316075016666666
+others,unknown,Mysore Road,False,High,7,Thursday,6.82868555
+vehicle_breakdown,bmtc_bus,Mysore Road,False,High,12,Monday,90.19987731666669
+vehicle_breakdown,lcv,Bellary Road 1,False,High,10,Thursday,86.78634966666667
+vehicle_breakdown,bmtc_bus,Non-corridor,False,Low,10,Thursday,81.11977473333333
+vehicle_breakdown,private_car,Non-corridor,False,Low,15,Monday,8.9473605
+vehicle_breakdown,bmtc_bus,Magadi Road,False,High,11,Thursday,67.566669
+water_logging,unknown,Non-corridor,False,Low,2,Tuesday,4.666376866666667
+vehicle_breakdown,heavy_vehicle,Tumkur Road,False,High,1,Tuesday,21.935244516666668
+vehicle_breakdown,others,Non-corridor,False,Low,1,Tuesday,31.711534466666667
+vehicle_breakdown,private_car,Non-corridor,False,Low,2,Tuesday,121.07565023333332
+water_logging,unknown,Non-corridor,False,Low,2,Tuesday,121.41991448333332
+pot_holes,unknown,Bellary Road 1,False,High,1,Tuesday,3171.436475616667
+vehicle_breakdown,lcv,Tumkur Road,False,High,3,Tuesday,9.946038833333334
+pot_holes,unknown,CBD 1,True,High,2,Tuesday,45.08455431666666
+vehicle_breakdown,lcv,ORR West 1,False,High,12,Thursday,47.0778124
+accident,unknown,Hosur Road,False,High,4,Tuesday,19.286777033333333
+vehicle_breakdown,lcv,Bellary Road 1,False,High,4,Tuesday,26.211784233333333
+vehicle_breakdown,bmtc_bus,Mysore Road,False,High,5,Tuesday,20.760291183333333
+vehicle_breakdown,lcv,Tumkur Road,False,High,7,Tuesday,14.798998433333333
+water_logging,unknown,CBD 2,False,High,8,Tuesday,1397.64799305
+vehicle_breakdown,bmtc_bus,Tumkur Road,False,High,2,Friday,17.37361458333333
+vehicle_breakdown,bmtc_bus,Non-corridor,False,Low,2,Friday,137.26294234999995
+vehicle_breakdown,truck,Mysore Road,False,High,11,Tuesday,55.2758047
+vehicle_breakdown,bmtc_bus,Magadi Road,False,High,11,Tuesday,61.61077986666667
+vehicle_breakdown,bmtc_bus,Magadi Road,False,High,11,Tuesday,64.27595888333333
+vehicle_breakdown,private_car,Bellary Road 2,False,High,23,Tuesday,24.362505416666668
+others,unknown,Bellary Road 1,False,High,7,Friday,4304.7043229
+vehicle_breakdown,bmtc_bus,Tumkur Road,False,High,1,Wednesday,10.195782266666669
+vehicle_breakdown,private_bus,Mysore Road,False,High,2,Wednesday,6.759156316666666
+others,unknown,Mysore Road,False,High,0,Wednesday,2073.54119145
+vehicle_breakdown,bmtc_bus,Tumkur Road,False,High,6,Friday,23.556338
+others,unknown,Non-corridor,False,Low,2,Wednesday,1954.897802166667
+vehicle_breakdown,bmtc_bus,Mysore Road,False,High,12,Friday,112.59205778333332
+vehicle_breakdown,bmtc_bus,Non-corridor,False,Low,4,Wednesday,41.06278635
+vehicle_breakdown,bmtc_bus,Non-corridor,False,Low,5,Wednesday,63.735437633333326
+vehicle_breakdown,heavy_vehicle,ORR North 2,False,High,23,Friday,41.89284255
+tree_fall,unknown,Non-corridor,False,Low,1,Saturday,48.95543648333333
+vehicle_breakdown,ksrtc_bus,Bellary Road 1,False,High,2,Saturday,9.997270066666664
+vehicle_breakdown,bmtc_bus,Old Madras Road,False,High,7,Wednesday,18.148097683333333
+vehicle_breakdown,lcv,Mysore Road,False,High,8,Wednesday,32.78711466666667
+vehicle_breakdown,heavy_vehicle,Non-corridor,False,Low,9,Wednesday,104.44264348333331
+water_logging,unknown,Tumkur Road,False,High,11,Wednesday,72.85393916666666
+vehicle_breakdown,private_car,Mysore Road,False,High,4,Saturday,31.87520885
+vehicle_breakdown,bmtc_bus,Old Madras Road,False,High,4,Saturday,78.34826575000001
+vehicle_breakdown,bmtc_bus,Non-corridor,False,Low,6,Saturday,26.941963933333334
+vehicle_breakdown,heavy_vehicle,West of Chord Road,False,High,0,Thursday,24.466795816666668
+vehicle_breakdown,bmtc_bus,Non-corridor,False,Low,8,Saturday,158.45544278333332
+vehicle_breakdown,bmtc_bus,Non-corridor,False,Low,11,Saturday,70.00693796666665
+others,unknown,Tumkur Road,False,High,3,Thursday,1848.5386914833327
+construction,unknown,Non-corridor,True,Low,11,Saturday,3822.70962675
+vehicle_breakdown,heavy_vehicle,Non-corridor,False,Low,4,Thursday,39.13312485
+vehicle_breakdown,heavy_vehicle,Varthur Road,False,High,8,Thursday,122.43185746666668
+others,unknown,Tumkur Road,False,High,9,Thursday,243.29029311666667
+vehicle_breakdown,bmtc_bus,Non-corridor,False,Low,10,Thursday,13.885744066666666
+water_logging,unknown,Non-corridor,False,Low,10,Thursday,165.4671482
+tree_fall,unknown,Bellary Road 1,True,High,10,Thursday,971.1941217166666
+construction,unknown,Non-corridor,False,Low,10,Thursday,3954.1524874666666
+tree_fall,unknown,Non-corridor,True,Low,10,Thursday,63.69129203333333
+tree_fall,unknown,Non-corridor,False,Low,16,Saturday,412.24392695
+construction,unknown,Non-corridor,False,Low,10,Thursday,1464.6774282
+vehicle_breakdown,lcv,Tumkur Road,False,High,0,Sunday,29.151570016666668
+vehicle_breakdown,heavy_vehicle,Mysore Road,False,High,0,Sunday,22.22487305
+vehicle_breakdown,heavy_vehicle,ORR North 1,False,High,0,Sunday,36.730649516666666
+accident,unknown,Bellary Road 1,False,High,0,Sunday,47.1991773
+tree_fall,unknown,Non-corridor,True,Low,11,Thursday,4073.313846416667
+tree_fall,unknown,Mysore Road,False,High,11,Thursday,829.2974442333333
+water_logging,unknown,Hosur Road,False,High,11,Thursday,2847.0369545333333
+water_logging,unknown,ORR West 1,False,High,11,Thursday,1218.6891324166668
+water_logging,unknown,Old Airport Road,False,High,11,Thursday,93.40865363333334
+water_logging,unknown,ORR East 2,False,High,11,Thursday,30.67920825
+water_logging,unknown,Mysore Road,True,High,11,Thursday,177.56342588333334
+water_logging,unknown,Non-corridor,False,Low,11,Thursday,3898.6085132
+others,unknown,Non-corridor,False,Low,3,Sunday,1291.4888951166663
+tree_fall,unknown,ORR West 1,False,High,11,Thursday,66.95399586666666
+tree_fall,unknown,Non-corridor,True,Low,11,Thursday,1114.93334045
+water_logging,unknown,Non-corridor,True,Low,11,Thursday,2421.883144183333
+water_logging,unknown,Non-corridor,False,Low,11,Thursday,188.00503193333333
+tree_fall,unknown,Non-corridor,False,Low,11,Thursday,18.08276255
+vehicle_breakdown,bmtc_bus,Bannerghata Road,False,High,10,Sunday,146.04922566666667
+water_logging,unknown,Bellary Road 1,False,High,11,Thursday,3886.3786027166666
+vehicle_breakdown,lcv,Tumkur Road,False,High,11,Sunday,108.20570536666668
+tree_fall,unknown,Non-corridor,True,Low,11,Thursday,2904.70705535
+water_logging,unknown,Non-corridor,True,Low,11,Thursday,71.25115430000001
+water_logging,unknown,Non-corridor,True,Low,11,Thursday,149.96828003333334
+tree_fall,unknown,Non-corridor,False,Low,11,Thursday,914.0249496
+water_logging,unknown,Old Madras Road,True,High,11,Thursday,201.7505084166667
+tree_fall,unknown,Tumkur Road,False,High,11,Thursday,933.8846359333334
+water_logging,unknown,ORR West 1,False,High,11,Thursday,1190.4635745833334
+water_logging,unknown,ORR West 1,False,High,11,Thursday,118.58968551666666
+tree_fall,unknown,Non-corridor,True,Low,12,Thursday,220.2884145333333
+water_logging,unknown,Bellary Road 1,False,High,11,Thursday,42.345254966666666
+vehicle_breakdown,bmtc_bus,Bannerghata Road,False,High,12,Thursday,108.71099421666666
+vehicle_breakdown,bmtc_bus,Mysore Road,False,High,13,Sunday,93.48512965
+vehicle_breakdown,others,Bellary Road 2,False,High,12,Thursday,151.79433328333334
+vehicle_breakdown,private_car,ORR East 1,False,High,14,Sunday,16.044057783333333
+vehicle_breakdown,bmtc_bus,Bannerghata Road,False,High,14,Sunday,34.15102665
+vehicle_breakdown,private_bus,Tumkur Road,False,High,15,Sunday,91.52639778333334
+others,unknown,Non-corridor,False,Low,12,Thursday,2163.54553765
+vehicle_breakdown,others,Mysore Road,False,High,2,Monday,35.252319033333336
+tree_fall,unknown,Non-corridor,False,Low,12,Thursday,1173.623239883333
+water_logging,unknown,Bannerghata Road,False,High,12,Thursday,2294.902803066667
+water_logging,unknown,Non-corridor,False,Low,12,Thursday,282.94748196666666
+water_logging,unknown,Non-corridor,False,Low,12,Thursday,1785.8880387
+others,unknown,Tumkur Road,False,High,2,Monday,61.567407450000005
+water_logging,unknown,Non-corridor,False,Low,12,Thursday,2863.879304833333
+others,unknown,Mysore Road,False,High,4,Monday,16.937478916666667
+vehicle_breakdown,bmtc_bus,Old Madras Road,False,High,5,Monday,41.53308571666666
+tree_fall,unknown,Non-corridor,True,Low,6,Monday,76.98202371666666
+water_logging,unknown,ORR East 1,False,High,12,Thursday,759.0033270166666
+vehicle_breakdown,truck,Non-corridor,False,Low,7,Monday,133.49633208333333
+vehicle_breakdown,lcv,Mysore Road,False,High,7,Monday,32.21089145
+water_logging,unknown,Non-corridor,False,Low,13,Thursday,2055.8126417666667
+vehicle_breakdown,bmtc_bus,Non-corridor,False,Low,9,Monday,9.313865683333336
+vehicle_breakdown,taxi,Hosur Road,False,High,9,Monday,133.745803
+vehicle_breakdown,bmtc_bus,Non-corridor,False,Low,12,Monday,18.82696628333333
+tree_fall,unknown,Non-corridor,True,Low,13,Thursday,1414.7297125500002
+vehicle_breakdown,bmtc_bus,Non-corridor,False,Low,14,Thursday,23.6800304
+vehicle_breakdown,private_car,Bellary Road 1,False,High,17,Monday,12.157235616666666
+vehicle_breakdown,bmtc_bus,Non-corridor,False,Low,23,Monday,162.0998554
+road_conditions,unknown,Non-corridor,False,Low,17,Thursday,625.0678506666667
+vehicle_breakdown,others,Non-corridor,False,Low,3,Tuesday,43.03527413333334
+vehicle_breakdown,bmtc_bus,Non-corridor,False,Low,3,Tuesday,79.89617193333333
+others,unknown,ORR East 2,False,High,3,Tuesday,91.73039343333332
+vehicle_breakdown,others,West of Chord Road,False,High,5,Tuesday,26.33293743333333
+vehicle_breakdown,heavy_vehicle,ORR East 2,False,High,8,Tuesday,21.8926714
+construction,unknown,Non-corridor,False,Low,8,Tuesday,2926.57525605
+vehicle_breakdown,bmtc_bus,ORR East 1,False,High,9,Tuesday,15.380214683333332
+vehicle_breakdown,bmtc_bus,Non-corridor,False,Low,9,Tuesday,24.38405428333333
+water_logging,unknown,Old Madras Road,False,High,10,Tuesday,34.37859473333333
+water_logging,unknown,Non-corridor,False,Low,10,Tuesday,171.4411991
+water_logging,unknown,West of Chord Road,False,High,10,Tuesday,79.3147058
+water_logging,unknown,Mysore Road,True,High,10,Tuesday,106.8736322
+water_logging,unknown,Non-corridor,False,Low,10,Tuesday,389.9546150833333
+water_logging,unknown,Mysore Road,False,High,10,Tuesday,25.36718933333333
+water_logging,unknown,Bellary Road 1,False,High,10,Tuesday,38.08992445
+tree_fall,unknown,West of Chord Road,False,High,10,Tuesday,72.68515286666667
+water_logging,unknown,Bellary Road 1,False,High,10,Tuesday,4022.929784933333
+water_logging,unknown,Non-corridor,False,Low,10,Tuesday,24.84664738333333
+accident,unknown,Non-corridor,False,Low,10,Tuesday,42.8945817
+water_logging,unknown,Mysore Road,False,High,11,Tuesday,324.67876015
+water_logging,unknown,ORR North 1,False,High,11,Tuesday,984.9738974833332
+water_logging,unknown,ORR North 1,False,High,10,Tuesday,997.1460983833332
+tree_fall,unknown,ORR North 1,False,High,11,Tuesday,191.9047068333333
+tree_fall,unknown,Magadi Road,False,High,11,Tuesday,9.963474483333332
+tree_fall,unknown,Airport New South Road,True,High,11,Tuesday,18.271439616666665
+water_logging,unknown,Tumkur Road,False,High,11,Tuesday,1345.3929395666669
+road_conditions,unknown,Bellary Road 2,True,High,11,Tuesday,58.72275493333333
+pot_holes,unknown,ORR North 1,False,High,11,Tuesday,135.51806013333334
+water_logging,unknown,Non-corridor,False,Low,11,Tuesday,2860.77638925
+vehicle_breakdown,bmtc_bus,Magadi Road,False,High,12,Tuesday,46.057772066666665
+others,unknown,ORR West 1,False,High,12,Tuesday,36.40983923333333
+vehicle_breakdown,private_bus,Hosur Road,False,High,13,Tuesday,82.93424305
+water_logging,unknown,ORR North 2,False,High,12,Tuesday,2790.3985524
+vehicle_breakdown,lcv,ORR East 2,False,High,23,Tuesday,25.358829383333333
+vehicle_breakdown,heavy_vehicle,ORR North 1,False,High,23,Tuesday,124.40155733333332
+water_logging,unknown,Non-corridor,False,Low,2,Wednesday,230.06940948333332
+tree_fall,unknown,Bellary Road 1,False,High,2,Wednesday,115.15186836666666
+tree_fall,unknown,Non-corridor,True,Low,3,Wednesday,173.99265736666666
+vehicle_breakdown,private_car,Bellary Road 1,False,High,4,Wednesday,16.297705333333333
+vehicle_breakdown,bmtc_bus,Mysore Road,False,High,5,Wednesday,6.283415033333333
+vehicle_breakdown,heavy_vehicle,Mysore Road,False,High,5,Wednesday,59.30142481666667
+vehicle_breakdown,taxi,ORR East 2,False,High,9,Wednesday,33.80299288333333
+others,unknown,Non-corridor,False,Low,7,Wednesday,88.10845821666666
+vehicle_breakdown,bmtc_bus,ORR East 1,False,High,9,Wednesday,64.20612750000001
+others,unknown,Non-corridor,False,Low,11,Wednesday,17.946091666666668
+vehicle_breakdown,others,ORR North 1,False,High,0,Thursday,35.82966003333333
+vehicle_breakdown,private_bus,Bellary Road 1,False,High,1,Thursday,23.154083816666667
+pot_holes,unknown,Varthur Road,False,High,1,Thursday,1484.128609333333
+vehicle_breakdown,others,Old Madras Road,False,High,3,Thursday,13.457770483333332
+vehicle_breakdown,bmtc_bus,Non-corridor,False,Low,3,Thursday,51.76279426666667
+vehicle_breakdown,bmtc_bus,IRR(Thanisandra road),False,High,6,Thursday,18.787546516666666
+vehicle_breakdown,private_car,CBD 1,False,High,7,Thursday,44.65402225
+vehicle_breakdown,others,ORR East 1,False,High,8,Thursday,76.91394981666667
+vehicle_breakdown,truck,Mysore Road,False,High,9,Thursday,17.55729665
+others,unknown,Non-corridor,True,Low,10,Thursday,51.695509916666666
+vehicle_breakdown,bmtc_bus,Hosur Road,False,High,11,Thursday,65.48031155
+vehicle_breakdown,bmtc_bus,Non-corridor,False,Low,12,Thursday,66.91385481666667
+vehicle_breakdown,lcv,ORR East 1,False,High,2,Friday,30.901282016666663
+vehicle_breakdown,others,Old Madras Road,False,High,2,Friday,36.214431233333336
+vehicle_breakdown,heavy_vehicle,Tumkur Road,False,High,3,Friday,49.94344546666667
+pot_holes,unknown,Non-corridor,False,Low,3,Friday,19.20661473333333
+tree_fall,unknown,Non-corridor,True,Low,3,Friday,59.84010705
+vehicle_breakdown,bmtc_bus,Hosur Road,False,High,3,Friday,99.30421715
+pot_holes,unknown,Non-corridor,False,Low,3,Friday,17.4932504
+pot_holes,unknown,Non-corridor,False,Low,3,Friday,14.928576566666669
+pot_holes,unknown,Non-corridor,False,Low,3,Friday,15.4770977
+pot_holes,unknown,Non-corridor,False,Low,3,Friday,16.411283
+pot_holes,unknown,Non-corridor,False,Low,3,Friday,16.9942509
+pot_holes,unknown,Non-corridor,False,Low,3,Friday,18.3650141
+pot_holes,unknown,Non-corridor,False,Low,3,Friday,14.3002825
+pot_holes,unknown,Non-corridor,False,Low,3,Friday,12.506670883333332
+pot_holes,unknown,Non-corridor,False,Low,3,Friday,13.0632383
+pot_holes,unknown,Non-corridor,False,Low,3,Friday,9.87261625
+vehicle_breakdown,heavy_vehicle,Tumkur Road,False,High,3,Friday,47.03375918333334
+vehicle_breakdown,heavy_vehicle,Non-corridor,False,Low,6,Friday,129.54430614999998
+vehicle_breakdown,bmtc_bus,Non-corridor,False,Low,6,Friday,30.303397416666662
+vehicle_breakdown,private_car,ORR East 1,False,High,12,Friday,18.49158505
+tree_fall,unknown,Non-corridor,True,Low,12,Friday,123.11069673333331
+tree_fall,unknown,ORR North 1,False,High,12,Friday,27.822454966666665
+vehicle_breakdown,bmtc_bus,Non-corridor,False,Low,12,Friday,29.09114751666667
+tree_fall,unknown,Airport New South Road,False,High,12,Friday,55.80160463333333
+vehicle_breakdown,bmtc_bus,ORR East 1,False,High,12,Friday,147.82595933333332
+water_logging,unknown,ORR North 1,False,High,12,Friday,80.64387239999999
+vehicle_breakdown,bmtc_bus,Old Airport Road,False,High,12,Friday,118.12879753333333
+water_logging,unknown,Non-corridor,False,Low,12,Friday,831.3955135166667
+water_logging,unknown,Non-corridor,False,Low,12,Friday,2397.0427186
+vehicle_breakdown,bmtc_bus,Magadi Road,False,High,12,Friday,32.77034728333334
+tree_fall,unknown,Mysore Road,True,High,12,Friday,185.27675816666667
+others,unknown,ORR East 2,False,High,12,Friday,52.82519771666667
+water_logging,unknown,Non-corridor,False,Low,12,Friday,33.98230143333333
+tree_fall,unknown,Non-corridor,False,Low,12,Friday,62.6290118
+water_logging,unknown,Mysore Road,False,High,12,Friday,841.5602696333333
+water_logging,unknown,Non-corridor,False,Low,12,Friday,70.98094761666667
+water_logging,unknown,Non-corridor,False,Low,13,Friday,846.7670525833333
+vehicle_breakdown,others,Non-corridor,False,Low,14,Friday,108.5029804
+water_logging,unknown,Non-corridor,False,Low,17,Friday,81.68219065
+vehicle_breakdown,bmtc_bus,Non-corridor,False,Low,1,Saturday,23.377118366666664
+construction,unknown,ORR East 2,False,High,1,Saturday,397.8982905833333
+road_conditions,unknown,Mysore Road,True,High,0,Saturday,3223.2303516666666
+accident,unknown,Tumkur Road,False,High,2,Saturday,62.21196405
+vehicle_breakdown,private_bus,Hosur Road,False,High,2,Saturday,46.13815655
+vehicle_breakdown,taxi,Bellary Road 1,False,High,3,Saturday,115.88590868333334
+vehicle_breakdown,heavy_vehicle,Tumkur Road,False,High,3,Saturday,105.8915411
+tree_fall,unknown,Non-corridor,False,Low,4,Saturday,40.36682893333333
+tree_fall,unknown,Non-corridor,True,Low,4,Saturday,29.77319076666667
+vehicle_breakdown,bmtc_bus,Bannerghata Road,False,High,4,Saturday,79.09793438333332
+vehicle_breakdown,lcv,ORR West 1,False,High,5,Saturday,15.052173633333332
+vehicle_breakdown,others,ORR East 2,False,High,7,Saturday,27.418236333333333
+vehicle_breakdown,heavy_vehicle,ORR East 1,False,High,8,Saturday,30.649880516666663
+vehicle_breakdown,private_bus,Non-corridor,True,Low,10,Saturday,50.121874866666666
+vehicle_breakdown,others,Magadi Road,False,High,10,Saturday,60.88455116666667
+vehicle_breakdown,bmtc_bus,Non-corridor,False,Low,10,Saturday,32.11716358333334
+vehicle_breakdown,bmtc_bus,Old Madras Road,False,High,10,Saturday,18.52816173333333
+others,unknown,Bellary Road 1,False,High,10,Saturday,1273.2366011333334
+vehicle_breakdown,others,Non-corridor,False,Low,10,Saturday,40.62272716666666
+vehicle_breakdown,private_bus,Hosur Road,False,High,10,Saturday,107.0100683
+tree_fall,unknown,Non-corridor,True,Low,23,Saturday,107.3134921
+vehicle_breakdown,heavy_vehicle,Non-corridor,False,Low,1,Sunday,6.343955466666667
+vehicle_breakdown,private_bus,Mysore Road,False,High,1,Sunday,97.06916886666666
+pot_holes,unknown,ORR West 1,False,High,2,Sunday,109.2543058
+tree_fall,unknown,West of Chord Road,False,High,3,Sunday,3476.3552569333333
+vehicle_breakdown,lcv,Non-corridor,False,Low,3,Sunday,19.155355633333333
+vehicle_breakdown,private_bus,Hosur Road,False,High,7,Sunday,22.957331716666665
+others,unknown,Bellary Road 1,False,High,7,Sunday,21.59410468333333
+vehicle_breakdown,private_bus,Non-corridor,False,Low,7,Sunday,123.76114395
+vehicle_breakdown,heavy_vehicle,Non-corridor,False,Low,7,Sunday,12.062376916666668
+vehicle_breakdown,lcv,Non-corridor,False,Low,6,Sunday,110.94811855
+vehicle_breakdown,ksrtc_bus,Bellary Road 1,False,High,8,Sunday,19.97699008333333
+vehicle_breakdown,bmtc_bus,Tumkur Road,False,High,9,Sunday,86.64108061666667
+vehicle_breakdown,heavy_vehicle,Non-corridor,False,Low,9,Sunday,4.059924333333333
+others,unknown,Non-corridor,False,Low,11,Sunday,101.6763598
+vehicle_breakdown,bmtc_bus,Old Airport Road,False,High,12,Sunday,122.7237518
+vehicle_breakdown,bmtc_bus,Non-corridor,False,Low,12,Sunday,90.95861588333334
+vehicle_breakdown,lcv,Bellary Road 1,False,High,0,Monday,24.24073986666667
+vehicle_breakdown,others,ORR North 2,False,High,2,Monday,41.59923455
+vehicle_breakdown,heavy_vehicle,Mysore Road,False,High,3,Monday,18.0877439
+others,unknown,IRR(Thanisandra road),False,High,7,Monday,65.08393731666666
+construction,unknown,Non-corridor,False,Low,7,Monday,2963.87893805
+vehicle_breakdown,bmtc_bus,Non-corridor,False,Low,8,Monday,131.94412271666667
+others,unknown,Tumkur Road,False,High,10,Monday,92.57581136666666
+accident,unknown,Bellary Road 2,False,High,14,Monday,111.00052843333332
+vehicle_breakdown,heavy_vehicle,ORR North 2,False,High,23,Monday,75.40505538333333
+vehicle_breakdown,lcv,Non-corridor,False,Low,0,Tuesday,68.49113005
+others,unknown,Bellary Road 1,False,High,23,Monday,2439.674774333333
+others,unknown,Non-corridor,False,Low,2,Tuesday,235.79430155
+vehicle_breakdown,lcv,ORR East 1,False,High,1,Tuesday,145.02591746666667
+vehicle_breakdown,bmtc_bus,Old Airport Road,True,High,5,Tuesday,14.23674055
+vehicle_breakdown,truck,ORR North 1,False,High,7,Tuesday,37.87514003333333
+vehicle_breakdown,others,Bellary Road 1,False,High,10,Tuesday,136.31685245
+others,unknown,ORR North 2,False,High,10,Tuesday,30.405308533333333
+water_logging,unknown,Bannerghata Road,False,High,11,Tuesday,2414.280303016667
+vehicle_breakdown,bmtc_bus,Mysore Road,False,High,11,Tuesday,40.551200216666665
+vehicle_breakdown,others,Bellary Road 1,False,High,12,Tuesday,79.2974488
+vehicle_breakdown,heavy_vehicle,Mysore Road,False,High,13,Tuesday,35.1868439
+vehicle_breakdown,private_car,Mysore Road,False,High,14,Tuesday,70.84477651666666
+vehicle_breakdown,truck,Mysore Road,False,High,0,Wednesday,38.20066928333333
+others,unknown,Bellary Road 2,False,High,2,Wednesday,241.04827926666667
+vehicle_breakdown,others,Varthur Road,False,High,1,Wednesday,46.857148433333336
+vehicle_breakdown,heavy_vehicle,Non-corridor,False,Low,1,Wednesday,64.38512095
+tree_fall,unknown,Tumkur Road,False,High,2,Wednesday,625.2399286
+vehicle_breakdown,private_car,Bellary Road 1,False,High,4,Wednesday,15.27002655
+vehicle_breakdown,bmtc_bus,Tumkur Road,False,High,7,Wednesday,59.305708083333336
+vehicle_breakdown,lcv,ORR East 1,False,High,8,Wednesday,110.08692461666666
+vehicle_breakdown,heavy_vehicle,Mysore Road,False,High,9,Wednesday,115.65848086666666
+vehicle_breakdown,heavy_vehicle,Mysore Road,False,High,10,Wednesday,41.90043643333333
+others,unknown,Non-corridor,False,Low,10,Wednesday,48.774039916666666
+vehicle_breakdown,private_car,Non-corridor,False,Low,10,Wednesday,61.62912321666667
+vehicle_breakdown,private_car,Tumkur Road,False,High,12,Wednesday,36.63884388333334
+water_logging,unknown,Bellary Road 1,False,High,12,Wednesday,166.96345176666668
+water_logging,unknown,Non-corridor,False,Low,12,Wednesday,200.69236025
+tree_fall,unknown,ORR North 1,True,High,12,Wednesday,91.21919121666666
+tree_fall,unknown,Non-corridor,True,Low,12,Wednesday,925.7372646833334
+water_logging,unknown,Non-corridor,False,Low,12,Wednesday,1006.1655060333334
+tree_fall,unknown,ORR North 1,True,High,12,Wednesday,1460.2014964666666
+water_logging,unknown,Bellary Road 1,False,High,12,Wednesday,47.0575782
+water_logging,unknown,Tumkur Road,False,High,12,Wednesday,290.6539000166667
+others,unknown,Non-corridor,False,Low,12,Wednesday,995.1403278833332
+water_logging,unknown,Mysore Road,False,High,12,Wednesday,41.50739275
+tree_fall,unknown,Non-corridor,True,Low,12,Wednesday,910.6879625166667
+water_logging,unknown,Bellary Road 2,False,High,13,Wednesday,2770.8328553166666
+water_logging,unknown,Non-corridor,False,Low,13,Wednesday,30.881768916666665
+tree_fall,unknown,Non-corridor,False,Low,13,Wednesday,18.83196996666667
+water_logging,unknown,Tumkur Road,False,High,13,Wednesday,22.479101616666664
+vehicle_breakdown,lcv,Tumkur Road,False,High,14,Wednesday,27.599997716666667
+tree_fall,unknown,West of Chord Road,False,High,14,Wednesday,33.88522995
+vehicle_breakdown,private_car,Tumkur Road,False,High,14,Wednesday,14.710999483333334
+vehicle_breakdown,private_bus,West of Chord Road,False,High,15,Wednesday,40.58120198333334
+tree_fall,unknown,Non-corridor,True,Low,15,Wednesday,32.49691728333333
+vehicle_breakdown,heavy_vehicle,Bellary Road 2,False,High,0,Thursday,20.8340875
+others,unknown,West of Chord Road,False,High,0,Thursday,72.12592303333332
+construction,unknown,Non-corridor,False,Low,2,Thursday,46.82045858333333
+others,unknown,Non-corridor,False,Low,2,Thursday,63.64818135
+vehicle_breakdown,bmtc_bus,Mysore Road,False,High,2,Thursday,48.24166831666666
+vehicle_breakdown,bmtc_bus,Non-corridor,False,Low,3,Thursday,25.40089808333333
+tree_fall,unknown,Non-corridor,True,Low,3,Thursday,90.36818116666667
+others,unknown,Bellary Road 1,False,High,3,Thursday,72.40414826666667
+vehicle_breakdown,heavy_vehicle,Non-corridor,False,Low,3,Thursday,86.31497898333333
+vehicle_breakdown,bmtc_bus,Bannerghata Road,False,High,3,Thursday,122.30917251666666
+tree_fall,unknown,Non-corridor,False,Low,3,Thursday,1470.0430083666663
+tree_fall,unknown,Non-corridor,False,Low,3,Thursday,1440.6003920833332
+tree_fall,unknown,Non-corridor,False,Low,3,Thursday,2916.2087200166666
+vehicle_breakdown,bmtc_bus,Bellary Road 1,False,High,7,Tuesday,95.4360007
+tree_fall,unknown,Non-corridor,False,Low,4,Thursday,1411.9529853499998
+pot_holes,unknown,ORR East 1,False,High,7,Thursday,1197.5816577
+vehicle_breakdown,others,Non-corridor,False,Low,10,Thursday,30.141555516666664
+vehicle_breakdown,truck,Non-corridor,False,Low,10,Thursday,39.16560811666667
+pot_holes,unknown,Non-corridor,True,Low,11,Thursday,226.26411701666663
+vehicle_breakdown,bmtc_bus,Tumkur Road,False,High,11,Thursday,112.07015633333334
+vehicle_breakdown,bmtc_bus,ORR North 2,False,High,12,Thursday,123.6661835
+pot_holes,unknown,Tumkur Road,False,High,5,Friday,1924.8340301833332
+vehicle_breakdown,truck,Non-corridor,False,Low,7,Friday,24.55831028333333
+vehicle_breakdown,private_car,Mysore Road,False,High,7,Friday,76.01981826666666
+vehicle_breakdown,heavy_vehicle,Non-corridor,False,Low,10,Friday,27.298359316666662
+vehicle_breakdown,bmtc_bus,Non-corridor,False,Low,10,Friday,19.6133014
+vehicle_breakdown,bmtc_bus,Magadi Road,False,High,12,Friday,65.73336365
+water_logging,unknown,Hosur Road,False,High,13,Friday,142.49620595
+water_logging,unknown,Hosur Road,False,High,13,Friday,142.60774456666667
+tree_fall,unknown,Non-corridor,True,Low,13,Friday,16.979280016666667
+water_logging,unknown,Non-corridor,False,Low,13,Friday,40.03074528333333
+tree_fall,unknown,ORR West 1,False,High,13,Friday,72.61775473333334
+tree_fall,unknown,Non-corridor,True,Low,14,Friday,96.0607281
+tree_fall,unknown,Non-corridor,False,Low,13,Friday,1393.53298145
+water_logging,unknown,Hosur Road,False,High,14,Friday,49.00152443333333
+water_logging,unknown,ORR West 1,False,High,14,Friday,1373.5644947333335
+tree_fall,unknown,Non-corridor,True,Low,14,Friday,548.7531228
+tree_fall,unknown,Non-corridor,False,Low,15,Friday,1320.4380149333333
+tree_fall,unknown,Non-corridor,True,Low,16,Friday,536.49335105
+vehicle_breakdown,ksrtc_bus,Bellary Road 1,False,High,23,Friday,48.2565839
+vehicle_breakdown,lcv,Non-corridor,False,Low,2,Saturday,45.58134771666666
+tree_fall,unknown,West of Chord Road,False,High,3,Saturday,155.89571066666667
+vehicle_breakdown,others,Mysore Road,False,High,6,Saturday,26.13505413333333
+tree_fall,unknown,Non-corridor,False,Low,15,Friday,952.3543390833332
+vehicle_breakdown,ksrtc_bus,Old Madras Road,False,High,7,Saturday,35.63385138333333
+vehicle_breakdown,heavy_vehicle,Tumkur Road,False,High,8,Saturday,14.8788692
+others,unknown,Non-corridor,False,Low,9,Saturday,2533.2403664333333
+vehicle_breakdown,bmtc_bus,Non-corridor,False,Low,10,Saturday,48.53696371666667
+vehicle_breakdown,lcv,Mysore Road,False,High,10,Saturday,58.50245235
+water_logging,unknown,Non-corridor,False,Low,12,Saturday,4277.100367116666
+water_logging,unknown,Non-corridor,False,Low,11,Saturday,2869.6824818166665
+water_logging,unknown,ORR North 2,False,High,12,Saturday,106.64748336666666
+water_logging,unknown,Mysore Road,True,High,12,Saturday,34.89283663333333
+water_logging,unknown,Non-corridor,False,Low,12,Saturday,948.7411337666668
+water_logging,unknown,Non-corridor,False,Low,12,Saturday,63.20659305
+water_logging,unknown,Mysore Road,True,High,12,Saturday,214.5883546833333
+water_logging,unknown,Bellary Road 1,False,High,12,Saturday,160.49394478333335
+water_logging,unknown,Mysore Road,False,High,12,Saturday,2454.942666616667
+water_logging,unknown,Mysore Road,True,High,12,Saturday,102.53868266666667
+water_logging,unknown,Non-corridor,False,Low,12,Saturday,1437.0530988
+water_logging,unknown,ORR North 1,False,High,12,Saturday,46.07936715
+water_logging,unknown,Mysore Road,True,High,12,Saturday,32.478422933333334
+others,unknown,Non-corridor,True,Low,12,Saturday,56.71689196666667
+water_logging,unknown,Non-corridor,False,Low,12,Saturday,130.15376253333335
+tree_fall,unknown,Tumkur Road,False,High,12,Saturday,1153.7935038666667
+water_logging,unknown,Tumkur Road,False,High,12,Saturday,1416.37773795
+water_logging,unknown,Mysore Road,False,High,12,Saturday,14.584563283333331
+water_logging,unknown,Varthur Road,False,High,12,Saturday,35.91581583333333
+others,unknown,Non-corridor,True,Low,13,Saturday,1403.7603150166665
+tree_fall,unknown,Non-corridor,True,Low,13,Saturday,77.13955258333334
+vehicle_breakdown,lcv,Tumkur Road,False,High,13,Saturday,16.6484411
+vehicle_breakdown,others,Old Madras Road,False,High,0,Sunday,35.37574233333333
+vehicle_breakdown,others,Old Madras Road,False,High,1,Sunday,21.099181166666664
+tree_fall,unknown,Old Madras Road,False,High,0,Sunday,54.21143968333333
+others,unknown,Old Madras Road,False,High,0,Sunday,623.1539982833333
+tree_fall,unknown,Non-corridor,True,Low,1,Sunday,38.38311856666667
+vehicle_breakdown,bmtc_bus,Non-corridor,False,Low,2,Sunday,48.38570516666667
+water_logging,unknown,Non-corridor,False,Low,3,Sunday,100.9754557
+tree_fall,unknown,Bannerghata Road,True,High,4,Sunday,30.045177533333334
+vehicle_breakdown,heavy_vehicle,Non-corridor,False,Low,5,Sunday,13.937764283333332
+vehicle_breakdown,lcv,Non-corridor,False,Low,6,Sunday,21.3044091
+others,unknown,Mysore Road,True,High,6,Sunday,306.1306395666667
+vehicle_breakdown,private_car,Bellary Road 1,False,High,6,Sunday,62.002885516666666
+vehicle_breakdown,heavy_vehicle,Non-corridor,False,Low,7,Sunday,16.351039883333335
+vehicle_breakdown,heavy_vehicle,Tumkur Road,False,High,8,Sunday,100.47900773333336
+vehicle_breakdown,others,CBD 2,False,High,8,Sunday,6.410764866666667
+vehicle_breakdown,bmtc_bus,Non-corridor,False,Low,8,Sunday,149.70177753333334
+vehicle_breakdown,heavy_vehicle,Non-corridor,False,Low,9,Sunday,42.76717533333333
+vehicle_breakdown,private_car,Non-corridor,False,Low,9,Sunday,82.94842686666667
+vehicle_breakdown,bmtc_bus,Tumkur Road,False,High,10,Sunday,117.5478197
+vehicle_breakdown,heavy_vehicle,Magadi Road,False,High,10,Sunday,82.63382763333334
+vehicle_breakdown,heavy_vehicle,Tumkur Road,False,High,11,Sunday,9.90734335
+accident,unknown,Tumkur Road,False,High,10,Sunday,26.873762566666667
+vehicle_breakdown,bmtc_bus,IRR(Thanisandra road),False,High,10,Sunday,60.60606776666667
+pot_holes,unknown,Non-corridor,False,Low,11,Sunday,103.51557583333332
+tree_fall,unknown,Non-corridor,True,Low,11,Sunday,53.07258183333333
+vehicle_breakdown,ksrtc_bus,Bellary Road 1,False,High,12,Sunday,116.56037328333332
+water_logging,unknown,Magadi Road,False,High,11,Sunday,256.12679966666667
+tree_fall,unknown,Bellary Road 1,False,High,11,Sunday,1266.6776086833331
+water_logging,unknown,Bellary Road 1,False,High,11,Sunday,2756.454794866667
+vehicle_breakdown,bmtc_bus,ORR West 1,False,High,13,Sunday,42.17753376666667
+vehicle_breakdown,heavy_vehicle,ORR North 2,False,High,15,Sunday,59.8490193
+procession,unknown,Non-corridor,False,Low,2,Monday,91.63820131666668
+others,unknown,Non-corridor,False,Low,13,Monday,25.01378635
+vehicle_breakdown,private_car,Old Madras Road,False,High,8,Monday,26.570824366666667
+vehicle_breakdown,bmtc_bus,Bellary Road 1,False,High,8,Monday,51.01353958333333
+water_logging,unknown,Non-corridor,False,Low,13,Monday,34.769885716666664
+vehicle_breakdown,heavy_vehicle,Tumkur Road,False,High,16,Monday,35.686632450000005
+vehicle_breakdown,heavy_vehicle,Non-corridor,False,Low,3,Sunday,37.67183235
+construction,unknown,Airport New South Road,False,High,0,Tuesday,364.60111866666665
+vehicle_breakdown,truck,Bellary Road 2,False,High,12,Saturday,133.6017457
+vehicle_breakdown,truck,Non-corridor,False,Low,11,Tuesday,58.11503883333333
+vehicle_breakdown,lcv,Non-corridor,False,Low,12,Tuesday,86.67813828333333
+construction,unknown,Non-corridor,False,Low,13,Tuesday,1080.753416816667
+vehicle_breakdown,bmtc_bus,Non-corridor,False,Low,4,Saturday,133.06417406666665
+procession,unknown,Non-corridor,True,Low,14,Monday,38.40874121666666
+accident,unknown,Non-corridor,False,Low,4,Tuesday,43.29526675
+accident,unknown,Non-corridor,False,Low,6,Thursday,77.25445518333332
+accident,unknown,Non-corridor,False,Low,6,Thursday,57.72944888333333
+vehicle_breakdown,bmtc_bus,ORR West 1,False,High,2,Wednesday,26.65322595
+vehicle_breakdown,bmtc_bus,ORR North 1,False,High,3,Wednesday,34.82160695
+vehicle_breakdown,lcv,Non-corridor,False,Low,4,Wednesday,23.468869533333336
+vehicle_breakdown,heavy_vehicle,ORR North 2,False,High,6,Wednesday,73.26354786666667
+vehicle_breakdown,private_car,Non-corridor,False,Low,14,Thursday,76.8051597
+vehicle_breakdown,bmtc_bus,Non-corridor,False,Low,2,Thursday,103.6454872
+vehicle_breakdown,bmtc_bus,Non-corridor,False,Low,4,Thursday,12.0260546
+vehicle_breakdown,lcv,Non-corridor,False,Low,23,Thursday,58.99964246666666
+vehicle_breakdown,others,Non-corridor,False,Low,2,Friday,70.21878856666667
+vehicle_breakdown,bmtc_bus,Non-corridor,False,Low,14,Wednesday,75.99562091666667
+vehicle_breakdown,heavy_vehicle,Bellary Road 1,False,High,1,Thursday,119.66875773333332
+vehicle_breakdown,lcv,ORR North 1,False,High,3,Thursday,52.80341505
+vehicle_breakdown,heavy_vehicle,Non-corridor,False,Low,6,Friday,120.12128181666668
+vehicle_breakdown,heavy_vehicle,ORR North 1,False,High,6,Thursday,19.14146123333333
+vehicle_breakdown,bmtc_bus,Mysore Road,False,High,9,Thursday,7.899234916666667
+road_conditions,unknown,Non-corridor,False,Low,10,Thursday,2592.6318681333337
+vehicle_breakdown,heavy_vehicle,ORR East 1,False,High,1,Saturday,33.951876483333336
+vehicle_breakdown,bmtc_bus,Non-corridor,False,Low,3,Friday,45.277387833333336
+vehicle_breakdown,private_bus,Non-corridor,False,Low,1,Saturday,87.5886433
+vehicle_breakdown,bmtc_bus,Non-corridor,False,Low,2,Friday,147.50678613333332
+vehicle_breakdown,bmtc_bus,ORR East 1,False,High,4,Friday,79.75770394999999
+vehicle_breakdown,lcv,Non-corridor,False,Low,9,Friday,15.0543215
+vehicle_breakdown,ksrtc_bus,Tumkur Road,False,High,9,Friday,71.66411911666667
+vehicle_breakdown,bmtc_bus,Magadi Road,False,High,11,Saturday,23.92499288333333
+construction,unknown,Non-corridor,True,Low,4,Saturday,212.49775946666665
+vehicle_breakdown,others,Non-corridor,False,Low,3,Sunday,22.6700687
+others,unknown,Bellary Road 1,False,High,12,Saturday,1019.0574604
+vehicle_breakdown,heavy_vehicle,Hennur Main Road,True,High,5,Sunday,31.50097945
+vehicle_breakdown,lcv,ORR East 2,False,High,7,Sunday,31.0078949
+vehicle_breakdown,lcv,Bellary Road 1,False,High,5,Sunday,14.120967933333333
+vehicle_breakdown,heavy_vehicle,Non-corridor,False,Low,7,Sunday,37.96253371666667
+others,unknown,Bellary Road 1,False,High,10,Sunday,15.16647845
+others,unknown,Non-corridor,False,Low,15,Sunday,43.93024606666667
+others,unknown,Non-corridor,False,Low,12,Sunday,36.25226046666667
+vehicle_breakdown,bmtc_bus,Magadi Road,False,High,12,Sunday,17.286109166666666
+vehicle_breakdown,truck,Non-corridor,False,Low,13,Sunday,81.40570293333333
+vehicle_breakdown,bmtc_bus,Magadi Road,False,High,12,Saturday,32.2544127
+vehicle_breakdown,private_car,Bellary Road 1,False,High,12,Saturday,27.512111066666662
+construction,unknown,Non-corridor,False,Low,5,Monday,422.84670481666666
+vehicle_breakdown,others,Non-corridor,True,Low,9,Monday,79.95452736666667
+vehicle_breakdown,heavy_vehicle,ORR North 2,True,High,18,Saturday,47.18853848333333
+vehicle_breakdown,bmtc_bus,ORR North 2,False,High,1,Wednesday,119.49004745
+vehicle_breakdown,private_bus,Bellary Road 1,False,High,2,Sunday,84.78185871666666
+vehicle_breakdown,lcv,Non-corridor,False,Low,5,Sunday,104.65397676666666
+vehicle_breakdown,lcv,Hosur Road,False,High,6,Sunday,40.8658856
+vehicle_breakdown,lcv,Non-corridor,False,Low,3,Wednesday,117.5667829
+vehicle_breakdown,heavy_vehicle,Bellary Road 2,False,High,10,Sunday,61.77776111666667
+vehicle_breakdown,ksrtc_bus,Non-corridor,False,Low,11,Sunday,17.657173883333332
+road_conditions,unknown,Bellary Road 1,False,High,8,Wednesday,1080.0639682
+others,unknown,Non-corridor,False,Low,10,Wednesday,34.33242193333333
+vehicle_breakdown,bmtc_bus,Bellary Road 1,False,High,10,Monday,66.08000601666667
+construction,unknown,Non-corridor,False,Low,2,Sunday,2088.7512201166664
+road_conditions,unknown,Airport New South Road,False,High,0,Tuesday,413.53389055
+vehicle_breakdown,lcv,Non-corridor,True,Low,14,Monday,29.33008175
+accident,unknown,Bellary Road 1,False,High,2,Tuesday,77.10802596666667
+pot_holes,unknown,ORR East 1,False,High,2,Tuesday,4312.2463811
+vehicle_breakdown,bmtc_bus,Bellary Road 1,False,High,7,Monday,36.41474506666667
+vehicle_breakdown,truck,Tumkur Road,False,High,1,Tuesday,84.17469084999999
+vehicle_breakdown,lcv,Non-corridor,False,Low,8,Monday,68.62886456666666
+accident,unknown,Non-corridor,False,Low,10,Tuesday,36.671183766666665
+vehicle_breakdown,others,Varthur Road,False,High,7,Thursday,7.910359416666666
+vehicle_breakdown,bmtc_bus,Non-corridor,True,Low,1,Tuesday,43.90709898333333
+vehicle_breakdown,bmtc_bus,ORR West 1,False,High,10,Thursday,96.0197339
+vehicle_breakdown,bmtc_bus,Mysore Road,False,High,11,Thursday,112.81719833333334
+vehicle_breakdown,heavy_vehicle,Magadi Road,False,High,5,Tuesday,8.331595366666667
+vehicle_breakdown,bmtc_bus,Hosur Road,False,High,12,Thursday,76.14695535000001
+protest,unknown,Non-corridor,False,Low,4,Wednesday,18.243379033333333
+vehicle_breakdown,heavy_vehicle,Magadi Road,False,High,5,Wednesday,34.93821658333333
+others,unknown,Bellary Road 1,True,High,7,Tuesday,75.32430751666668
+vehicle_breakdown,heavy_vehicle,Non-corridor,False,Low,9,Wednesday,13.8765319
+vehicle_breakdown,bmtc_bus,ORR East 1,False,High,1,Friday,13.849933383333331
+road_conditions,unknown,Airport New South Road,True,High,10,Wednesday,875.3519315
+vehicle_breakdown,bmtc_bus,Non-corridor,False,Low,11,Tuesday,55.27947091666667
+vehicle_breakdown,bmtc_bus,Non-corridor,False,Low,12,Tuesday,61.12860748333333
+vehicle_breakdown,others,Non-corridor,False,Low,3,Thursday,98.90068815
+tree_fall,unknown,Non-corridor,False,Low,12,Tuesday,90.51336833333332
+vehicle_breakdown,lcv,Magadi Road,False,High,14,Tuesday,49.2026263
+accident,unknown,Non-corridor,False,Low,8,Friday,107.37691118333332
+vehicle_breakdown,bmtc_bus,ORR East 1,False,High,11,Thursday,89.75760016666666
+vehicle_breakdown,heavy_vehicle,Non-corridor,False,Low,8,Friday,57.23335346666667
+vehicle_breakdown,heavy_vehicle,Non-corridor,False,Low,2,Friday,86.91129488333333
+vehicle_breakdown,others,Non-corridor,True,Low,11,Friday,91.56274088333332
+vehicle_breakdown,lcv,ORR North 2,False,High,1,Friday,70.69381796666667
+others,unknown,Non-corridor,False,Low,2,Friday,44.664516866666666
+others,unknown,ORR North 2,False,High,14,Friday,112.90304878333332
+vehicle_breakdown,bmtc_bus,Bellary Road 1,False,High,6,Friday,33.71249048333333
+vehicle_breakdown,bmtc_bus,Bellary Road 1,False,High,0,Saturday,52.97608373333333
+vehicle_breakdown,bmtc_bus,Non-corridor,False,Low,1,Saturday,39.61189256666667
+vehicle_breakdown,bmtc_bus,Non-corridor,False,Low,2,Saturday,32.548574
+others,unknown,Bellary Road 1,False,High,3,Saturday,452.1203694833333
+others,unknown,ORR North 2,False,High,2,Saturday,142.48538508333334
+vehicle_breakdown,heavy_vehicle,Non-corridor,False,Low,6,Saturday,14.0151522
+others,unknown,ORR North 2,False,High,8,Saturday,205.8966446
+vehicle_breakdown,ksrtc_bus,Bellary Road 1,False,High,10,Saturday,94.6911131
+accident,unknown,Non-corridor,False,Low,14,Saturday,26.38407085
+vehicle_breakdown,bmtc_bus,Non-corridor,False,Low,11,Wednesday,38.4014269
+vehicle_breakdown,bmtc_bus,ORR East 2,False,High,1,Sunday,72.49902041666665
+vehicle_breakdown,private_car,Bellary Road 1,False,High,3,Sunday,40.69936873333334
+vehicle_breakdown,bmtc_bus,ORR East 1,False,High,2,Tuesday,12.8765419
+vehicle_breakdown,heavy_vehicle,Non-corridor,False,Low,2,Tuesday,52.71905041666666
+vehicle_breakdown,ksrtc_bus,Non-corridor,False,Low,2,Tuesday,62.614986433333335
+construction,unknown,Non-corridor,False,Low,2,Tuesday,1436.9409212833334
+others,unknown,Bellary Road 1,False,High,8,Sunday,185.8108202333333
+vehicle_breakdown,heavy_vehicle,Non-corridor,False,Low,15,Saturday,32.470111116666665
+vehicle_breakdown,taxi,Bellary Road 2,False,High,2,Thursday,74.9959374
+vehicle_breakdown,bmtc_bus,Non-corridor,False,Low,3,Thursday,14.4955594
+vehicle_breakdown,heavy_vehicle,Bellary Road 2,False,High,2,Thursday,68.20895490000001
+others,unknown,Non-corridor,False,Low,1,Monday,392.16103275
+vehicle_breakdown,heavy_vehicle,Bellary Road 1,True,High,1,Monday,83.15135861666666
+vehicle_breakdown,others,Bellary Road 1,False,High,4,Thursday,40.08785518333333
+vehicle_breakdown,taxi,Bellary Road 1,False,High,2,Monday,85.08149098333334
+vehicle_breakdown,bmtc_bus,Bellary Road 1,False,High,6,Thursday,65.8663165
+vehicle_breakdown,lcv,Non-corridor,False,Low,3,Monday,102.04546606666666
+others,unknown,Airport New South Road,False,High,6,Thursday,16.642737933333333
+vehicle_breakdown,bmtc_bus,Non-corridor,False,Low,4,Monday,41.68275345
+vehicle_breakdown,heavy_vehicle,Non-corridor,False,Low,5,Monday,40.976809116666665
+vehicle_breakdown,taxi,Non-corridor,False,Low,0,Tuesday,99.16390298333334
+vehicle_breakdown,heavy_vehicle,Non-corridor,False,Low,11,Sunday,10.431269066666664
+others,unknown,ORR North 2,False,High,7,Tuesday,13.802722683333334
+vehicle_breakdown,heavy_vehicle,Non-corridor,False,Low,0,Monday,168.7313624
+vehicle_breakdown,bmtc_bus,Magadi Road,False,High,14,Tuesday,79.66424116666667
+vehicle_breakdown,others,Bellary Road 1,False,High,2,Monday,40.299746033333335
+vehicle_breakdown,truck,Non-corridor,False,Low,6,Monday,45.618598600000006
+vehicle_breakdown,lcv,ORR North 2,False,High,6,Wednesday,26.215256266666664
+vehicle_breakdown,heavy_vehicle,Bellary Road 1,False,High,9,Wednesday,61.22423801666666
+pot_holes,unknown,ORR East 1,False,High,9,Wednesday,1319.2296099500002
+vehicle_breakdown,others,ORR East 1,False,High,5,Friday,89.64109846666666
+vehicle_breakdown,heavy_vehicle,ORR East 2,False,High,8,Friday,29.160188716666667
+vehicle_breakdown,private_car,Non-corridor,False,Low,9,Friday,45.4172374
+vehicle_breakdown,bmtc_bus,Bellary Road 1,False,High,9,Friday,60.4495289
+construction,unknown,Airport New South Road,False,High,1,Tuesday,419.0733540666667
+others,unknown,Bellary Road 1,False,High,8,Wednesday,43.06716361666667
+procession,unknown,Magadi Road,False,High,10,Thursday,120.45697526666666
+vehicle_breakdown,heavy_vehicle,Bellary Road 2,False,High,9,Wednesday,87.68711406666667
+construction,unknown,Non-corridor,True,Low,1,Friday,329.12024915
+vehicle_breakdown,heavy_vehicle,Non-corridor,False,Low,1,Saturday,63.62485048333333
+others,unknown,ORR North 2,False,High,7,Tuesday,15.641905283333331
+vehicle_breakdown,bmtc_bus,Hennur Main Road,False,High,10,Saturday,50.3825598
+vehicle_breakdown,others,Bellary Road 2,False,High,10,Saturday,44.61752728333333
+others,unknown,ORR North 2,False,High,11,Saturday,74.58705141666665
+vehicle_breakdown,lcv,Varthur Road,False,High,11,Saturday,54.53153316666667
+vehicle_breakdown,truck,Bellary Road 1,False,High,12,Saturday,96.51823415
+vehicle_breakdown,private_car,Non-corridor,False,Low,6,Sunday,68.46058618333333
+pot_holes,unknown,Magadi Road,False,High,12,Wednesday,1358.3815949666666
+others,unknown,Non-corridor,False,Low,12,Wednesday,1553.7663699333332
+pot_holes,unknown,Non-corridor,True,Low,11,Sunday,9.656423833333331
+vehicle_breakdown,private_car,Non-corridor,False,Low,12,Sunday,18.1232739
+vehicle_breakdown,heavy_vehicle,Bellary Road 1,False,High,1,Wednesday,9.0990085
+vehicle_breakdown,ksrtc_bus,West of Chord Road,False,High,5,Monday,38.17363073333333
+vehicle_breakdown,lcv,Non-corridor,False,Low,2,Wednesday,115.30609676666668
+procession,unknown,Non-corridor,False,Low,9,Monday,166.81366601666664
+vehicle_breakdown,bmtc_bus,Non-corridor,False,Low,4,Saturday,105.27233006666668
+others,unknown,Magadi Road,False,High,0,Thursday,48.009267783333335
+construction,unknown,Bellary Road 1,False,High,5,Saturday,5.682947016666666
+vehicle_breakdown,lcv,Mysore Road,False,High,0,Tuesday,34.983110116666666
+vehicle_breakdown,private_bus,Bellary Road 1,False,High,0,Tuesday,110.57912203333332
+vehicle_breakdown,private_bus,Non-corridor,False,Low,2,Tuesday,29.094076266666665
+vehicle_breakdown,others,Tumkur Road,False,High,2,Tuesday,19.710776516666662
+tree_fall,unknown,Magadi Road,True,High,9,Wednesday,91.44109088333332
+vehicle_breakdown,private_bus,Varthur Road,False,High,10,Wednesday,139.90008856666665
+vehicle_breakdown,private_bus,Non-corridor,False,Low,1,Thursday,90.77372385
+vehicle_breakdown,private_car,Non-corridor,False,Low,2,Thursday,46.3259174
+vehicle_breakdown,others,Bellary Road 1,False,High,10,Thursday,39.85933068333333
+construction,unknown,Non-corridor,False,Low,11,Thursday,274.00397273333334
+vehicle_breakdown,bmtc_bus,Non-corridor,False,Low,11,Thursday,41.31266376666667
+vehicle_breakdown,others,Non-corridor,False,Low,11,Thursday,62.41803623333333
+vehicle_breakdown,private_car,Non-corridor,False,Low,13,Thursday,51.74567765
+pot_holes,unknown,Bellary Road 1,False,High,2,Friday,1566.9048729333333
+vehicle_breakdown,lcv,Non-corridor,False,Low,1,Sunday,48.37082896666666
+vehicle_breakdown,heavy_vehicle,Bellary Road 1,False,High,14,Thursday,20.757847583333334
+vehicle_breakdown,bmtc_bus,Non-corridor,False,Low,14,Thursday,126.5230286
+tree_fall,unknown,Non-corridor,True,Low,15,Thursday,634.9466416166667
+vehicle_breakdown,taxi,Bellary Road 2,False,High,10,Friday,133.28790756666666
+vehicle_breakdown,private_car,Non-corridor,False,Low,2,Friday,29.97115595
+vehicle_breakdown,lcv,ORR North 2,False,High,9,Friday,13.06309525
+vehicle_breakdown,heavy_vehicle,Bellary Road 2,False,High,6,Sunday,46.69524255
+vehicle_breakdown,heavy_vehicle,Bellary Road 1,False,High,8,Friday,19.9379241
+others,unknown,Bellary Road 2,False,High,7,Sunday,2948.766243083333
+vehicle_breakdown,bmtc_bus,Tumkur Road,False,High,9,Sunday,51.0690825
+vehicle_breakdown,others,Bellary Road 1,False,High,10,Sunday,91.85315681666664
+vehicle_breakdown,lcv,ORR North 1,False,High,2,Saturday,17.6375147
+vehicle_breakdown,private_bus,ORR East 2,False,High,2,Saturday,49.72056991666667
+vehicle_breakdown,bmtc_bus,Non-corridor,False,Low,3,Saturday,25.30426093333333
+accident,unknown,Bellary Road 1,False,High,3,Sunday,22.10445898333333
+vehicle_breakdown,heavy_vehicle,ORR East 2,False,High,23,Monday,31.903825633333334
+vehicle_breakdown,truck,Magadi Road,False,High,12,Sunday,16.718276533333334
+others,unknown,Non-corridor,False,Low,11,Sunday,2451.852184266667
+vehicle_breakdown,heavy_vehicle,Non-corridor,False,Low,0,Tuesday,39.00280811666666
+accident,unknown,Non-corridor,False,Low,0,Monday,20.5029632
+vehicle_breakdown,bmtc_bus,Tumkur Road,False,High,3,Tuesday,69.02691816666668
+procession,unknown,Non-corridor,False,Low,10,Monday,58.20283951666667
+vehicle_breakdown,lcv,Magadi Road,False,High,2,Tuesday,46.90332128333333
+vehicle_breakdown,bmtc_bus,Non-corridor,False,Low,10,Sunday,21.676458
+vehicle_breakdown,bmtc_bus,Non-corridor,False,Low,12,Sunday,123.51028495
+vehicle_breakdown,heavy_vehicle,ORR East 1,False,High,0,Friday,43.20982215
+others,unknown,Non-corridor,False,Low,8,Monday,28.82723145
+vehicle_breakdown,heavy_vehicle,Bellary Road 2,False,High,11,Monday,142.3646873
+vehicle_breakdown,bmtc_bus,Hosur Road,False,High,22,Monday,63.03992563333334
+vehicle_breakdown,lcv,ORR East 1,False,High,0,Tuesday,29.68307105
+construction,unknown,ORR North 1,False,High,4,Thursday,51.12241125
+others,unknown,Non-corridor,False,Low,9,Saturday,98.94985726666668
+vehicle_breakdown,lcv,ORR North 1,False,High,6,Friday,62.70201386666667
+vehicle_breakdown,lcv,Bellary Road 1,False,High,9,Friday,82.52175041666666
+vehicle_breakdown,private_bus,ORR North 2,False,High,0,Saturday,10.677372616666666
+vehicle_breakdown,lcv,Non-corridor,True,Low,10,Saturday,159.28904783333334
+vehicle_breakdown,bmtc_bus,ORR East 1,False,High,2,Tuesday,40.835751566666666
+vehicle_breakdown,lcv,Non-corridor,False,Low,7,Tuesday,67.34591795
+others,unknown,Non-corridor,False,Low,0,Wednesday,531.4297273999999
+vehicle_breakdown,lcv,Bellary Road 1,False,High,12,Wednesday,14.133789316666668
+vehicle_breakdown,bmtc_bus,Old Airport Road,False,High,11,Friday,63.47326641666667
+vehicle_breakdown,bmtc_bus,Non-corridor,False,Low,7,Monday,126.8133991
+vehicle_breakdown,truck,Bellary Road 1,False,High,2,Tuesday,16.259062183333334
+vehicle_breakdown,bmtc_bus,Non-corridor,False,Low,2,Tuesday,87.88003225000001
+others,unknown,Bellary Road 1,False,High,6,Wednesday,1355.9523948333333
+others,unknown,ORR East 2,False,High,6,Wednesday,695.0349998500001
+vehicle_breakdown,lcv,Bellary Road 1,False,High,9,Thursday,23.71280468333333
+vehicle_breakdown,heavy_vehicle,Non-corridor,False,Low,10,Tuesday,80.19145851666667
+construction,unknown,Non-corridor,False,Low,1,Saturday,414.5363759
+vehicle_breakdown,bmtc_bus,Non-corridor,False,Low,0,Sunday,69.24498263333334
+vehicle_breakdown,private_bus,Bellary Road 1,False,High,11,Friday,52.19419608333333
+vehicle_breakdown,bmtc_bus,Non-corridor,False,Low,4,Friday,45.6590295
+vehicle_breakdown,heavy_vehicle,ORR North 1,False,High,1,Saturday,144.15670458333335
+vehicle_breakdown,lcv,Non-corridor,False,Low,1,Saturday,64.77909031666667
+vehicle_breakdown,lcv,Tumkur Road,False,High,7,Saturday,19.6866555
+vehicle_breakdown,private_car,ORR West 1,False,High,11,Saturday,75.37487433333334
+accident,unknown,Hosur Road,False,High,1,Sunday,20.58339885
+construction,unknown,ORR East 1,True,High,9,Sunday,3827.6131107
+accident,unknown,Non-corridor,False,Low,0,Monday,15.379208666666669
+vehicle_breakdown,others,Non-corridor,False,Low,2,Monday,14.3899262
+vehicle_breakdown,private_bus,Mysore Road,False,High,3,Monday,30.176836466666668
+vehicle_breakdown,others,Bellary Road 1,False,High,1,Tuesday,17.879924716666668
+others,unknown,Bellary Road 2,False,High,4,Tuesday,1841.0177078
+accident,unknown,Hosur Road,False,High,4,Tuesday,33.47683516666667
+vehicle_breakdown,private_bus,Non-corridor,False,Low,7,Tuesday,81.4365754
+others,unknown,Bellary Road 2,False,High,10,Tuesday,1513.1385030833333
+accident,unknown,Non-corridor,False,Low,2,Wednesday,216.12666711666668
+accident,unknown,Bellary Road 2,False,High,11,Wednesday,39.634294700000005
+vehicle_breakdown,heavy_vehicle,Non-corridor,False,Low,2,Thursday,69.58610278333335
+vehicle_breakdown,lcv,ORR East 1,False,High,3,Thursday,81.19912645
+vehicle_breakdown,heavy_vehicle,Non-corridor,False,Low,3,Thursday,58.679805316666666
+vehicle_breakdown,heavy_vehicle,Non-corridor,False,Low,4,Thursday,48.05517008333334
+vehicle_breakdown,bmtc_bus,Non-corridor,False,Low,5,Thursday,63.71386355
+others,unknown,Non-corridor,False,Low,8,Thursday,99.64480833333332
+vehicle_breakdown,lcv,Bellary Road 1,False,High,9,Thursday,19.75909175
+vehicle_breakdown,truck,ORR East 2,False,High,9,Thursday,92.9163563
+vehicle_breakdown,bmtc_bus,Bellary Road 1,False,High,11,Thursday,147.61173708333334
+construction,unknown,Magadi Road,True,High,0,Friday,3603.1197480666665
+vehicle_breakdown,heavy_vehicle,ORR East 2,False,High,0,Friday,31.1868471
+water_logging,unknown,Bellary Road 2,False,High,8,Friday,402.88345245
+others,unknown,West of Chord Road,False,High,11,Friday,81.24858818333334
+construction,unknown,Airport New South Road,False,High,0,Saturday,1444.87902435
+vehicle_breakdown,heavy_vehicle,ORR North 1,False,High,1,Saturday,25.888201816666665
+others,unknown,Bellary Road 1,False,High,9,Saturday,28.6036425
+construction,unknown,Airport New South Road,False,High,9,Saturday,6.968827316666666
+accident,unknown,ORR North 1,False,High,10,Saturday,50.145977466666665
+vehicle_breakdown,private_bus,Non-corridor,False,Low,12,Saturday,56.5959926
+construction,unknown,Airport New South Road,False,High,0,Sunday,3.1451403
+accident,unknown,Non-corridor,False,Low,8,Sunday,61.85042823333333
+vehicle_breakdown,private_car,Bellary Road 1,False,High,9,Sunday,46.93523065
+others,unknown,Magadi Road,False,High,12,Sunday,84.37444583333333
+vehicle_breakdown,bmtc_bus,Non-corridor,False,Low,14,Sunday,69.26106918333333
+construction,unknown,Airport New South Road,False,High,0,Monday,1897.86964235
+construction,unknown,Non-corridor,True,Low,4,Monday,28.28856955
+vehicle_breakdown,bmtc_bus,Non-corridor,False,Low,12,Monday,75.54407861666667
+vehicle_breakdown,private_bus,Non-corridor,False,Low,3,Tuesday,112.37712826666666
+vehicle_breakdown,heavy_vehicle,Non-corridor,False,Low,12,Tuesday,109.74121628333334
+others,unknown,ORR North 2,False,High,4,Wednesday,83.9909704
+vehicle_breakdown,others,Bellary Road 1,False,High,9,Wednesday,82.32451263333334
+vehicle_breakdown,others,Bellary Road 1,False,High,9,Wednesday,82.27843179999999
+vehicle_breakdown,lcv,Non-corridor,False,Low,3,Thursday,34.47710638333333
+vehicle_breakdown,heavy_vehicle,ORR North 2,True,High,22,Thursday,62.10023035
+accident,unknown,Hosur Road,False,High,0,Friday,116.71515605
+accident,unknown,Hosur Road,False,High,0,Friday,115.2570139
+accident,unknown,Hosur Road,False,High,0,Friday,114.69720166666666
+accident,unknown,Hosur Road,False,High,0,Friday,109.13002826666668
+vehicle_breakdown,bmtc_bus,Non-corridor,False,Low,1,Friday,134.75408208333334
+vehicle_breakdown,others,Bellary Road 1,False,High,5,Friday,24.70797813333333
+vehicle_breakdown,bmtc_bus,Non-corridor,False,Low,10,Friday,34.95256223333333
+vehicle_breakdown,others,Hennur Main Road,False,High,10,Friday,56.3099261
+vehicle_breakdown,private_bus,Hosur Road,False,High,10,Friday,33.11645485
+vehicle_breakdown,auto,Bellary Road 1,False,High,13,Friday,27.943233333333332
+vehicle_breakdown,bmtc_bus,Magadi Road,False,High,6,Saturday,121.27505245
+vehicle_breakdown,bmtc_bus,ORR East 2,False,High,6,Saturday,92.36745463333334
+vehicle_breakdown,others,Bellary Road 2,False,High,2,Sunday,15.887661683333333
+vehicle_breakdown,truck,Non-corridor,False,Low,2,Sunday,126.80761521666666
+vehicle_breakdown,bmtc_bus,Tumkur Road,False,High,4,Sunday,58.02695011666666
+vehicle_breakdown,private_car,Bellary Road 1,False,High,10,Sunday,28.03322653333333
+others,unknown,Non-corridor,False,Low,1,Monday,139.68356741666668
+vehicle_breakdown,others,Non-corridor,False,Low,11,Monday,76.08330763333333
+others,unknown,Non-corridor,False,Low,3,Tuesday,1938.5710855833331
+others,unknown,Bellary Road 2,False,High,3,Tuesday,1323.29262625
+vehicle_breakdown,private_car,Bellary Road 1,False,High,4,Tuesday,27.20697725
+accident,unknown,Non-corridor,False,Low,10,Tuesday,22.614246416666667
+vehicle_breakdown,heavy_vehicle,Non-corridor,False,Low,5,Wednesday,44.093461483333336
+vehicle_breakdown,heavy_vehicle,Non-corridor,False,Low,12,Wednesday,26.185454216666667
+vehicle_breakdown,truck,Non-corridor,False,Low,2,Thursday,54.60272913333333
+procession,unknown,Hennur Main Road,False,High,10,Monday,104.52003925
+others,unknown,Non-corridor,False,Low,14,Tuesday,614.3931757833333
+vehicle_breakdown,heavy_vehicle,ORR East 1,False,High,8,Tuesday,83.40713503333333
+vehicle_breakdown,lcv,Non-corridor,False,Low,11,Tuesday,57.44499458333333
+vehicle_breakdown,lcv,Magadi Road,False,High,11,Tuesday,70.84300005
+vehicle_breakdown,heavy_vehicle,ORR North 2,False,High,0,Thursday,78.82542815000001
+construction,unknown,Non-corridor,False,Low,0,Thursday,295.5893642333333
+vehicle_breakdown,others,ORR East 2,False,High,2,Thursday,94.23299795
+vehicle_breakdown,heavy_vehicle,Non-corridor,True,Low,2,Friday,4.565127216666666
+others,unknown,Non-corridor,False,Low,0,Friday,203.8280376
+vehicle_breakdown,bmtc_bus,Non-corridor,False,Low,4,Friday,97.63435158333333
+vehicle_breakdown,lcv,Mysore Road,False,High,8,Friday,59.16374196666666
+vehicle_breakdown,private_car,Tumkur Road,False,High,8,Friday,18.19665601666667
+vehicle_breakdown,truck,Non-corridor,False,Low,11,Friday,119.25386498333334
+vehicle_breakdown,truck,Non-corridor,False,Low,14,Friday,22.12320453333333
+others,unknown,Non-corridor,False,Low,14,Friday,2735.974906883333
+vehicle_breakdown,heavy_vehicle,Hosur Road,False,High,0,Saturday,88.40484938333334
+vehicle_breakdown,bmtc_bus,Mysore Road,False,High,1,Saturday,35.16567031666667
+pot_holes,unknown,Non-corridor,False,Low,1,Saturday,3035.5120126333336
+pot_holes,unknown,Bannerghata Road,False,High,2,Saturday,4295.294638583333
+vehicle_breakdown,bmtc_bus,Non-corridor,False,Low,6,Saturday,71.16974789999999
+vehicle_breakdown,bmtc_bus,Non-corridor,False,Low,10,Saturday,50.2345196
+vehicle_breakdown,bmtc_bus,Mysore Road,False,High,0,Sunday,99.41600825
+vehicle_breakdown,heavy_vehicle,Non-corridor,False,Low,1,Sunday,107.3207998
+vehicle_breakdown,others,Non-corridor,False,Low,2,Sunday,44.53869965
+vehicle_breakdown,private_car,Bellary Road 1,False,High,3,Sunday,114.13534746666666
+construction,unknown,Non-corridor,True,Low,23,Saturday,894.2096481499999
+vehicle_breakdown,bmtc_bus,Bellary Road 2,False,High,6,Sunday,20.413769233333333
+vehicle_breakdown,bmtc_bus,Non-corridor,False,Low,7,Sunday,52.04973218333334
+others,unknown,Bellary Road 2,False,High,10,Sunday,141.81894821666668
+others,unknown,Bellary Road 2,False,High,7,Monday,4008.7431538333335
+vehicle_breakdown,ksrtc_bus,Non-corridor,False,Low,9,Monday,64.19872528333333
+accident,unknown,Bellary Road 2,False,High,11,Monday,16.327909866666666
+accident,unknown,Bellary Road 2,False,High,11,Monday,14.426824566666664
+vehicle_breakdown,auto,Non-corridor,False,Low,2,Tuesday,32.76764323333334
+others,unknown,Non-corridor,False,Low,3,Tuesday,49.172535466666666
+vehicle_breakdown,heavy_vehicle,Non-corridor,False,Low,3,Tuesday,60.23542993333333
+vehicle_breakdown,bmtc_bus,Non-corridor,False,Low,7,Tuesday,19.04382405
+vehicle_breakdown,bmtc_bus,Mysore Road,False,High,7,Tuesday,24.4252093
+vehicle_breakdown,bmtc_bus,Mysore Road,False,High,7,Tuesday,90.33891258333333
+vehicle_breakdown,heavy_vehicle,ORR West 1,False,High,8,Tuesday,51.1371376
+vehicle_breakdown,bmtc_bus,Varthur Road,False,High,11,Tuesday,53.12340725
+vehicle_breakdown,bmtc_bus,Airport New South Road,False,High,13,Tuesday,51.91812203333333
+vehicle_breakdown,bmtc_bus,Tumkur Road,False,High,13,Tuesday,63.94471371666667
+vehicle_breakdown,bmtc_bus,Non-corridor,False,Low,0,Wednesday,53.43984021666667
+vehicle_breakdown,others,Tumkur Road,False,High,2,Wednesday,40.50562813333333
+construction,unknown,Varthur Road,False,High,2,Wednesday,2871.7622427333336
+vehicle_breakdown,bmtc_bus,ORR East 1,False,High,6,Wednesday,114.98783913333334
+accident,unknown,Non-corridor,False,Low,15,Wednesday,85.21886508333334
+vehicle_breakdown,heavy_vehicle,Mysore Road,False,High,15,Wednesday,5.572158416666666
+vehicle_breakdown,bmtc_bus,Varthur Road,False,High,2,Thursday,78.65082263333333
+pot_holes,unknown,ORR East 1,False,High,2,Thursday,1417.0408469
+vehicle_breakdown,bmtc_bus,Old Airport Road,False,High,3,Thursday,4.570926633333333
+others,unknown,ORR North 2,False,High,4,Thursday,1673.7103156666667
+vehicle_breakdown,auto,CBD 2,False,High,5,Thursday,90.37927065
+others,unknown,Bellary Road 2,False,High,7,Thursday,250.19651421666669
+vehicle_breakdown,bmtc_bus,Non-corridor,False,Low,10,Thursday,40.86747448333333
+vehicle_breakdown,others,Non-corridor,False,Low,12,Thursday,50.3255556
+vehicle_breakdown,private_car,Bellary Road 2,False,High,13,Thursday,103.64486746666668
+accident,unknown,Tumkur Road,False,High,1,Friday,36.67476746666667
+vehicle_breakdown,ksrtc_bus,Old Madras Road,False,High,4,Friday,43.62368715
+vehicle_breakdown,bmtc_bus,Tumkur Road,True,High,4,Friday,15.29187335
+vehicle_breakdown,private_car,Mysore Road,False,High,6,Friday,40.43931741666667
+road_conditions,unknown,Hennur Main Road,False,High,6,Friday,33.66901506666667
+tree_fall,unknown,ORR East 1,False,High,7,Friday,77.93821268333333
+vehicle_breakdown,private_bus,Non-corridor,False,Low,10,Friday,84.81419685
+accident,unknown,Bellary Road 2,False,High,19,Friday,59.43833245
+vehicle_breakdown,private_bus,ORR West 1,False,High,2,Saturday,72.52724768333333
+pot_holes,unknown,Old Airport Road,False,High,4,Saturday,84.90187545
+vehicle_breakdown,heavy_vehicle,ORR East 1,False,High,6,Saturday,78.27243788333334
+vehicle_breakdown,heavy_vehicle,Non-corridor,False,Low,8,Saturday,37.40827121666667
+vehicle_breakdown,lcv,Bellary Road 1,False,High,13,Saturday,136.78986316666666
+vehicle_breakdown,bmtc_bus,Non-corridor,False,Low,15,Saturday,13.487757566666666
+vehicle_breakdown,private_car,Non-corridor,False,Low,5,Sunday,36.74988463333333
+vehicle_breakdown,heavy_vehicle,Non-corridor,False,Low,5,Sunday,12.550240633333337
+vehicle_breakdown,bmtc_bus,Mysore Road,False,High,11,Sunday,81.50184441666667
+vehicle_breakdown,heavy_vehicle,Non-corridor,False,Low,0,Monday,26.36466031666667
+vehicle_breakdown,lcv,Tumkur Road,False,High,0,Monday,50.51885516666667
+vehicle_breakdown,bmtc_bus,Non-corridor,False,Low,1,Monday,51.39911233333333
+vehicle_breakdown,heavy_vehicle,Bellary Road 2,False,High,4,Monday,116.95864045
+vehicle_breakdown,bmtc_bus,Mysore Road,False,High,5,Monday,11.41171555
+vehicle_breakdown,bmtc_bus,Non-corridor,False,Low,1,Tuesday,98.24602408333334
+vehicle_breakdown,truck,Bellary Road 1,False,High,6,Monday,67.97322405
+others,unknown,Hosur Road,False,High,18,Monday,286.8181712166667
+vehicle_breakdown,heavy_vehicle,Non-corridor,False,Low,0,Tuesday,127.14900161666668
+vehicle_breakdown,private_car,ORR West 1,False,High,3,Tuesday,20.7539686
+vehicle_breakdown,bmtc_bus,Old Airport Road,False,High,4,Tuesday,69.78363693333334
+vehicle_breakdown,bmtc_bus,Tumkur Road,False,High,4,Tuesday,2.1166342
+vehicle_breakdown,bmtc_bus,Mysore Road,False,High,4,Tuesday,159.76517208333334
+vehicle_breakdown,lcv,Tumkur Road,False,High,5,Tuesday,75.34786806666666
+vehicle_breakdown,bmtc_bus,Mysore Road,False,High,8,Tuesday,70.3720422
+vehicle_breakdown,others,Bellary Road 2,False,High,9,Tuesday,37.210154933333335
+vehicle_breakdown,ksrtc_bus,West of Chord Road,False,High,10,Tuesday,61.66422065
+vehicle_breakdown,bmtc_bus,Mysore Road,False,High,11,Tuesday,65.48658305
+vehicle_breakdown,others,Old Madras Road,False,High,11,Tuesday,74.64067675
+vehicle_breakdown,lcv,Non-corridor,False,Low,12,Tuesday,59.08022015
+accident,unknown,ORR North 1,False,High,1,Wednesday,21.757424
+vehicle_breakdown,bmtc_bus,West of Chord Road,False,High,1,Wednesday,13.018610533333334
+water_logging,unknown,ORR East 1,False,High,3,Wednesday,3688.3307549166666
+others,unknown,Old Airport Road,False,High,3,Wednesday,59.4949055
+vehicle_breakdown,heavy_vehicle,Bellary Road 2,False,High,4,Wednesday,111.66404631666666
+vehicle_breakdown,bmtc_bus,Non-corridor,False,Low,6,Wednesday,75.91999933333334
+vehicle_breakdown,private_car,Mysore Road,False,High,7,Wednesday,23.28740005
+vehicle_breakdown,lcv,Mysore Road,False,High,9,Wednesday,34.048471166666666
+vehicle_breakdown,lcv,Tumkur Road,False,High,9,Wednesday,7.489767433333333
+vehicle_breakdown,bmtc_bus,Old Airport Road,False,High,10,Wednesday,144.85944098333331
+vehicle_breakdown,lcv,Mysore Road,False,High,11,Wednesday,53.03763343333333
+vehicle_breakdown,lcv,Magadi Road,False,High,12,Wednesday,69.13833371666666
+vehicle_breakdown,bmtc_bus,Non-corridor,False,Low,12,Wednesday,146.44818733333335
+vehicle_breakdown,others,Non-corridor,False,Low,13,Wednesday,22.930431433333336
+others,unknown,ORR East 1,False,High,0,Thursday,606.2956126833334
+vehicle_breakdown,heavy_vehicle,Tumkur Road,False,High,0,Thursday,29.652116483333334
+others,unknown,Old Airport Road,False,High,3,Thursday,218.97665736666667
+vehicle_breakdown,bmtc_bus,Varthur Road,True,High,3,Thursday,38.99701985
+road_conditions,unknown,Hosur Road,False,High,6,Thursday,31.40482066666667
+others,unknown,CBD 2,False,High,7,Thursday,32.9574732
+others,unknown,ORR North 2,False,High,0,Friday,1977.045800633333
+vehicle_breakdown,private_car,CBD 2,False,High,6,Friday,97.3695523
+vehicle_breakdown,others,Bellary Road 1,False,High,10,Friday,48.4159136
+others,unknown,Hosur Road,False,High,11,Friday,865.5403809
+vehicle_breakdown,private_car,Non-corridor,False,Low,13,Friday,2.6516332666666664
+construction,unknown,Bannerghata Road,False,High,2,Saturday,11.78033255
+vehicle_breakdown,heavy_vehicle,Tumkur Road,False,High,2,Saturday,115.8735414
+vehicle_breakdown,bmtc_bus,Mysore Road,False,High,3,Saturday,38.12304935
+vehicle_breakdown,taxi,Bellary Road 1,False,High,5,Saturday,6.232070666666667
+vehicle_breakdown,private_bus,Mysore Road,False,High,6,Saturday,37.45476503333334
+vehicle_breakdown,bmtc_bus,Bellary Road 2,False,High,10,Saturday,53.11047366666666
+vehicle_breakdown,heavy_vehicle,Bellary Road 2,False,High,0,Sunday,98.95300796666668
+vehicle_breakdown,bmtc_bus,Tumkur Road,False,High,3,Sunday,26.654573000000003
+vehicle_breakdown,private_car,ORR North 2,False,High,9,Sunday,36.75914435
+vehicle_breakdown,bmtc_bus,Mysore Road,False,High,9,Sunday,150.89506383333335
+vehicle_breakdown,lcv,Tumkur Road,False,High,9,Sunday,50.57958421666667
+vehicle_breakdown,bmtc_bus,Non-corridor,False,Low,10,Sunday,16.589146799999998
+road_conditions,unknown,Bellary Road 1,True,High,1,Monday,288.8241364
+vehicle_breakdown,lcv,Mysore Road,False,High,4,Monday,137.25990439999998
+vehicle_breakdown,bmtc_bus,Non-corridor,False,Low,4,Monday,124.67001535
+vehicle_breakdown,private_bus,Non-corridor,True,Low,10,Monday,42.98520965
+vehicle_breakdown,private_car,Magadi Road,False,High,11,Monday,30.007936166666664
+vehicle_breakdown,others,Magadi Road,False,High,13,Monday,140.95731608333332
+vehicle_breakdown,truck,Magadi Road,True,High,0,Tuesday,63.96499075
+others,unknown,ORR East 1,False,High,1,Tuesday,99.96852326666666
+vehicle_breakdown,bmtc_bus,ORR West 1,False,High,3,Tuesday,116.45913183333332
+vehicle_breakdown,heavy_vehicle,Bellary Road 1,False,High,3,Tuesday,32.58043245
+vehicle_breakdown,taxi,Tumkur Road,False,High,5,Tuesday,17.136627316666665
+others,unknown,ORR East 1,True,High,5,Tuesday,24.443889966666667
+road_conditions,unknown,Bellary Road 1,False,High,8,Tuesday,61.000142933333336
+others,unknown,Non-corridor,False,Low,8,Tuesday,75.05420305
+vehicle_breakdown,bmtc_bus,Non-corridor,False,Low,9,Tuesday,63.04091908333333
+vehicle_breakdown,bmtc_bus,ORR East 1,False,High,9,Tuesday,66.10421948333334
+vehicle_breakdown,taxi,Bellary Road 1,False,High,13,Tuesday,71.66695605
+vehicle_breakdown,private_car,Tumkur Road,False,High,14,Tuesday,15.9091993
+vehicle_breakdown,bmtc_bus,Non-corridor,False,Low,2,Wednesday,22.19168823333333
+vehicle_breakdown,bmtc_bus,Tumkur Road,False,High,2,Wednesday,52.31364178333333
+vehicle_breakdown,others,Mysore Road,True,High,7,Wednesday,18.3150515
+vehicle_breakdown,private_bus,ORR West 1,False,High,11,Wednesday,146.17011165
+vehicle_breakdown,lcv,ORR West 1,False,High,11,Wednesday,56.04167118333333
+vehicle_breakdown,auto,Non-corridor,False,Low,1,Thursday,88.99168374999999
+road_conditions,unknown,Non-corridor,False,Low,2,Thursday,1346.5596524833334
+others,unknown,Non-corridor,False,Low,2,Thursday,1343.1174781
+vehicle_breakdown,bmtc_bus,ORR North 1,False,High,5,Thursday,9.36597485
+others,unknown,Old Madras Road,False,High,7,Thursday,49.59777256666666
+vehicle_breakdown,bmtc_bus,Magadi Road,False,High,9,Thursday,72.36508631666668
+accident,unknown,Bellary Road 2,False,High,0,Friday,61.2137216
+vehicle_breakdown,others,ORR North 2,False,High,1,Friday,33.22631478333333
+others,unknown,CBD 2,False,High,2,Friday,135.58937761666667
+vehicle_breakdown,bmtc_bus,Non-corridor,False,Low,2,Friday,74.80607221666668
+vehicle_breakdown,bmtc_bus,Magadi Road,False,High,4,Friday,66.17483445
+vehicle_breakdown,bmtc_bus,Non-corridor,False,Low,6,Friday,39.06277933333333
+vehicle_breakdown,private_car,Non-corridor,False,Low,9,Friday,69.60687666666666
+vehicle_breakdown,bmtc_bus,Non-corridor,False,Low,11,Friday,131.71085216666668
+vehicle_breakdown,lcv,Hosur Road,False,High,11,Friday,24.13871885
+vehicle_breakdown,bmtc_bus,Mysore Road,False,High,11,Friday,54.60528863333333
+vehicle_breakdown,private_bus,Hosur Road,False,High,1,Saturday,162.5665779
+vehicle_breakdown,lcv,ORR East 1,False,High,3,Saturday,39.86270186666666
+vehicle_breakdown,others,Airport New South Road,False,High,4,Saturday,19.595001083333333
+vehicle_breakdown,ksrtc_bus,Bellary Road 2,False,High,9,Saturday,8.450361483333333
+vehicle_breakdown,bmtc_bus,Non-corridor,False,Low,10,Saturday,87.37563088333333
+vehicle_breakdown,bmtc_bus,ORR East 1,False,High,11,Saturday,81.59911578333335
+vehicle_breakdown,lcv,Bellary Road 1,False,High,11,Saturday,7.943334633333333
+vehicle_breakdown,lcv,Tumkur Road,False,High,13,Saturday,15.30609795
+others,unknown,ORR North 2,False,High,16,Saturday,425.97661755
+construction,unknown,ORR North 1,True,High,0,Sunday,84.54522296666667
+vehicle_breakdown,ksrtc_bus,Mysore Road,False,High,0,Sunday,7.529350916666667
+vehicle_breakdown,private_car,Tumkur Road,False,High,0,Sunday,30.706076783333334
+vehicle_breakdown,heavy_vehicle,Tumkur Road,False,High,1,Sunday,66.04253946666667
+road_conditions,unknown,Bellary Road 1,False,High,2,Sunday,282.6844774666667
+vehicle_breakdown,others,Mysore Road,False,High,2,Sunday,13.244365666666663
+vehicle_breakdown,others,Old Madras Road,False,High,3,Sunday,78.62757426666667
+construction,unknown,Old Madras Road,False,High,4,Sunday,149.8709145
+vehicle_breakdown,lcv,Mysore Road,False,High,6,Sunday,19.0847936
+vehicle_breakdown,ksrtc_bus,Mysore Road,False,High,13,Sunday,89.9522413
+vehicle_breakdown,lcv,Hosur Road,False,High,13,Sunday,59.55044333333333
+vehicle_breakdown,bmtc_bus,ORR North 2,False,High,13,Sunday,89.7169197
+pot_holes,unknown,Bellary Road 1,True,High,18,Sunday,285.07037575
+vehicle_breakdown,bmtc_bus,Magadi Road,False,High,2,Monday,31.16099865
+vehicle_breakdown,bmtc_bus,Non-corridor,False,Low,2,Monday,56.05031413333334
+vehicle_breakdown,private_bus,Hosur Road,False,High,2,Monday,114.57613495
+vehicle_breakdown,bmtc_bus,Mysore Road,False,High,9,Monday,32.90016421666667
+vehicle_breakdown,heavy_vehicle,Magadi Road,False,High,9,Monday,81.95171803333332
+vehicle_breakdown,bmtc_bus,Non-corridor,False,Low,10,Monday,91.13215373333334
+vehicle_breakdown,private_car,Bellary Road 2,True,High,12,Monday,33.596919400000004
+vehicle_breakdown,private_car,Tumkur Road,False,High,6,Tuesday,33.985266100000004
+vehicle_breakdown,lcv,Non-corridor,False,Low,9,Tuesday,140.87877841666665
+road_conditions,unknown,ORR West 1,False,High,10,Tuesday,1564.7028752166666
+vehicle_breakdown,bmtc_bus,IRR(Thanisandra road),False,High,11,Tuesday,41.87327523333333
+vehicle_breakdown,taxi,Non-corridor,False,Low,14,Tuesday,18.1132444
+vehicle_breakdown,bmtc_bus,Hosur Road,False,High,1,Wednesday,22.29174835
+vehicle_breakdown,unknown,Magadi Road,False,High,1,Wednesday,35.64787915
+vehicle_breakdown,bmtc_bus,Non-corridor,False,Low,2,Wednesday,61.508581766666666
+accident,unknown,Bellary Road 2,False,High,5,Wednesday,38.39330155
+vehicle_breakdown,heavy_vehicle,Non-corridor,False,Low,7,Wednesday,14.36698985
+vehicle_breakdown,heavy_vehicle,Bellary Road 1,False,High,8,Wednesday,115.132901
+vehicle_breakdown,private_bus,Non-corridor,True,Low,8,Wednesday,109.37136253333333
+others,unknown,Magadi Road,False,High,8,Wednesday,85.97490423333333
+vehicle_breakdown,truck,Tumkur Road,False,High,9,Wednesday,43.36787996666667
+road_conditions,unknown,ORR North 2,False,High,10,Wednesday,2434.732365266667
+vehicle_breakdown,bmtc_bus,Mysore Road,False,High,10,Wednesday,54.04092538333334
+vehicle_breakdown,lcv,Magadi Road,False,High,10,Wednesday,125.2718676
+vehicle_breakdown,others,Mysore Road,False,High,0,Thursday,63.322104683333336
+others,unknown,Bellary Road 2,False,High,4,Thursday,4199.15399095
+vehicle_breakdown,bmtc_bus,Tumkur Road,False,High,6,Thursday,82.14613223333335
+vehicle_breakdown,bmtc_bus,Varthur Road,False,High,9,Thursday,11.0878252
+others,unknown,Non-corridor,False,Low,9,Thursday,39.2511919
+road_conditions,unknown,Old Airport Road,False,High,14,Thursday,773.9601677166667
+others,unknown,Mysore Road,False,High,3,Friday,3082.97852185
+vehicle_breakdown,bmtc_bus,Bellary Road 1,False,High,4,Friday,71.08655019999999
+vehicle_breakdown,bmtc_bus,CBD 2,False,High,4,Friday,11.7920497
+vehicle_breakdown,heavy_vehicle,Non-corridor,False,Low,6,Friday,29.7505507
+others,unknown,Mysore Road,True,High,6,Friday,30.164484366666667
+road_conditions,unknown,ORR North 1,False,High,8,Friday,1389.0003810666667
+vehicle_breakdown,bmtc_bus,Bellary Road 1,False,High,8,Friday,20.309035
+vehicle_breakdown,heavy_vehicle,ORR West 1,False,High,9,Friday,106.0838667
+vehicle_breakdown,lcv,Tumkur Road,False,High,11,Friday,43.00267638333333
+vehicle_breakdown,lcv,Non-corridor,False,Low,13,Friday,67.49291361666667
+construction,unknown,Bannerghata Road,True,High,17,Friday,426.6093685333333
+vehicle_breakdown,private_car,Mysore Road,False,High,1,Saturday,34.02031625
+vehicle_breakdown,heavy_vehicle,Mysore Road,False,High,2,Saturday,58.02250183333333
+vehicle_breakdown,heavy_vehicle,Non-corridor,False,Low,4,Saturday,26.693448083333333
+pot_holes,unknown,Mysore Road,False,High,5,Saturday,1329.8763023666666
+construction,unknown,Mysore Road,False,High,5,Saturday,1329.4673205166666
+vehicle_breakdown,bmtc_bus,Non-corridor,False,Low,10,Saturday,76.01247123333333
+others,unknown,Non-corridor,False,Low,3,Sunday,1814.1772902
+others,unknown,Mysore Road,False,High,4,Sunday,140.10122228333333
+vehicle_breakdown,bmtc_bus,ORR North 2,False,High,4,Sunday,114.38313273333333
+vehicle_breakdown,heavy_vehicle,Non-corridor,False,Low,6,Sunday,29.411997316666668
+vehicle_breakdown,bmtc_bus,Mysore Road,False,High,6,Sunday,11.68523875
+vehicle_breakdown,private_car,Non-corridor,False,Low,10,Sunday,16.8068625
+vehicle_breakdown,ksrtc_bus,Mysore Road,False,High,11,Sunday,60.08275768333333
+vehicle_breakdown,heavy_vehicle,ORR North 2,False,High,11,Sunday,24.984949416666662
+vehicle_breakdown,heavy_vehicle,Non-corridor,False,Low,13,Wednesday,60.6943697
+vehicle_breakdown,others,Non-corridor,False,Low,1,Monday,23.29224866666667
+vehicle_breakdown,heavy_vehicle,Tumkur Road,False,High,6,Monday,34.993629850000005
+vehicle_breakdown,bmtc_bus,Mysore Road,False,High,6,Monday,5.181943216666666
+vehicle_breakdown,bmtc_bus,Tumkur Road,False,High,6,Monday,21.473084716666666
+others,unknown,Non-corridor,False,Low,11,Monday,41.99649041666667
+accident,unknown,Old Madras Road,False,High,14,Monday,26.89822893333333
+vehicle_breakdown,truck,Old Madras Road,False,High,2,Tuesday,38.2213697
+vehicle_breakdown,lcv,Tumkur Road,False,High,5,Tuesday,15.214015783333334
+vehicle_breakdown,private_car,Tumkur Road,True,High,5,Tuesday,18.1767132
+others,unknown,Hosur Road,False,High,8,Tuesday,84.10136785
+vehicle_breakdown,heavy_vehicle,Mysore Road,False,High,11,Tuesday,21.95295851666667
+vehicle_breakdown,lcv,Non-corridor,False,Low,12,Tuesday,81.31714885
+vehicle_breakdown,bmtc_bus,Magadi Road,False,High,13,Tuesday,100.30911363333333
+accident,unknown,Bellary Road 2,False,High,22,Tuesday,61.15111423333334
+vehicle_breakdown,private_bus,Magadi Road,False,High,0,Wednesday,60.353135316666666
+vehicle_breakdown,truck,Non-corridor,False,Low,1,Wednesday,111.66607546666668
+vehicle_breakdown,ksrtc_bus,Tumkur Road,False,High,3,Wednesday,43.5193229
+vehicle_breakdown,heavy_vehicle,Magadi Road,False,High,4,Wednesday,21.31967213333333
+vehicle_breakdown,bmtc_bus,Non-corridor,False,Low,4,Wednesday,50.19797263333333
+vehicle_breakdown,private_bus,Mysore Road,False,High,6,Wednesday,64.40976768333333
+vehicle_breakdown,private_bus,Non-corridor,False,Low,13,Wednesday,14.684621466666666
+vehicle_breakdown,truck,Magadi Road,False,High,14,Wednesday,71.71492216666667
+vehicle_breakdown,heavy_vehicle,Non-corridor,False,Low,1,Thursday,92.9306516
+vehicle_breakdown,bmtc_bus,Non-corridor,False,Low,9,Thursday,55.782216733333335
+vehicle_breakdown,private_car,Non-corridor,False,Low,4,Thursday,17.571417983333333
+vehicle_breakdown,private_car,Mysore Road,False,High,8,Thursday,22.565027816666667
+tree_fall,unknown,Non-corridor,True,Low,8,Thursday,215.32322236666667
+vehicle_breakdown,lcv,Mysore Road,False,High,9,Thursday,123.62687971666666
+vehicle_breakdown,bmtc_bus,Non-corridor,True,Low,10,Thursday,46.66483641666667
+vehicle_breakdown,heavy_vehicle,Non-corridor,False,Low,0,Friday,64.02628708333333
+accident,unknown,ORR North 2,False,High,0,Friday,52.3450849
+others,unknown,Mysore Road,False,High,0,Friday,210.75325715
+vehicle_breakdown,taxi,Hosur Road,False,High,1,Friday,103.09514586666666
+vehicle_breakdown,truck,Non-corridor,False,Low,1,Friday,155.09577226666667
+vehicle_breakdown,heavy_vehicle,Tumkur Road,False,High,1,Friday,104.27178085
+vehicle_breakdown,heavy_vehicle,Non-corridor,False,Low,2,Friday,104.50401355
+others,unknown,Non-corridor,False,Low,3,Friday,569.8624514500001
+vehicle_breakdown,private_car,Tumkur Road,False,High,5,Friday,29.06766845
+others,unknown,West of Chord Road,False,High,7,Friday,2499.5234841666665
+vehicle_breakdown,private_bus,Non-corridor,False,Low,10,Friday,48.95618971666667
+vehicle_breakdown,bmtc_bus,Mysore Road,False,High,10,Friday,51.75960268333333
+vehicle_breakdown,private_bus,ORR East 1,False,High,10,Friday,78.02181971666667
+others,unknown,Mysore Road,False,High,11,Friday,59.64277355
+vehicle_breakdown,ksrtc_bus,Non-corridor,True,Low,11,Friday,37.0500163
+vehicle_breakdown,lcv,ORR West 1,False,High,1,Saturday,76.18386368333333
+construction,unknown,ORR North 1,False,High,2,Saturday,88.67244375
+vehicle_breakdown,bmtc_bus,CBD 2,False,High,4,Saturday,76.97170356666668
+construction,unknown,Bellary Road 2,False,High,5,Saturday,1378.1403613
+vehicle_breakdown,bmtc_bus,Mysore Road,False,High,6,Saturday,14.241182866666666
+vehicle_breakdown,private_car,CBD 2,False,High,10,Saturday,169.54879098333333
+vehicle_breakdown,private_car,West of Chord Road,False,High,10,Saturday,11.163700416666668
+others,unknown,Non-corridor,False,Low,10,Saturday,95.37588738333334
+vehicle_breakdown,lcv,Bellary Road 1,False,High,15,Saturday,74.98126361666667
+accident,unknown,Tumkur Road,False,High,0,Sunday,40.03595935
+pot_holes,unknown,Tumkur Road,False,High,6,Sunday,2780.0727107333337
+vehicle_breakdown,bmtc_bus,Varthur Road,False,High,11,Sunday,17.611252466666667
+vehicle_breakdown,heavy_vehicle,Airport New South Road,False,High,8,Sunday,54.71060688333333
+others,unknown,Bellary Road 2,False,High,9,Sunday,1555.4924963666667
+vehicle_breakdown,private_bus,Bellary Road 2,False,High,9,Sunday,33.33801285
+vehicle_breakdown,bmtc_bus,Tumkur Road,False,High,9,Sunday,45.30445895
+vehicle_breakdown,ksrtc_bus,Mysore Road,False,High,10,Sunday,27.37180333333333
+vehicle_breakdown,others,CBD 2,False,High,4,Monday,24.567187016666665
+vehicle_breakdown,others,Bellary Road 2,False,High,11,Monday,50.71622881666666
+vehicle_breakdown,bmtc_bus,Hosur Road,False,High,12,Monday,64.53818363333333
+vehicle_breakdown,bmtc_bus,Mysore Road,False,High,0,Tuesday,44.14427928333334
+vehicle_breakdown,bmtc_bus,Non-corridor,True,Low,2,Tuesday,72.3468573
+vehicle_breakdown,bmtc_bus,Mysore Road,False,High,2,Tuesday,146.97563921666668
+vehicle_breakdown,heavy_vehicle,ORR North 1,False,High,9,Tuesday,27.495784800000003
+vehicle_breakdown,bmtc_bus,Bannerghata Road,False,High,10,Tuesday,131.96330435
+vehicle_breakdown,bmtc_bus,Non-corridor,False,Low,10,Tuesday,37.32267656666667
+vehicle_breakdown,ksrtc_bus,Non-corridor,False,Low,10,Tuesday,15.536178283333332
+vehicle_breakdown,taxi,Hosur Road,False,High,11,Tuesday,86.54174110000001
+vehicle_breakdown,ksrtc_bus,Non-corridor,False,Low,11,Tuesday,45.5785642
+vehicle_breakdown,private_car,Tumkur Road,False,High,3,Wednesday,9.538056933333332
+others,unknown,CBD 2,False,High,6,Wednesday,91.00916453333332
+vehicle_breakdown,bmtc_bus,Non-corridor,False,Low,9,Wednesday,104.66418203333332
+others,unknown,ORR West 1,False,High,5,Thursday,3102.2017643333334
+vehicle_breakdown,private_car,ORR East 1,False,High,8,Thursday,14.823477983333332
+vehicle_breakdown,bmtc_bus,Non-corridor,False,Low,9,Thursday,44.15008491666666
+vehicle_breakdown,taxi,Non-corridor,False,Low,10,Thursday,27.336794750000003
+vehicle_breakdown,bmtc_bus,Mysore Road,False,High,11,Thursday,47.80724921666667
+accident,unknown,Tumkur Road,False,High,14,Thursday,46.73368636666667
+vehicle_breakdown,lcv,Mysore Road,False,High,1,Friday,71.89760106666667
+vehicle_breakdown,private_bus,Tumkur Road,False,High,2,Friday,173.42698381666665
+vehicle_breakdown,others,Tumkur Road,False,High,2,Friday,38.45392828333333
+others,unknown,Mysore Road,True,High,2,Friday,33.48906055
+vehicle_breakdown,bmtc_bus,Mysore Road,False,High,2,Friday,43.98374376666666
+vehicle_breakdown,bmtc_bus,ORR West 1,False,High,3,Friday,44.5321139
+vehicle_breakdown,others,Non-corridor,False,Low,4,Friday,16.580316616666668
+vehicle_breakdown,heavy_vehicle,Bellary Road 1,False,High,5,Friday,12.5869507
+vehicle_breakdown,bmtc_bus,Non-corridor,False,Low,6,Friday,74.30124980000001
+vehicle_breakdown,bmtc_bus,CBD 2,False,High,10,Friday,15.845159116666668
+vehicle_breakdown,heavy_vehicle,West of Chord Road,False,High,1,Saturday,119.55588141666668
+others,unknown,CBD 2,False,High,2,Saturday,14.21674075
+vehicle_breakdown,others,Bellary Road 1,False,High,3,Saturday,143.33777285
+others,unknown,Bellary Road 2,False,High,4,Saturday,1369.8670542833331
+vehicle_breakdown,lcv,Tumkur Road,False,High,7,Saturday,18.01668828333333
+vehicle_breakdown,lcv,Mysore Road,False,High,1,Sunday,22.29318775
+vehicle_breakdown,bmtc_bus,ORR West 1,False,High,2,Sunday,78.36581535
+others,unknown,Non-corridor,False,Low,2,Sunday,261.85771655
+vehicle_breakdown,lcv,Tumkur Road,False,High,3,Sunday,22.33721543333333
+others,unknown,Non-corridor,False,Low,9,Sunday,4163.109783466667
+vehicle_breakdown,heavy_vehicle,Bellary Road 2,False,High,10,Sunday,41.04432583333333
+vehicle_breakdown,lcv,Tumkur Road,False,High,12,Sunday,22.74252915
+construction,unknown,ORR North 1,False,High,17,Sunday,325.6833299666667
+vehicle_breakdown,bmtc_bus,Non-corridor,True,Low,3,Monday,96.72711803333333
+others,unknown,Old Airport Road,False,High,5,Monday,4300.172757016667
+vehicle_breakdown,lcv,Bellary Road 2,False,High,5,Monday,34.49597188333333
+vehicle_breakdown,bmtc_bus,Non-corridor,False,Low,8,Monday,70.5850728
+others,unknown,Mysore Road,True,High,0,Tuesday,32.59866376666667
+vehicle_breakdown,bmtc_bus,Non-corridor,False,Low,1,Tuesday,8.523106283333332
+vehicle_breakdown,private_bus,Hosur Road,False,High,2,Tuesday,23.53905478333333
+others,unknown,West of Chord Road,False,High,3,Tuesday,64.12804031666667
+pot_holes,unknown,Hosur Road,False,High,4,Tuesday,1654.8833694166667
+vehicle_breakdown,lcv,Tumkur Road,False,High,6,Tuesday,72.97621806666666
+vehicle_breakdown,others,Mysore Road,False,High,7,Tuesday,47.98083691666667
+vehicle_breakdown,others,Non-corridor,False,Low,8,Tuesday,31.247457216666664
+vehicle_breakdown,truck,Mysore Road,True,High,14,Tuesday,107.22244468333334
+vehicle_breakdown,heavy_vehicle,Non-corridor,False,Low,1,Wednesday,129.90277936666666
+vehicle_breakdown,bmtc_bus,Tumkur Road,False,High,1,Wednesday,38.30340338333333
+vehicle_breakdown,private_bus,Non-corridor,True,Low,1,Wednesday,67.44224876666667
+vehicle_breakdown,heavy_vehicle,ORR North 1,False,High,2,Wednesday,108.81123375
+vehicle_breakdown,bmtc_bus,West of Chord Road,False,High,2,Wednesday,32.680638949999995
+vehicle_breakdown,bmtc_bus,Bellary Road 1,False,High,3,Wednesday,83.49164651666666
+vehicle_breakdown,bmtc_bus,Non-corridor,False,Low,5,Wednesday,44.92332695
+vehicle_breakdown,lcv,Tumkur Road,False,High,5,Wednesday,17.107073166666666
+vehicle_breakdown,others,Mysore Road,False,High,8,Wednesday,77.87683966666667
+procession,unknown,Magadi Road,True,High,10,Wednesday,1.7318844333333334
+others,unknown,West of Chord Road,True,High,11,Wednesday,178.83197656666667
+vehicle_breakdown,ksrtc_bus,Non-corridor,False,Low,14,Wednesday,78.58230435
+vehicle_breakdown,others,Tumkur Road,False,High,23,Wednesday,63.1243505
+vehicle_breakdown,bmtc_bus,Non-corridor,False,Low,6,Thursday,47.84910341666667
+others,unknown,Non-corridor,False,Low,1,Thursday,85.23560838333333
+vehicle_breakdown,heavy_vehicle,Mysore Road,False,High,1,Thursday,50.35936076666667
+vehicle_breakdown,heavy_vehicle,Bellary Road 1,False,High,1,Thursday,7.1787815833333335
+vehicle_breakdown,taxi,Airport New South Road,False,High,4,Thursday,91.12731315
+accident,unknown,Non-corridor,False,Low,6,Thursday,89.56093413333333
+vehicle_breakdown,bmtc_bus,Non-corridor,False,Low,8,Thursday,73.55559968333334
+vehicle_breakdown,heavy_vehicle,Hosur Road,False,High,9,Thursday,117.19740893333332
+vehicle_breakdown,truck,Hosur Road,False,High,10,Thursday,57.67031773333333
+vehicle_breakdown,others,Hosur Road,False,High,15,Thursday,40.683018700000005
+vehicle_breakdown,bmtc_bus,Bannerghata Road,False,High,2,Friday,50.30348728333333
+vehicle_breakdown,bmtc_bus,Bannerghata Road,False,High,4,Friday,21.371302766666663
+vehicle_breakdown,bmtc_bus,Mysore Road,False,High,5,Friday,12.958737216666666
+others,unknown,Mysore Road,False,High,5,Friday,75.1166929
+vehicle_breakdown,private_car,Mysore Road,False,High,6,Friday,35.96668218333333
+road_conditions,unknown,Non-corridor,False,Low,12,Friday,835.9154337666666
+vehicle_breakdown,lcv,Non-corridor,False,Low,1,Saturday,37.04358068333333
+vehicle_breakdown,private_car,Non-corridor,False,Low,3,Saturday,14.661843316666667
+vehicle_breakdown,bmtc_bus,Varthur Road,False,High,4,Saturday,11.872288033333332
+vehicle_breakdown,ksrtc_bus,Old Madras Road,False,High,4,Saturday,84.41191578333334
+others,unknown,Non-corridor,False,Low,5,Saturday,47.220114566666666
+construction,unknown,Bellary Road 2,False,High,6,Saturday,134.01126233333332
+vehicle_breakdown,bmtc_bus,Bannerghata Road,False,High,10,Saturday,13.843773283333332
+vehicle_breakdown,private_car,CBD 1,False,High,10,Saturday,55.216074733333336
+tree_fall,unknown,Non-corridor,True,Low,11,Saturday,53.0065693
+vehicle_breakdown,heavy_vehicle,ORR North 1,False,High,11,Saturday,109.08034831666669
+vehicle_breakdown,lcv,Tumkur Road,False,High,0,Sunday,20.733621333333332
+vehicle_breakdown,private_car,Non-corridor,False,Low,3,Sunday,38.57169646666667
+construction,unknown,Bellary Road 2,False,High,4,Sunday,146.81543166666668
+accident,unknown,Non-corridor,False,Low,5,Sunday,18.1937805
+vehicle_breakdown,ksrtc_bus,West of Chord Road,False,High,6,Sunday,30.792283566666665
+vehicle_breakdown,heavy_vehicle,Tumkur Road,False,High,8,Sunday,44.7709926
+vehicle_breakdown,truck,Tumkur Road,False,High,11,Sunday,17.515266066666666
+vehicle_breakdown,lcv,Mysore Road,False,High,13,Sunday,19.045456016666662
+vehicle_breakdown,others,Hosur Road,False,High,14,Sunday,63.30696068333334
+vehicle_breakdown,heavy_vehicle,Old Madras Road,False,High,1,Monday,98.99271175
+vehicle_breakdown,bmtc_bus,Tumkur Road,False,High,9,Monday,80.04287316666667
+vehicle_breakdown,bmtc_bus,West of Chord Road,False,High,10,Monday,52.70662574999999
+vehicle_breakdown,ksrtc_bus,Tumkur Road,False,High,13,Monday,21.827275766666663
+vehicle_breakdown,heavy_vehicle,Mysore Road,False,High,7,Tuesday,32.07267888333333
+vehicle_breakdown,bmtc_bus,Non-corridor,False,Low,1,Tuesday,4.56995985
+others,unknown,Non-corridor,False,Low,2,Tuesday,249.6043484
+vehicle_breakdown,others,Magadi Road,False,High,4,Tuesday,12.483802816666667
+vehicle_breakdown,bmtc_bus,Magadi Road,False,High,5,Tuesday,111.84865853333334
+vehicle_breakdown,heavy_vehicle,Magadi Road,False,High,6,Tuesday,30.268775783333336
+vehicle_breakdown,bmtc_bus,Non-corridor,False,Low,11,Tuesday,42.39773146666666
+vehicle_breakdown,heavy_vehicle,ORR West 1,False,High,12,Tuesday,38.30005405
+vehicle_breakdown,bmtc_bus,Bellary Road 2,True,High,4,Wednesday,69.21877518333334
+others,unknown,Tumkur Road,False,High,5,Wednesday,2644.8609572
+vehicle_breakdown,bmtc_bus,Non-corridor,False,Low,10,Wednesday,52.88396848333333
+vehicle_breakdown,bmtc_bus,Old Madras Road,False,High,10,Wednesday,65.14124903333332
+vehicle_breakdown,bmtc_bus,Non-corridor,False,Low,11,Wednesday,67.65367151666666
+vehicle_breakdown,bmtc_bus,Non-corridor,False,Low,3,Friday,33.47803065
+vehicle_breakdown,heavy_vehicle,Hosur Road,True,High,11,Wednesday,113.5855103
+protest,unknown,Mysore Road,False,High,13,Wednesday,30.6651656
+vehicle_breakdown,heavy_vehicle,Mysore Road,False,High,1,Thursday,75.1806598
+vehicle_breakdown,bmtc_bus,Mysore Road,False,High,1,Thursday,21.039561
+road_conditions,unknown,Non-corridor,False,Low,2,Thursday,737.9011989666667
+others,unknown,Hosur Road,False,High,2,Thursday,514.82014045
+vehicle_breakdown,bmtc_bus,Tumkur Road,False,High,7,Thursday,88.48042575
+vehicle_breakdown,bmtc_bus,Non-corridor,False,Low,10,Thursday,25.39199308333333
+vehicle_breakdown,bmtc_bus,Non-corridor,False,Low,11,Thursday,152.09387653333334
+vehicle_breakdown,private_bus,Mysore Road,False,High,12,Thursday,6.5506378666666665
+others,unknown,Non-corridor,False,Low,1,Friday,49.2566289
+vehicle_breakdown,heavy_vehicle,Tumkur Road,False,High,3,Friday,39.01760381666666
+vehicle_breakdown,bmtc_bus,Tumkur Road,False,High,4,Friday,84.45260125
+vehicle_breakdown,bmtc_bus,Magadi Road,False,High,5,Friday,98.5958793
+vehicle_breakdown,bmtc_bus,Non-corridor,False,Low,8,Friday,64.04493938333333
+others,unknown,Non-corridor,False,Low,11,Friday,136.34130586666666
+others,unknown,Mysore Road,False,High,14,Friday,1009.0097056333332
+vehicle_breakdown,lcv,ORR West 1,False,High,14,Friday,58.62555233333333
+vehicle_breakdown,bmtc_bus,Non-corridor,False,Low,5,Saturday,113.74449883333334
+vehicle_breakdown,taxi,Bellary Road 2,False,High,12,Saturday,78.13917339999999
+vehicle_breakdown,private_car,Non-corridor,False,Low,14,Saturday,24.72499443333333
+vehicle_breakdown,private_car,Non-corridor,True,Low,0,Sunday,32.0253361
+vehicle_breakdown,lcv,Bellary Road 2,False,High,2,Sunday,108.3117811
+vehicle_breakdown,bmtc_bus,Non-corridor,False,Low,3,Sunday,114.12928961666668
+others,unknown,Bellary Road 2,False,High,3,Sunday,510.95003963333335
+others,unknown,Bellary Road 1,False,High,5,Sunday,10.293404816666667
+construction,unknown,IRR(Thanisandra road),True,High,5,Sunday,64.20182368333333
+vehicle_breakdown,private_bus,Mysore Road,False,High,6,Sunday,18.16507383333333
+accident,unknown,ORR East 1,False,High,6,Sunday,36.9388623
+vehicle_breakdown,bmtc_bus,Non-corridor,False,Low,6,Sunday,39.72012806666667
+vehicle_breakdown,bmtc_bus,Bellary Road 1,False,High,9,Sunday,25.16234988333333
+vehicle_breakdown,bmtc_bus,Non-corridor,False,Low,12,Sunday,34.984809266666666
+others,unknown,Mysore Road,True,High,12,Sunday,799.62619265
+construction,unknown,Bellary Road 2,True,High,16,Sunday,487.25248725
+vehicle_breakdown,others,West of Chord Road,False,High,22,Sunday,93.61899465
+others,unknown,Non-corridor,False,Low,10,Monday,192.62937578333333
+vehicle_breakdown,private_bus,Non-corridor,False,Low,12,Monday,88.78084009999999
+vehicle_breakdown,bmtc_bus,Non-corridor,False,Low,1,Tuesday,44.9643523
+vehicle_breakdown,bmtc_bus,ORR West 1,False,High,2,Tuesday,92.29439425
+construction,unknown,Old Madras Road,False,High,4,Tuesday,28.81112498333333
+vehicle_breakdown,bmtc_bus,Non-corridor,False,Low,9,Tuesday,44.57315223333333
+vehicle_breakdown,others,Bannerghata Road,False,High,11,Tuesday,71.91043833333333
+accident,unknown,Old Madras Road,False,High,11,Tuesday,65.42554686666666
+vehicle_breakdown,others,Non-corridor,True,Low,11,Tuesday,15.258431183333332
+others,unknown,Mysore Road,False,High,1,Wednesday,172.3003701833333
+vehicle_breakdown,heavy_vehicle,ORR West 1,False,High,2,Wednesday,113.1355069
+vehicle_breakdown,bmtc_bus,Old Madras Road,False,High,12,Wednesday,12.342886116666667
+vehicle_breakdown,bmtc_bus,Hosur Road,False,High,13,Wednesday,46.56802951666667
+construction,unknown,Mysore Road,True,High,16,Wednesday,428.7790138333333
+vehicle_breakdown,bmtc_bus,West of Chord Road,False,High,1,Thursday,25.0307267
+others,unknown,Bellary Road 2,False,High,5,Thursday,2680.5984291
+vehicle_breakdown,bmtc_bus,Non-corridor,False,Low,11,Thursday,59.11293991666666
+water_logging,unknown,Non-corridor,False,Low,11,Thursday,37.07593646666667
+vehicle_breakdown,ksrtc_bus,Old Madras Road,False,High,0,Friday,75.95687948333332
+pot_holes,unknown,Bellary Road 1,False,High,6,Friday,1293.5411369
+vehicle_breakdown,lcv,Mysore Road,False,High,10,Friday,52.991312916666665
+vehicle_breakdown,bmtc_bus,Non-corridor,False,Low,10,Friday,76.29404848333334
+accident,unknown,Bellary Road 2,False,High,1,Saturday,32.31531945
+others,unknown,Bellary Road 2,False,High,2,Saturday,173.80799983333333
+vehicle_breakdown,heavy_vehicle,Tumkur Road,False,High,3,Saturday,18.4725225
+vehicle_breakdown,truck,Old Madras Road,False,High,3,Saturday,9.1956618
+others,unknown,Hosur Road,False,High,5,Saturday,1723.0274039166666
+others,unknown,Mysore Road,True,High,7,Saturday,21.920086183333336
+vehicle_breakdown,bmtc_bus,ORR West 1,False,High,7,Saturday,6.4347744166666665
+vehicle_breakdown,lcv,Mysore Road,False,High,9,Saturday,36.41693461666667
+others,unknown,Magadi Road,False,High,10,Saturday,140.94401789999998
+vehicle_breakdown,bmtc_bus,Non-corridor,False,Low,11,Saturday,88.08686613333333
+others,unknown,Old Madras Road,False,High,13,Saturday,75.93873236666667
+vehicle_breakdown,others,Tumkur Road,True,High,15,Saturday,15.850226350000002
+vehicle_breakdown,private_car,Tumkur Road,False,High,5,Sunday,28.672119833333333
+vehicle_breakdown,heavy_vehicle,Bellary Road 2,False,High,9,Sunday,74.82453056666667
+vehicle_breakdown,bmtc_bus,ORR North 1,False,High,10,Sunday,71.77608031666666
+others,unknown,Old Madras Road,False,High,10,Sunday,66.8745492
+vehicle_breakdown,bmtc_bus,Non-corridor,False,Low,11,Sunday,30.275829366666667
+accident,unknown,Tumkur Road,False,High,22,Sunday,49.68956086666667
+vehicle_breakdown,lcv,Tumkur Road,False,High,0,Monday,49.72454593333334
+vehicle_breakdown,private_bus,Old Madras Road,False,High,1,Monday,25.269977633333333
+vehicle_breakdown,private_bus,Tumkur Road,False,High,9,Monday,34.959811916666666
+others,unknown,Mysore Road,False,High,10,Monday,33.46089618333333
+vehicle_breakdown,private_car,Tumkur Road,False,High,10,Monday,29.59502883333333
+vehicle_breakdown,heavy_vehicle,ORR East 1,False,High,23,Monday,43.65070458333333
+vehicle_breakdown,lcv,Tumkur Road,False,High,0,Tuesday,55.3120185
+vehicle_breakdown,bmtc_bus,IRR(Thanisandra road),True,High,1,Tuesday,51.23013096666667
+others,unknown,Hosur Road,False,High,1,Tuesday,97.11398355
+vehicle_breakdown,bmtc_bus,Mysore Road,False,High,3,Tuesday,35.43387466666666
+vehicle_breakdown,others,Old Madras Road,False,High,3,Tuesday,29.915713316666665
+vehicle_breakdown,bmtc_bus,ORR West 1,False,High,6,Tuesday,43.33326306666667
+vehicle_breakdown,bmtc_bus,Mysore Road,False,High,9,Tuesday,2.606119833333333
+vehicle_breakdown,private_bus,Bannerghata Road,False,High,10,Tuesday,20.97513005
+vehicle_breakdown,truck,West of Chord Road,False,High,10,Tuesday,30.68868525
+vehicle_breakdown,heavy_vehicle,Hosur Road,False,High,10,Tuesday,111.8691282
+vehicle_breakdown,lcv,Mysore Road,False,High,10,Tuesday,8.1381474
+vehicle_breakdown,heavy_vehicle,Bellary Road 2,False,High,0,Wednesday,10.638263616666668
+others,unknown,West of Chord Road,False,High,0,Wednesday,1682.0687555833333
+construction,unknown,ORR West 1,False,High,0,Wednesday,18.658855366666668
+vehicle_breakdown,lcv,CBD 2,False,High,1,Wednesday,72.16349068333334
+vehicle_breakdown,ksrtc_bus,Old Madras Road,False,High,1,Wednesday,6.507784116666667
+vehicle_breakdown,heavy_vehicle,Bellary Road 2,False,High,2,Wednesday,38.233425366666665
+vehicle_breakdown,others,Non-corridor,False,Low,3,Wednesday,20.32718785
+vehicle_breakdown,lcv,Mysore Road,False,High,5,Wednesday,27.996742333333334
+vehicle_breakdown,bmtc_bus,ORR West 1,False,High,9,Wednesday,100.30296911666666
+pot_holes,unknown,Non-corridor,False,Low,2,Thursday,1241.1601620166666
+vehicle_breakdown,private_car,Mysore Road,False,High,3,Thursday,18.39184095
+vehicle_breakdown,lcv,Tumkur Road,False,High,3,Thursday,29.780961883333337
+vehicle_breakdown,bmtc_bus,West of Chord Road,False,High,4,Thursday,7.597021883333332
+tree_fall,unknown,Non-corridor,False,Low,4,Thursday,1569.8819773833334
+vehicle_breakdown,heavy_vehicle,Old Madras Road,False,High,5,Thursday,20.259159333333333
+others,unknown,Bellary Road 1,False,High,6,Thursday,406.3289395
+vehicle_breakdown,lcv,Non-corridor,False,Low,9,Thursday,25.71718945
+others,unknown,Non-corridor,False,Low,14,Thursday,598.4027556333333
+vehicle_breakdown,bmtc_bus,Old Madras Road,False,High,0,Friday,53.08126645
+vehicle_breakdown,others,CBD 2,False,High,1,Friday,53.88951821666667
+vehicle_breakdown,private_bus,Hosur Road,False,High,1,Friday,9.537807249999998
+vehicle_breakdown,private_bus,ORR East 1,False,High,2,Friday,24.52389155
+vehicle_breakdown,lcv,ORR East 1,False,High,3,Friday,83.42797768333334
+vehicle_breakdown,bmtc_bus,Non-corridor,False,Low,3,Friday,66.69363336666667
+vehicle_breakdown,lcv,Mysore Road,False,High,3,Friday,23.59637425
+vehicle_breakdown,bmtc_bus,Non-corridor,False,Low,4,Friday,26.267882366666665
+vehicle_breakdown,others,Varthur Road,False,High,4,Friday,50.8098261
+others,unknown,Tumkur Road,False,High,8,Friday,81.79674135
+others,unknown,Magadi Road,False,High,10,Friday,143.69155221666668
+vehicle_breakdown,auto,Bannerghata Road,False,High,10,Friday,22.181698200000003
+vehicle_breakdown,bmtc_bus,Non-corridor,False,Low,12,Friday,85.28976388333334
+vehicle_breakdown,bmtc_bus,Non-corridor,True,Low,13,Friday,63.35080513333333
+vehicle_breakdown,bmtc_bus,Mysore Road,False,High,13,Friday,101.30639593333332
+construction,unknown,Non-corridor,True,Low,15,Friday,482.79533441666666
+others,unknown,Non-corridor,False,Low,0,Saturday,15.193326466666669
+vehicle_breakdown,others,Non-corridor,False,Low,2,Saturday,46.60752335
+vehicle_breakdown,ksrtc_bus,Tumkur Road,False,High,2,Saturday,51.14671941666666
+others,unknown,Old Madras Road,False,High,3,Saturday,30.950269216666666
+vehicle_breakdown,private_bus,Non-corridor,False,Low,7,Saturday,41.03490251666666
+vehicle_breakdown,lcv,ORR North 2,False,High,10,Saturday,24.6922743
+others,unknown,ORR East 1,False,High,10,Saturday,2568.793783733333
+vehicle_breakdown,bmtc_bus,ORR West 1,False,High,11,Saturday,147.82079903333334
+tree_fall,unknown,Non-corridor,False,Low,12,Saturday,63.193024916666666
+construction,unknown,ORR North 1,False,High,18,Saturday,418.72792855
+construction,unknown,ORR North 1,False,High,18,Saturday,416.4596988166667
+construction,unknown,ORR North 1,False,High,18,Saturday,410.07223675
+vehicle_breakdown,unknown,Non-corridor,True,Low,0,Sunday,76.5535792
+vehicle_breakdown,others,Non-corridor,False,Low,1,Sunday,10.172995533333332
+vehicle_breakdown,bmtc_bus,Mysore Road,False,High,2,Sunday,63.944430233333335
+vehicle_breakdown,heavy_vehicle,Magadi Road,False,High,9,Sunday,44.38574795
+vehicle_breakdown,ksrtc_bus,Mysore Road,False,High,13,Sunday,32.330133016666665
+vehicle_breakdown,unknown,IRR(Thanisandra road),False,High,1,Monday,16.959205216666668
+vehicle_breakdown,lcv,Old Madras Road,False,High,0,Tuesday,37.8463379
+vehicle_breakdown,others,Non-corridor,False,Low,1,Tuesday,81.02077853333334
+others,unknown,Old Madras Road,False,High,1,Tuesday,108.49235771666666
+others,unknown,Old Madras Road,False,High,3,Tuesday,90.64092015
+vehicle_breakdown,private_car,Non-corridor,False,Low,4,Tuesday,80.54814843333334
+vehicle_breakdown,bmtc_bus,Tumkur Road,False,High,6,Tuesday,18.983907716666668
+vehicle_breakdown,heavy_vehicle,Bellary Road 2,False,High,7,Tuesday,20.67651958333333
+vehicle_breakdown,heavy_vehicle,Mysore Road,False,High,8,Tuesday,17.08193041666667
+vehicle_breakdown,bmtc_bus,Non-corridor,False,Low,0,Wednesday,34.28519798333333
+road_conditions,unknown,IRR(Thanisandra road),False,High,0,Wednesday,226.32391145000005
+vehicle_breakdown,bmtc_bus,Non-corridor,False,Low,1,Wednesday,70.25211858333334
+vehicle_breakdown,private_car,Mysore Road,False,High,1,Wednesday,9.713554783333333
+vehicle_breakdown,lcv,Bannerghata Road,False,High,2,Wednesday,31.053444266666663
+vehicle_breakdown,others,Non-corridor,False,Low,3,Wednesday,35.590218150000005
+others,unknown,Mysore Road,False,High,10,Wednesday,121.99925558333332
+vehicle_breakdown,bmtc_bus,Mysore Road,False,High,5,Wednesday,36.24162716666667
+vehicle_breakdown,others,Bellary Road 1,False,High,8,Wednesday,153.29203903333334
+vehicle_breakdown,heavy_vehicle,Bellary Road 2,False,High,9,Wednesday,21.891094866666663
+vehicle_breakdown,bmtc_bus,Non-corridor,False,Low,10,Wednesday,76.49049193333333
+water_logging,unknown,Bellary Road 2,False,High,11,Wednesday,251.5299698833333
+water_logging,unknown,ORR East 1,False,High,13,Wednesday,1373.8838876333332
+tree_fall,unknown,Non-corridor,True,Low,13,Wednesday,2292.2994898666666
+vehicle_breakdown,ksrtc_bus,Mysore Road,False,High,0,Thursday,6.084086783333333
+road_conditions,unknown,Magadi Road,False,High,2,Thursday,5.467024883333334
+vehicle_breakdown,others,West of Chord Road,False,High,2,Thursday,22.82533031666667
+vehicle_breakdown,lcv,ORR East 1,False,High,7,Thursday,25.0730054
+construction,unknown,Bellary Road 2,False,High,8,Thursday,28.910718466666665
+protest,unknown,Mysore Road,False,High,8,Thursday,36.9761542
+vehicle_breakdown,bmtc_bus,Non-corridor,False,Low,9,Thursday,33.196245600000005
+vehicle_breakdown,others,Bellary Road 2,False,High,9,Thursday,23.13778955
+vehicle_breakdown,ksrtc_bus,Tumkur Road,False,High,10,Thursday,54.30541788333333
+vehicle_breakdown,others,Non-corridor,False,Low,11,Thursday,53.374649950000006
+water_logging,unknown,Bellary Road 2,False,High,14,Thursday,146.49335698333334
+vehicle_breakdown,lcv,Tumkur Road,False,High,17,Thursday,26.296394516666663
+tree_fall,unknown,Non-corridor,True,Low,3,Saturday,125.7725866
+vehicle_breakdown,bmtc_bus,Non-corridor,False,Low,6,Friday,63.358071466666665
+vehicle_breakdown,taxi,Mysore Road,False,High,0,Saturday,56.79307898333333
+vehicle_breakdown,others,CBD 1,False,High,2,Saturday,64.51499301666666
+accident,unknown,Tumkur Road,False,High,9,Saturday,37.806749716666666
+vehicle_breakdown,bmtc_bus,Tumkur Road,False,High,3,Sunday,16.706654466666667
+others,unknown,Non-corridor,False,Low,3,Sunday,124.58709098333334
+vehicle_breakdown,private_car,Hosur Road,False,High,6,Sunday,38.88228771666666
+vehicle_breakdown,private_car,Bannerghata Road,False,High,10,Sunday,70.00420463333333
+vehicle_breakdown,bmtc_bus,Mysore Road,False,High,6,Monday,20.2021116
+vehicle_breakdown,bmtc_bus,Mysore Road,False,High,6,Monday,11.277187116666664
+vehicle_breakdown,private_car,Tumkur Road,False,High,8,Monday,44.69857258333333
+vehicle_breakdown,bmtc_bus,Mysore Road,False,High,12,Monday,63.49284705
+vehicle_breakdown,private_bus,Tumkur Road,False,High,1,Tuesday,44.00237736666666
+vehicle_breakdown,private_bus,Hosur Road,False,High,1,Tuesday,54.72725916666666
+vehicle_breakdown,private_bus,Hosur Road,False,High,1,Tuesday,43.12657125
+vehicle_breakdown,lcv,Bannerghata Road,False,High,2,Tuesday,21.635088383333333
+vehicle_breakdown,bmtc_bus,Non-corridor,False,Low,3,Tuesday,13.002653716666666
+vehicle_breakdown,truck,Non-corridor,True,Low,7,Tuesday,13.914063633333337
