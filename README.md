@@ -1,7 +1,82 @@
+# GridlockDNA
+
+**Bangalore Traffic Intelligence System — Flipkart Gridlock Hackathon 2.0**
+
+GridlockDNA finds the places in Bangalore where chronic illegal parking and recurring traffic incidents physically overlap — and uses that overlap to power three things: a real-time enforcement dispatch dashboard, an ambulance-priority safety layer, and a last-mile delivery routing optimiser.
+
+Two city datasets — 298,450 parking violation records and 8,173 Astram traffic incident logs — had never been joined before. GridlockDNA spatially clusters both and intersects them to surface **45 compound gridlock zones**: locations where bad parking and traffic incidents compound each other, not just coexist in the same city.
+
+---
+
+## Why this matters
+
+A zone with heavy parking violations but no nearby incidents is a parking problem. A zone with both — heavy violations *and* recurring incidents *and* proximity to a hospital — is where an ambulance actually gets stuck. Nobody had built that joint view before. GridlockDNA does.
+
+---
+
+## The Pipeline
+
+The project runs as a 5-phase pipeline, each phase building on the last.
+
+### Phase 1 — Data Preparation
+Cleaned both raw datasets: dropped empty columns, filtered rejected/duplicate records, parsed JSON-encoded offence fields into severity flags, converted all timestamps to IST, and computed a recidivism score per vehicle based on repeat-violation history.
+
+- **Input:** 298,450 parking violations, 8,173 Astram incidents
+- **Output:** 248,376 clean parking records, 6,639 clean incident records
+- 27,971 vehicles identified as repeat offenders (more than one violation)
+
+### Phase 2 — Spatial Join (the core innovation)
+Clustered both datasets independently using DBSCAN (haversine distance, 100m radius), then spatially joined every parking cluster to the nearest incident cluster within 200 metres. Computed a **Compound Risk Score (CRS)** for every resulting zone from four real, weighted signals: vehicle type, violation severity, recidivism factor, and incident/road-closure rate.
+
+- 529 chronic parking hotspots clustered
+- 114 recurring incident clusters identified
+- **45 compound gridlock zones** found — joint evidence of parking + incidents at the same location
+- 16,386 violations and 1,165 incidents fall within these 45 zones
+
+### Phase 3 — AmbulanceShield (life-safety layer)
+Mapped 8 major Bangalore hospitals and computed each zone's proximity to the nearest one. Zones within 1km of a hospital get a 3× priority multiplier, within 2km get 2×, beyond that 1× — meaning ambulance proximity can override raw risk ranking entirely. Also flagged all currently-active, road-closing incidents as live critical alerts.
+
+- 32 of 45 zones were re-ranked once ambulance proximity was applied
+- 100 critical ambulance alerts identified from real active/road-closure incidents
+
+### Phase 4 — Incident Duration Predictor (BreakdownBlind)
+Trained a gradient-boosted regression model to estimate how much longer an active incident will likely block traffic, using event cause, vehicle type, corridor, road-closure flag, priority, hour, and weekday as features.
+
+- Trained on 1,885 incidents with known duration
+- Validated signal: road closures average 409 min vs 274 min without; BMTC bus breakdowns average 61 min vs 42 min for private cars
+- **Honest limitation:** incident duration has a heavy long tail (90th percentile = 871 min vs median 62 min). With ~1,900 training rows, the model is used for *relative ranking* (which zones tend to clear slower), not precise minute-level forecasting. The core risk score does not depend on it.
+
+### Phase 5 — Dashboard + Live Demo
+A FastAPI backend serves 4 endpoints (zones, alerts, dispatch queue, Flipkart routing) consumed by a React + Leaflet dashboard. A replay script feeds the Astram dataset chronologically into the API to simulate a live traffic feed for demo purposes.
+
+- Interactive map with colour-coded risk zones (red/amber/green) and hospital markers
+- Ranked enforcement dispatch queue, sorted by ambulance-weighted priority
+- Analytics panel: top zones by CRS, violations by hour, incident cause breakdown
+- **Flipkart routing panel:** compares a direct delivery route against a GridlockDNA-optimised route avoiding high-risk zones — in our test case (Peenya warehouse → Koramangala), the optimised route saves an estimated 28 minutes by avoiding 3 critical zones.
+
+---
+
+## Tech Stack
+
+| Layer | Tools |
+|---|---|
+| Data processing | Python, pandas |
+| Spatial clustering | scikit-learn (DBSCAN, haversine metric) |
+| Spatial join | scipy (cKDTree) / geopandas |
+| Predictive model | LightGBM |
+| Backend | FastAPI |
+| Frontend | React, Leaflet, Chart.js |
+
+---
+
+## Data
+
+You can find the complete dataset zip file in /data.
+
+---
+
 # GridlockDNA — Phase 5 (Frontend) Setup Guide
 
-Your partner's notebook (`ParkSenseAI.ipynb`) is fully complete through Step 14.
-It produces real results: **45 compound zones**, **100 ambulance alerts**, **8 hospitals**.
 
 This guide gets you from "notebook ran successfully" to "live dashboard demo."
 
@@ -18,7 +93,7 @@ ambulance_alerts.json     ← Step 11 output — 100 real critical incidents
 hospitals.json            ← Step 9 output — 8 hospital coordinates
 ```
 
-**If your partner used Google Colab:**
+**From Google Colab:**
 ```python
 from google.colab import files
 files.download("live_zone_status.json")
@@ -91,48 +166,5 @@ python replay.py
 
 This pulls the **real 100 ambulance alerts** (sorted by hospital proximity — most urgent first) and fires one every 2.2 seconds into the dashboard. Each one pops a red marker on the map at its real lat/lon with the real `event_cause` and hospital distance.
 
-Want fewer/more events? `python replay.py 25` replays the top 25 instead of the default 15.
 
 ---
-
-## What's different from the original mock version
-
-| Thing | Mock v1 | Real v2 (this one) |
-|---|---|---|
-| Zone count | 10 fake | **45 real** compound zones |
-| Field names | `final_priority` | `final_priority_score` (mapped internally) |
-| Ambulance alerts | 10 invented | **100 real** Astram incidents |
-| Severity | manually assigned | derived from real `final_priority_score` (≥80 critical, ≥40 high) |
-| Duration prediction | not present | **real LightGBM output** (`predicted_remaining_block_min`) — with the honest caveat that val MAE is ~286 min, so treat it as relative signal not precise minutes |
-| Filter by severity | not present | **added** — filter chips in dispatch panel |
-| Hospital count on chart | not present | **added** — "zones by nearest hospital" bar chart |
-
----
-
-## Honest numbers to use in your demo / slides
-
-Pull these straight from the notebook output — don't round up or embellish:
-
-- **248,376** clean parking violation rows (after removing rejected/duplicate)
-- **6,639** clean Astram incident rows (after authenticated + duration cleanup)
-- **529** parking violation clusters found via DBSCAN
-- **114** incident clusters found via DBSCAN
-- **45** compound zones where a parking cluster and incident cluster overlap within 200m
-- **100** active road-closure incidents within hospital proximity (ambulance alerts)
-- **32 of 45** zones had their enforcement rank *changed* by ambulance weighting vs raw CRS alone — this is your strongest one-liner, it proves the ambulance layer isn't decorative, it materially reprioritises enforcement
-- Duration model: **val MAE = 286 min**, honestly reported. Say: *"the model is a relative signal — useful for ranking which zones are likely to stay blocked longer than others — not a precise minute-level guarantee, given roughly 1,900 training rows and a heavy-tailed duration distribution."*
-
-That last point — leading with the honest limitation instead of waiting to get caught — is exactly the kind of thing that makes BTP engineers trust the rest of your numbers.
-
----
-
-## 90-second demo script (updated for real data)
-
-1. Open dashboard. Point to map: *"This is built from 248,000 real BTP parking violations and 6,600 real Astram incidents — not synthetic data."*
-2. Click on the top-ranked zone (Cluster 0 or Cluster 206 — both ambulance-critical). Show the popup: violations, incidents, nearest hospital, distance.
-3. Mention: *"32 of our 45 compounding zones had their priority order changed once we factored in hospital proximity — meaning a medium-risk zone near a hospital outranks a high-risk zone that isn't."*
-4. Run `replay.py` — watch real ambulance alerts fire on the map in real time, sorted by proximity to hospitals.
-5. Switch to Analytics tab — show the delay label distribution and the honest MAE callout.
-6. Switch to Flipkart tab — Route A vs B comparison.
-
-Done in under 90 seconds, entirely on real numbers.
