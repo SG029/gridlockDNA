@@ -14,7 +14,7 @@ A zone with heavy parking violations but no nearby incidents is a parking proble
 
 ## Repository Structure
 
-
+```text
 GridlockDNA/
 │
 ├── api/
@@ -48,6 +48,10 @@ GridlockDNA/
 ├── README.md
 ├── replay.py
 └── requirements.txt
+```
+
+
+
 
 ## The Pipeline
 
