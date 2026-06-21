@@ -12,12 +12,6 @@ Two city datasets — 298,450 parking violation records and 8,173 Astram traffic
 
 A zone with heavy parking violations but no nearby incidents is a parking problem. A zone with both — heavy violations *and* recurring incidents *and* proximity to a hospital — is where an ambulance actually gets stuck. Nobody had built that joint view before. GridlockDNA does.
 
----
-
-## The Pipeline
-
-The project runs as a 5-phase pipeline, each phase building on the last.
-
 ## Repository Structure
 
 
@@ -54,6 +48,10 @@ GridlockDNA/
 ├── README.md
 ├── replay.py
 └── requirements.txt
+
+## The Pipeline
+
+The project runs as a 5-phase pipeline, each phase building on the last.
 
 
 ### Phase 1 — Data Preparation
